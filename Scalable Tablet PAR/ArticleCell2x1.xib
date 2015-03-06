@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ArticleAggregatorItemView">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="1360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hch-0p-zyL">
+                    <rect key="frame" x="16" y="621" width="488" height="61"/>
+                    <string key="text">Trichinella spiralis newborn larvae: characterization of a stage specific serine proteinase expression, NBL1, using monoclonal antibodies</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="IAg-Tv-vt9">
+                    <rect key="frame" x="16" y="772" width="488" height="179"/>
+                    <string key="text">Trichinella spiralis is an intracellular parasitic nematode of mammalian skeletal muscle, causing a serious zoonotic disease in humans and showing a high economic impact mainly in pig breeding. Serine proteinases of T. spiralis play important roles in the host–parasite interactions mediating host invasion. </string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GRASSET-CHEVILLOT, SHUANG FENG, MING YUAN LIU, PASCAL BOIREAU and ISABELLE VALLÉE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-MM-FCp">
+                    <rect key="frame" x="16" y="702" width="488" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-J1-cGC">
+                    <rect key="frame" x="55" y="8" width="400" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="270" id="3Bt-Jq-tFh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hch-0p-zyL" firstAttribute="top" secondItem="bUF-J1-cGC" secondAttribute="bottom" constant="16" id="AKF-up-3Gh"/>
+                <constraint firstAttribute="trailing" secondItem="hch-0p-zyL" secondAttribute="trailing" constant="16" id="IAe-wa-klf"/>
+                <constraint firstItem="IAg-Tv-vt9" firstAttribute="top" secondItem="vqD-MM-FCp" secondAttribute="bottom" constant="8" id="KG2-4e-55G"/>
+                <constraint firstAttribute="trailing" secondItem="bUF-J1-cGC" secondAttribute="trailing" constant="32" id="OMQ-23-DgN"/>
+                <constraint firstItem="vqD-MM-FCp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Yeq-yM-wxg"/>
+                <constraint firstItem="bUF-J1-cGC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="fmR-jj-SlS"/>
+                <constraint firstItem="IAg-Tv-vt9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="g35-Sv-XFA"/>
+                <constraint firstAttribute="trailing" secondItem="IAg-Tv-vt9" secondAttribute="trailing" constant="8" id="nFX-PF-9jZ"/>
+                <constraint firstItem="hch-0p-zyL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="tvp-Ck-1Rc"/>
+                <constraint firstAttribute="trailing" secondItem="vqD-MM-FCp" secondAttribute="trailing" constant="8" id="v7g-JH-t1V"/>
+                <constraint firstItem="vqD-MM-FCp" firstAttribute="top" secondItem="hch-0p-zyL" secondAttribute="bottom" constant="8" id="wxp-rS-Jbf"/>
+                <constraint firstItem="bUF-J1-cGC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="yes-Nz-srP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="abstractText" destination="IAg-Tv-vt9" id="r28-xj-1h4"/>
+                <outlet property="articleImage" destination="bUF-J1-cGC" id="mX4-vd-mMy"/>
+                <outlet property="authors" destination="vqD-MM-FCp" id="1Au-of-YHw"/>
+                <outlet property="title" destination="hch-0p-zyL" id="bzB-yc-hMX"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-01.png" width="1536" height="2048"/>
+    </resources>
+</document>

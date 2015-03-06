@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62C00C371A9EC66700979A05 /* VolumeCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C00C361A9EC66700979A05 /* VolumeCover.xib */; };
+		62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C00C391A9EC8A000979A05 /* VolumeCover.m */; };
+		62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */; };
+		62C14C161AA0405000ADCE3D /* VolumeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */; };
 		62C4A5AA1A97126F00F70F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5A91A97126F00F70F6D /* main.m */; };
 		62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5AC1A97126F00F70F6D /* AppDelegate.m */; };
 		62C4A5B01A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */; };
@@ -15,6 +19,20 @@
 		62C4A5B81A97126F00F70F6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C4A5B71A97126F00F70F6D /* Images.xcassets */; };
 		62C4A5BB1A97126F00F70F6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */; };
 		62C4A5C71A97127000F70F6D /* Scalable_Tablet_PARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5C61A97127000F70F6D /* Scalable_Tablet_PARTests.m */; };
+		62C4A5D21A97138200F70F6D /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62C4A5D11A97138200F70F6D /* bg.jpg */; };
+		62C4A5D41A97307E00F70F6D /* bgcleangray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62C4A5D31A97307E00F70F6D /* bgcleangray.jpg */; };
+		62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */; };
+		62C4A5DA1A9731C400F70F6D /* Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4A5D91A9731C400F70F6D /* Misc.m */; };
+		62D5F48E1AA8114000233B5E /* bg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D5F48D1AA8114000233B5E /* bg-01.png */; };
+		62E997801AA45CC400D8AD22 /* ArticleAggregatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E9977F1AA45CC400D8AD22 /* ArticleAggregatorViewController.m */; };
+		62E997831AA45CD300D8AD22 /* AggregatorLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E997821AA45CD300D8AD22 /* AggregatorLayoutView.m */; };
+		62E997871AA4619000D8AD22 /* AFKPageFlipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E997861AA4619000D8AD22 /* AFKPageFlipper.m */; };
+		62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E997891AA4626600D8AD22 /* ArticleAggregatorItemView.m */; };
+		62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */; };
+		62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E9978E1AA4687500D8AD22 /* ArticleCell.xib */; };
+		62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */; };
+		62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */; };
+		62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62C00C361A9EC66700979A05 /* VolumeCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeCover.xib; sourceTree = "<group>"; };
+		62C00C381A9EC8A000979A05 /* VolumeCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeCover.h; sourceTree = "<group>"; };
+		62C00C391A9EC8A000979A05 /* VolumeCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeCover.m; sourceTree = "<group>"; };
+		62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeViewController.h; sourceTree = "<group>"; };
+		62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeViewController.m; sourceTree = "<group>"; };
+		62C14C141AA0405000ADCE3D /* VolumeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeCellTableViewCell.h; sourceTree = "<group>"; };
+		62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeCellTableViewCell.m; sourceTree = "<group>"; };
 		62C4A5A41A97126F00F70F6D /* Scalable Tablet PAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scalable Tablet PAR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C4A5A81A97126F00F70F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C4A5A91A97126F00F70F6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +67,26 @@
 		62C4A5C01A97126F00F70F6D /* Scalable Tablet PARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scalable Tablet PARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C4A5C51A97126F00F70F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C4A5C61A97127000F70F6D /* Scalable_Tablet_PARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scalable_Tablet_PARTests.m; sourceTree = "<group>"; };
+		62C4A5D11A97138200F70F6D /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		62C4A5D31A97307E00F70F6D /* bgcleangray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgcleangray.jpg; sourceTree = "<group>"; };
+		62C4A5D51A97315C00F70F6D /* VolumeDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeDashboardViewController.h; sourceTree = "<group>"; };
+		62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeDashboardViewController.m; sourceTree = "<group>"; };
+		62C4A5D81A9731C400F70F6D /* Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Misc.h; sourceTree = "<group>"; };
+		62C4A5D91A9731C400F70F6D /* Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Misc.m; sourceTree = "<group>"; };
+		62D5F48D1AA8114000233B5E /* bg-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-01.png"; sourceTree = "<group>"; };
+		62E9977F1AA45CC400D8AD22 /* ArticleAggregatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleAggregatorViewController.m; sourceTree = "<group>"; };
+		62E997821AA45CD300D8AD22 /* AggregatorLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregatorLayoutView.m; sourceTree = "<group>"; };
+		62E997841AA460E100D8AD22 /* AggregatorLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregatorLayoutView.h; sourceTree = "<group>"; };
+		62E997851AA4619000D8AD22 /* AFKPageFlipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFKPageFlipper.h; sourceTree = "<group>"; };
+		62E997861AA4619000D8AD22 /* AFKPageFlipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFKPageFlipper.m; sourceTree = "<group>"; };
+		62E997891AA4626600D8AD22 /* ArticleAggregatorItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleAggregatorItemView.m; sourceTree = "<group>"; };
+		62E9978B1AA4629800D8AD22 /* ArticleAggregatorItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleAggregatorItemView.h; sourceTree = "<group>"; };
+		62E9978C1AA462AA00D8AD22 /* ArticleAggregatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleAggregatorViewController.h; sourceTree = "<group>"; };
+		62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell1x2.xib; sourceTree = "<group>"; };
+		62E9978E1AA4687500D8AD22 /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell2x1.xib; sourceTree = "<group>"; };
+		62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell3x1.xib; sourceTree = "<group>"; };
+		62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell1x3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +107,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62C00C351A9EC63F00979A05 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				62C4A5D51A97315C00F70F6D /* VolumeDashboardViewController.h */,
+				62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */,
+				62C00C361A9EC66700979A05 /* VolumeCover.xib */,
+				62C00C381A9EC8A000979A05 /* VolumeCover.h */,
+				62C00C391A9EC8A000979A05 /* VolumeCover.m */,
+			);
+			name = Issue;
+			sourceTree = "<group>";
+		};
+		62C14C101AA01F9800ADCE3D /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */,
+				62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */,
+				62C14C141AA0405000ADCE3D /* VolumeCellTableViewCell.h */,
+				62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */,
+			);
+			name = Volume;
+			sourceTree = "<group>";
+		};
 		62C4A59B1A97126F00F70F6D = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +151,23 @@
 		62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */ = {
 			isa = PBXGroup;
 			children = (
+				62D5F48C1AA80F1400233B5E /* Article */,
+				62C14C101AA01F9800ADCE3D /* Volume */,
+				62C00C351A9EC63F00979A05 /* Issue */,
 				62C4A5AB1A97126F00F70F6D /* AppDelegate.h */,
 				62C4A5AC1A97126F00F70F6D /* AppDelegate.m */,
+				62C4A5D81A9731C400F70F6D /* Misc.h */,
+				62C4A5D91A9731C400F70F6D /* Misc.m */,
 				62C4A5B11A97126F00F70F6D /* ViewController.h */,
+				62E997851AA4619000D8AD22 /* AFKPageFlipper.h */,
+				62E997861AA4619000D8AD22 /* AFKPageFlipper.m */,
 				62C4A5B21A97126F00F70F6D /* ViewController.m */,
 				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
+				62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */,
+				62E9978E1AA4687500D8AD22 /* ArticleCell.xib */,
+				62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */,
+				62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */,
+				62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */,
 				62C4A5B71A97126F00F70F6D /* Images.xcassets */,
 				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
 				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
@@ -99,6 +179,7 @@
 		62C4A5A71A97126F00F70F6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62C4A5D01A97137800F70F6D /* images */,
 				62C4A5A81A97126F00F70F6D /* Info.plist */,
 				62C4A5A91A97126F00F70F6D /* main.m */,
 			);
@@ -120,6 +201,29 @@
 				62C4A5C51A97126F00F70F6D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62C4A5D01A97137800F70F6D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62C4A5D31A97307E00F70F6D /* bgcleangray.jpg */,
+				62D5F48D1AA8114000233B5E /* bg-01.png */,
+				62C4A5D11A97138200F70F6D /* bg.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		62D5F48C1AA80F1400233B5E /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				62E997841AA460E100D8AD22 /* AggregatorLayoutView.h */,
+				62E997821AA45CD300D8AD22 /* AggregatorLayoutView.m */,
+				62E9978C1AA462AA00D8AD22 /* ArticleAggregatorViewController.h */,
+				62E9977F1AA45CC400D8AD22 /* ArticleAggregatorViewController.m */,
+				62E9978B1AA4629800D8AD22 /* ArticleAggregatorItemView.h */,
+				62E997891AA4626600D8AD22 /* ArticleAggregatorItemView.m */,
+			);
+			name = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +308,15 @@
 			files = (
 				62C4A5B61A97126F00F70F6D /* Main.storyboard in Resources */,
 				62C4A5BB1A97126F00F70F6D /* LaunchScreen.xib in Resources */,
+				62C4A5D21A97138200F70F6D /* bg.jpg in Resources */,
+				62D5F48E1AA8114000233B5E /* bg-01.png in Resources */,
+				62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */,
+				62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */,
+				62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */,
+				62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */,
+				62C00C371A9EC66700979A05 /* VolumeCover.xib in Resources */,
+				62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */,
+				62C4A5D41A97307E00F70F6D /* bgcleangray.jpg in Resources */,
 				62C4A5B81A97126F00F70F6D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,9 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */,
 				62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */,
+				62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */,
+				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
+				62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */,
+				62E997871AA4619000D8AD22 /* AFKPageFlipper.m in Sources */,
+				62E997801AA45CC400D8AD22 /* ArticleAggregatorViewController.m in Sources */,
 				62C4A5AA1A97126F00F70F6D /* main.m in Sources */,
+				62E997831AA45CD300D8AD22 /* AggregatorLayoutView.m in Sources */,
+				62C4A5DA1A9731C400F70F6D /* Misc.m in Sources */,
 				62C4A5B31A97126F00F70F6D /* ViewController.m in Sources */,
+				62C14C161AA0405000ADCE3D /* VolumeCellTableViewCell.m in Sources */,
 				62C4A5B01A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +540,7 @@
 				62C4A5CC1A97127000F70F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C4A5CD1A97127000F70F6D /* Build configuration list for PBXNativeTarget "Scalable Tablet PARTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +549,7 @@
 				62C4A5CF1A97127000F70F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
