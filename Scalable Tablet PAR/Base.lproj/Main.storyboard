@@ -495,25 +495,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP0-sv-2E2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.070588235294117646" green="0.054901960784313725" blue="0.023529411764705882" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="447" id="06v-mi-WmH">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="350"/>
-                                    </constraint>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="06v-mi-WmH"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="06v-mi-WmH"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbT-HX-UGV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -579,14 +560,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34e-Mg-WB5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="FhY-Sh-lan" secondAttribute="trailing" id="0AC-28-TrW">
                                         <variation key="heightClass=regular-widthClass=regular" constant="24"/>
@@ -683,13 +663,32 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-0A-aLW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-ZS-DlG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="hidden" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP0-sv-2E2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.054901960784313725" blue="0.023529411764705882" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="447" id="06v-mi-WmH">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="350"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="06v-mi-WmH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="06v-mi-WmH"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -701,39 +700,41 @@
                             <constraint firstAttribute="trailing" secondItem="Yqg-zq-Vfq" secondAttribute="trailing" id="76u-kp-GxR"/>
                             <constraint firstItem="qP0-sv-2E2" firstAttribute="leading" secondItem="e3q-si-JXn" secondAttribute="leading" id="7qw-HW-fUO"/>
                             <constraint firstAttribute="trailing" secondItem="HbT-HX-UGV" secondAttribute="trailing" id="BiU-Ug-mna"/>
-                            <constraint firstItem="zvk-0A-aLW" firstAttribute="leading" secondItem="qP0-sv-2E2" secondAttribute="leading" id="Bji-kT-oWw"/>
-                            <constraint firstItem="zvk-0A-aLW" firstAttribute="top" secondItem="qP0-sv-2E2" secondAttribute="top" id="D5e-i5-Khv"/>
+                            <constraint firstItem="UJ0-ZS-DlG" firstAttribute="leading" secondItem="e3q-si-JXn" secondAttribute="leading" id="C85-g1-ZYU"/>
                             <constraint firstItem="Yqg-zq-Vfq" firstAttribute="top" secondItem="HbT-HX-UGV" secondAttribute="bottom" constant="13" id="QtF-Fm-JUJ">
                                 <variation key="heightClass=regular" constant="0.0"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="zvk-0A-aLW" firstAttribute="bottom" secondItem="qP0-sv-2E2" secondAttribute="bottom" id="bzy-sL-TE3"/>
-                            <constraint firstItem="zvk-0A-aLW" firstAttribute="trailing" secondItem="qP0-sv-2E2" secondAttribute="trailing" id="fNT-Cm-QPF"/>
+                            <constraint firstItem="0UI-DP-3tp" firstAttribute="top" secondItem="UJ0-ZS-DlG" secondAttribute="bottom" id="g2a-VF-S6i"/>
+                            <constraint firstItem="UJ0-ZS-DlG" firstAttribute="height" secondItem="qP0-sv-2E2" secondAttribute="height" id="gDS-LN-yf0"/>
+                            <constraint firstAttribute="trailing" secondItem="UJ0-ZS-DlG" secondAttribute="trailing" id="mPn-BO-T1T"/>
                             <constraint firstAttribute="trailing" secondItem="qP0-sv-2E2" secondAttribute="trailing" id="oyU-IU-2pL"/>
                             <constraint firstItem="Yqg-zq-Vfq" firstAttribute="leading" secondItem="e3q-si-JXn" secondAttribute="leading" id="rZy-66-apS"/>
+                            <constraint firstItem="UJ0-ZS-DlG" firstAttribute="top" secondItem="Yqg-zq-Vfq" secondAttribute="bottom" id="tIh-OJ-heV"/>
                             <constraint firstItem="0UI-DP-3tp" firstAttribute="top" secondItem="qP0-sv-2E2" secondAttribute="bottom" id="yX6-qw-PLy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Yqg-zq-Vfq"/>
-                                <exclude reference="qP0-sv-2E2"/>
                                 <exclude reference="HbT-HX-UGV"/>
-                                <exclude reference="zvk-0A-aLW"/>
+                                <exclude reference="UJ0-ZS-DlG"/>
+                                <exclude reference="qP0-sv-2E2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2IY-9T-h7B"/>
                                 <exclude reference="5wh-RO-f2Y"/>
                                 <exclude reference="BiU-Ug-mna"/>
-                                <exclude reference="Bji-kT-oWw"/>
-                                <exclude reference="D5e-i5-Khv"/>
-                                <exclude reference="bzy-sL-TE3"/>
-                                <exclude reference="fNT-Cm-QPF"/>
                                 <exclude reference="76u-kp-GxR"/>
                                 <exclude reference="QtF-Fm-JUJ"/>
                                 <exclude reference="rZy-66-apS"/>
+                                <exclude reference="C85-g1-ZYU"/>
+                                <exclude reference="gDS-LN-yf0"/>
+                                <exclude reference="mPn-BO-T1T"/>
+                                <exclude reference="tIh-OJ-heV"/>
                                 <exclude reference="1qr-dv-RYd"/>
                                 <exclude reference="7qw-HW-fUO"/>
                                 <exclude reference="oyU-IU-2pL"/>
+                                <exclude reference="g2a-VF-S6i"/>
                                 <exclude reference="yX6-qw-PLy"/>
                             </mask>
                         </variation>
@@ -753,17 +754,18 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
+                                <include reference="UJ0-ZS-DlG"/>
                                 <include reference="qP0-sv-2E2"/>
-                                <include reference="zvk-0A-aLW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Bji-kT-oWw"/>
-                                <include reference="D5e-i5-Khv"/>
-                                <include reference="bzy-sL-TE3"/>
-                                <include reference="fNT-Cm-QPF"/>
+                                <include reference="C85-g1-ZYU"/>
+                                <exclude reference="gDS-LN-yf0"/>
+                                <include reference="mPn-BO-T1T"/>
+                                <include reference="tIh-OJ-heV"/>
                                 <include reference="1qr-dv-RYd"/>
                                 <include reference="7qw-HW-fUO"/>
                                 <include reference="oyU-IU-2pL"/>
+                                <include reference="g2a-VF-S6i"/>
                                 <include reference="yX6-qw-PLy"/>
                             </mask>
                         </variation>
@@ -777,7 +779,7 @@
                         <outlet property="journalEditorLabel" destination="FhY-Sh-lan" id="BCQ-nF-Mkl"/>
                         <outlet property="menuView" destination="Yqg-zq-Vfq" id="lEx-JZ-8F6"/>
                         <outlet property="scrollView" destination="qP0-sv-2E2" id="MC8-xT-dpA"/>
-                        <outlet property="tableView" destination="zvk-0A-aLW" id="FDN-lR-PmK"/>
+                        <outlet property="tableView" destination="UJ0-ZS-DlG" id="gIA-Hg-yzY"/>
                         <segue destination="62n-Y6-YLK" kind="show" identifier="articleAggregator" id="fmg-mB-drX"/>
                     </connections>
                 </viewController>

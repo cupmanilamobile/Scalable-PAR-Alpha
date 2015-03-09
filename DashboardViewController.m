@@ -38,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];    
     journalDetailsOriginalHeight = _journalDetailsView.frame.size.height;
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -59,6 +60,7 @@
             _journalDescriptionTextView.text = [journalDetailsDictionary objectForKey:@"description"];
             
             [self buildIssueCover];
+            [_tableView reloadData]; // reloading tableview assuming the user taps on the VOlumes immediately
         });
     }] resume];
 
@@ -97,6 +99,7 @@
 
 - (void)setConstraints:(int)index
 {
+    IssueCover *currentCover = [self issueCover:index];
     IssueCover *previousCover;
     if (index == 0) {
         previousCover = [self issueCover:index];
@@ -106,27 +109,20 @@
         previousCover = [self issueCover:index - 5];
     }
     
-    IssueCover *currentCover = [self issueCover:index];
     NSDictionary *viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
     
-    NSArray *constraint_POS_V;
-    if (index < 5) {
-        constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[currentCover]" options:0 metrics:nil views:viewsDictionary];
-    } else {
-        constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousCover]-24-[currentCover]" options:0 metrics:nil views:viewsDictionary];
-    }
+    // Vertical Constraint
+    NSString *visualVertical = index < 5 ? @"V:|-10-[currentCover]" : @"V:[previousCover]-24-[currentCover]";
+    NSArray *constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:visualVertical options:0 metrics:nil views:viewsDictionary];
     
     if (index > 5) { // Improve this
         previousCover = [self issueCover:index - 1];
         viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
     }
-    
-    NSArray *constraint_POS_H;
-    if (index == 0 || index % 5 == 0) {
-        constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[currentCover]" options:0 metrics:nil views:viewsDictionary];
-    } else {
-        constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[previousCover]-25-[currentCover]" options:0 metrics:nil views:viewsDictionary];
-    }
+
+    // Horizontal Constraint
+    NSString *visualHorizontal = index == 0 || index % 5 == 0 ? @"H:|-20-[currentCover]" : @"H:[previousCover]-25-[currentCover]";
+    NSArray *constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:visualHorizontal options:0 metrics:nil views:viewsDictionary];
     
     // Size constraints
     NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:currentCover attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:_scrollView attribute:NSLayoutAttributeHeight multiplier:0.0 constant:230];
@@ -175,7 +171,7 @@
 }
 
 - (void)reloadIssueCovers:(int)volumeId {
-    _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
+        _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self buildIssueCover];
     });
@@ -183,15 +179,20 @@
 
 #pragma mark - Menu Actions
 - (IBAction)showLatestIssues:(id)sender {
-    [self reloadIssueCovers:latestVolumeId];
     _tableView.hidden = YES;
     _scrollView.hidden = NO;
+    [self reloadIssueCovers:latestVolumeId];
 }
 
-- (IBAction)showVolumes:(id)sender {
-    [_tableView reloadData];
+- (IBAction)showVolumes:(UIButton *)button {
     _scrollView.hidden = YES;
     _tableView.hidden = NO;
+    [_tableView reloadData];
+    
+//    [UIView animateWithDuration:0.5 animations:^{
+//        _tableView.frame = CGRectMake(0, _tableView.frame.origin.y, _tableView.frame.size.width, _tableView.frame.size.height);
+//        _scrollView.frame = CGRectMake(-_scrollView.frame.size.width, _scrollView.frame.origin.y, _scrollView.frame.size.width, _scrollView.frame.size.height);
+//    }];
 }
 
 - (IBAction)showFirstView:(id)sender {
