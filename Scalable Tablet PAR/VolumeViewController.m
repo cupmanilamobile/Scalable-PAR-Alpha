@@ -27,7 +27,7 @@ NSArray* volumes;
     // Do any additional setup after loading the view.
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:@"http://localhost:8080/release-15.1.PAR/journal/PAR/"]
+    [[session dataTaskWithURL:[NSURL URLWithString:@"http://192.168.242.119:8080/release-15.1.PAR/journal/PAR/"]
             completionHandler:^(NSData *data,
                                 NSURLResponse *response,
                                 NSError *error) {

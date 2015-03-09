@@ -11,45 +11,45 @@
 #import "VolumeCover.h"
 #import "ArticleAggregatorViewController.h"
 
+#define API_GET_JOURNAL_DETAILS_URL @"http://192.168.242.119:8080/release-15.1.PAR/journal/PAR"
+#define API_GET_ISSUES_BY_VOLUME_ID_URL @"http://192.168.242.119:8080/release-15.1.PAR/journal/PAR/%@"
+
 @interface VolumeDashboardViewController ()
 
 @end
 
+@implementation VolumeDashboardViewController {
+    BOOL pageControlBeingUsed;
+}
 
-@implementation VolumeDashboardViewController
-
-BOOL pageControlBeingUsed;
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self.volumeContainerScrollView setDelegate:self];
+    
     [Misc downloadingServerImageFromUrl:self.latestVolumeCover AndUrl:@"http://journals.cambridge.org/cover_images/PAR/PAR.jpg"];
     // Do any additional setup after loading the view.
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:    [NSString stringWithFormat:@"http://localhost:8080/release-15.1.PAR/journal/PAR/%ld/",self.volumeId ]]
-            completionHandler:^(NSData *data,
-                                NSURLResponse *response,
-                                NSError *error) {
-                NSError* jsonError = nil;
-                self.issueList = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError] ;
-                NSLog(@"obj: %@ ; error: %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding], error);
-                // Log the decoded object, and the error if any
-               // [self.journalDetails objectForKey:@"description"];
-//                NSLog(@"done loading");
-//                NSLog(@"%@",[self.volumeDetails objectForKey:@"description"]);
-                dispatch_async(dispatch_get_main_queue(), ^{
-                  //  self.description.text =[self.journalDetails objectForKey:@"description"];
-                    ;
-                    
-                    [self setVolumesInContainer];
-                });
-            }] resume];
+    [[session dataTaskWithURL:[NSURL URLWithString:API_GET_JOURNAL_DETAILS_URL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSError* jsonError = nil;
+        NSDictionary *journalDetailsDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        
+        NSDictionary *volumeDictionary = [journalDetailsDictionary objectForKey:@"volumes"][0];
+        NSString *latestVolumeId = [volumeDictionary objectForKey:@"volumeId"];
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:API_GET_ISSUES_BY_VOLUME_ID_URL, latestVolumeId]];
+        NSData *issueData = [NSData dataWithContentsOfURL:url];
+        _issueList = [NSJSONSerialization JSONObjectWithData:issueData options:0 error:&jsonError];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // self.description.text =[self.journalDetails objectForKey:@"description"];
+            [self setVolumesInContainer];
+        });
+    }] resume];
     
-  //  VolumeCover* volumeCoverTry = [[VolumeCover alloc] initWithFrame:CGRectMake(0, 0, 300,300)];
- //   [self.view addSubview:volumeCoverTry];
     
-
-    
+//    VolumeCover* volumeCoverTry = [[VolumeCover alloc] initWithFrame:CGRectMake(0, 0, 300,300)];
+//    [self.view addSubview:volumeCoverTry];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,61 +57,36 @@ BOOL pageControlBeingUsed;
     // Dispose of any resources that can be recreated.
 }
 
--(void)setVolumesInContainer{
-      
-    NSArray* volumes = self.issueList;
-    CGFloat volumeX = 10;
-    CGFloat volumeY = 10;
+-(void)setVolumesInContainer {
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(issueTap:)];
+    self.latestVolumeLabel.text   = [NSString stringWithFormat:@"Issue %@",[[_issueList lastObject] objectForKey:@"issueId"]];
+
     int volumeIndex= 0;
-    NSDictionary* volume;
-    VolumeCover* volumeCover;
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                action:@selector(issueTap:)];
-    self.latestVolumeLabel.text   = [NSString stringWithFormat:@"Issue %ld",(long)[[[volumes lastObject] objectForKey:@"issueId"] integerValue]];
-    for(int i = 0 ; i>volumes.count;i++){
-        if(volumeIndex>=8){
-            volumeIndex-=8;
-        }
-        volumeX = 24+((i-1)/8) * self.volumeContainerScrollView.frame.size.width + (volumeIndex %4) * 180;
-        volumeY = (volumeIndex/4) * 300;
-
-     
-        volume = [volumes objectAtIndex:i];
-        
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                    action:@selector(issueTap:)];
-        
-        
-         volumeCover = [[VolumeCover alloc] initWithFrame:CGRectMake(volumeX, volumeY, 160, 275)];
-        [volumeCover addGestureRecognizer:singleTap];
-         volume = [volumes objectAtIndex:i];
-        
-//        [url replaceOccurrencesOfString:@"xxx" withString:[volume objectForKey:@"volumeId"] options:NSLiteralSearch range: NSMakeRange(0, [url length])];
-//        [Misc downloadingServerImageFromUrl:volumeCover  AndUrl:url];
-//        
-//        NSLog(@"url:%@",url);
-//        [url replaceOccurrencesOfString:[volume objectForKey:@"volumeId"] withString: @"xxx" options:NSLiteralSearch range: NSMakeRange(0, [url length])];
-//        NSLog(@"url:%@",url);
-        volumeCover.tag  = [[volume objectForKey:@"issueId"] integerValue];
-
-        volumeCover.volumeLabel.text = [NSString stringWithFormat:@"Volume %ld",(long)volumeCover.tag];
-        
-        
-        [self.volumeContainerScrollView addSubview:volumeCover];
+    for (int i = 0; i < _issueList.count; i++) {
+        volumeIndex = volumeIndex - (volumeIndex >= 8 ? 8 : 0);
+        [self.volumeContainerScrollView addSubview:[self createVolumeCover:i volumeIndex:volumeIndex]];
         volumeIndex++;
-        
-}
+    }
     
-   
-    
-    self.volumeContainerScrollView.contentSize  = CGSizeMake(self.volumeContainerScrollView.frame.size.width * (int)roundf(volumes.count/8.0f), self.volumeContainerScrollView.frame.size.height );
-    NSLog(@"%d",160 * 4 * (int)roundf(volumes.count/8.0f));
-    
+    self.volumeContainerScrollView.contentSize  = CGSizeMake(self.volumeContainerScrollView.frame.size.width * (int)roundf(_issueList.count/8.0f), self.volumeContainerScrollView.frame.size.height );
     self.volumePageControl.numberOfPages =self.volumeContainerScrollView.contentSize.width  / self.volumeContainerScrollView.frame.size.width;
     [self loadVolumesForPage:0];
-    [self.volumeContainerScrollView setDelegate:self];
+}
 
+- (VolumeCover *)createVolumeCover:(int)i volumeIndex:(int)volumeIndex {
+    CGFloat volumeX = 10, volumeY = 10;
+    VolumeCover* volumeCover;
 
+    volumeY = (volumeIndex/4) * 300;
+    volumeX = 24+((i-1)/8) * self.volumeContainerScrollView.frame.size.width + (volumeIndex %4) * 180;
+    volumeCover = [[VolumeCover alloc] initWithFrame:CGRectMake(volumeX, volumeY, 160, 275)];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(issueTap:)];
+    [volumeCover addGestureRecognizer:singleTap];
+    
+    volumeCover.tag  = [[_issueList[i] objectForKey:@"issueId"] integerValue];
+    volumeCover.volumeLabel.text = [NSString stringWithFormat:@"Volume %ld",(long)volumeCover.tag];
+    return volumeCover;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
@@ -122,16 +97,14 @@ BOOL pageControlBeingUsed;
     [self loadVolumesForPage:(int)self.volumePageControl.currentPage+1];
 
 }
+
+// update the scroll view to the appropriate page
 - (IBAction)changePage {
-    // update the scroll view to the appropriate page
     CGRect frame;
     frame.origin.x = self.volumeContainerScrollView.frame.size.width * self.volumePageControl.currentPage;
     frame.origin.y = 0;
     frame.size = self.volumeContainerScrollView.frame.size;
     [self.volumeContainerScrollView scrollRectToVisible:frame animated:YES];
-    
-   // [self loadVolumesForPage:(int)self.volumePageControl.currentPage+1];
-    
 }
 
 - (void)loadVolumesForPage:(int) page{

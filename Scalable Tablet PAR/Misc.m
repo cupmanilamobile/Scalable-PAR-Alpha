@@ -15,17 +15,9 @@
 //
 // 
 +(void)downloadingServerImageFromUrl:(UIImageView*)imgView AndUrl:(NSString*)strUrl{
-    
-    
-    
-    
     NSString* theFileName = [NSString stringWithFormat:@"%@.png",[[strUrl lastPathComponent] stringByDeletingPathExtension]];
-    
-    
     NSFileManager *fileManager =[NSFileManager defaultManager];
     NSString *fileName = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"tmp/%@",theFileName]];
-    
-    
     
     imgView.backgroundColor = [UIColor darkGrayColor];
     UIActivityIndicatorView *actView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];

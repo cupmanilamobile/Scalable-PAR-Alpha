@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62C00C371A9EC66700979A05 /* VolumeCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C00C361A9EC66700979A05 /* VolumeCover.xib */; };
+		62C00C371A9EC66700979A05 /* IssueCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C00C361A9EC66700979A05 /* IssueCover.xib */; };
 		62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C00C391A9EC8A000979A05 /* VolumeCover.m */; };
 		62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */; };
 		62C14C161AA0405000ADCE3D /* VolumeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */; };
@@ -33,6 +33,17 @@
 		62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */; };
 		62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */; };
 		62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */; };
+		CF09285D1AA9AE750061927C /* archiveswt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF0928591AA9AE750061927C /* archiveswt.png */; };
+		CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09285A1AA9AE750061927C /* firstviewwt.png */; };
+		CF09285F1AA9AE750061927C /* latestwt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09285B1AA9AE750061927C /* latestwt.png */; };
+		CF0928601AA9AE750061927C /* Openaccesswt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09285C1AA9AE750061927C /* Openaccesswt.png */; };
+		CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0928621AA9B2CF0061927C /* DashboardViewController.m */; };
+		CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */; };
+		CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */; };
+		CFC402791AAC86930094ED83 /* IssueCover.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC402781AAC86930094ED83 /* IssueCover.m */; };
+		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
+		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
+		CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		62C00C361A9EC66700979A05 /* VolumeCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeCover.xib; sourceTree = "<group>"; };
+		62C00C361A9EC66700979A05 /* IssueCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueCover.xib; sourceTree = "<group>"; };
 		62C00C381A9EC8A000979A05 /* VolumeCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeCover.h; sourceTree = "<group>"; };
 		62C00C391A9EC8A000979A05 /* VolumeCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeCover.m; sourceTree = "<group>"; };
 		62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeViewController.h; sourceTree = "<group>"; };
@@ -87,6 +98,21 @@
 		62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell2x1.xib; sourceTree = "<group>"; };
 		62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell3x1.xib; sourceTree = "<group>"; };
 		62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell1x3.xib; sourceTree = "<group>"; };
+		CF0928591AA9AE750061927C /* archiveswt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = archiveswt.png; sourceTree = "<group>"; };
+		CF09285A1AA9AE750061927C /* firstviewwt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstviewwt.png; sourceTree = "<group>"; };
+		CF09285B1AA9AE750061927C /* latestwt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = latestwt.png; sourceTree = "<group>"; };
+		CF09285C1AA9AE750061927C /* Openaccesswt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Openaccesswt.png; sourceTree = "<group>"; };
+		CF0928611AA9B2CF0061927C /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashboardViewController.h; path = ../DashboardViewController.h; sourceTree = "<group>"; };
+		CF0928621AA9B2CF0061927C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashboardViewController.m; path = ../DashboardViewController.m; sourceTree = "<group>"; };
+		CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logo.png"; sourceTree = "<group>"; };
+		CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logobk.png"; sourceTree = "<group>"; };
+		CFC402771AAC86930094ED83 /* IssueCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueCover.h; sourceTree = "<group>"; };
+		CFC402781AAC86930094ED83 /* IssueCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueCover.m; sourceTree = "<group>"; };
+		CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeTableViewCell.xib; sourceTree = "<group>"; };
+		CFC7628D1AAD4A950072B1D6 /* VolumeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeTableViewCell.h; sourceTree = "<group>"; };
+		CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableViewCell.m; sourceTree = "<group>"; };
+		CFC762901AAD4B4E0072B1D6 /* VolumeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeTableView.h; sourceTree = "<group>"; };
+		CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +136,9 @@
 		62C00C351A9EC63F00979A05 /* Issue */ = {
 			isa = PBXGroup;
 			children = (
-				62C4A5D51A97315C00F70F6D /* VolumeDashboardViewController.h */,
-				62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */,
-				62C00C361A9EC66700979A05 /* VolumeCover.xib */,
-				62C00C381A9EC8A000979A05 /* VolumeCover.h */,
-				62C00C391A9EC8A000979A05 /* VolumeCover.m */,
+				62C00C361A9EC66700979A05 /* IssueCover.xib */,
+				CFC402771AAC86930094ED83 /* IssueCover.h */,
+				CFC402781AAC86930094ED83 /* IssueCover.m */,
 			);
 			name = Issue;
 			sourceTree = "<group>";
@@ -122,10 +146,11 @@
 		62C14C101AA01F9800ADCE3D /* Volume */ = {
 			isa = PBXGroup;
 			children = (
-				62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */,
-				62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */,
-				62C14C141AA0405000ADCE3D /* VolumeCellTableViewCell.h */,
-				62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */,
+				CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */,
+				CFC7628D1AAD4A950072B1D6 /* VolumeTableViewCell.h */,
+				CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */,
+				CFC762901AAD4B4E0072B1D6 /* VolumeTableView.h */,
+				CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */,
 			);
 			name = Volume;
 			sourceTree = "<group>";
@@ -151,6 +176,9 @@
 		62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */ = {
 			isa = PBXGroup;
 			children = (
+				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
+				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
+				CF75FD701AAD6F8E00BBB79D /* Archive */,
 				62D5F48C1AA80F1400233B5E /* Article */,
 				62C14C101AA01F9800ADCE3D /* Volume */,
 				62C00C351A9EC63F00979A05 /* Issue */,
@@ -206,6 +234,12 @@
 		62C4A5D01A97137800F70F6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */,
+				CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */,
+				CF0928591AA9AE750061927C /* archiveswt.png */,
+				CF09285A1AA9AE750061927C /* firstviewwt.png */,
+				CF09285B1AA9AE750061927C /* latestwt.png */,
+				CF09285C1AA9AE750061927C /* Openaccesswt.png */,
 				62C4A5D31A97307E00F70F6D /* bgcleangray.jpg */,
 				62D5F48D1AA8114000233B5E /* bg-01.png */,
 				62C4A5D11A97138200F70F6D /* bg.jpg */,
@@ -224,6 +258,21 @@
 				62E997891AA4626600D8AD22 /* ArticleAggregatorItemView.m */,
 			);
 			name = Article;
+			sourceTree = "<group>";
+		};
+		CF75FD701AAD6F8E00BBB79D /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				62C4A5D51A97315C00F70F6D /* VolumeDashboardViewController.h */,
+				62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */,
+				62C00C381A9EC8A000979A05 /* VolumeCover.h */,
+				62C00C391A9EC8A000979A05 /* VolumeCover.m */,
+				62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */,
+				62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */,
+				62C14C141AA0405000ADCE3D /* VolumeCellTableViewCell.h */,
+				62C14C151AA0405000ADCE3D /* VolumeCellTableViewCell.m */,
+			);
+			name = Archive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,13 +360,20 @@
 				62C4A5D21A97138200F70F6D /* bg.jpg in Resources */,
 				62D5F48E1AA8114000233B5E /* bg-01.png in Resources */,
 				62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */,
+				CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */,
+				CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */,
+				CF0928601AA9AE750061927C /* Openaccesswt.png in Resources */,
 				62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */,
+				CF09285F1AA9AE750061927C /* latestwt.png in Resources */,
+				CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */,
 				62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */,
 				62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */,
-				62C00C371A9EC66700979A05 /* VolumeCover.xib in Resources */,
+				62C00C371A9EC66700979A05 /* IssueCover.xib in Resources */,
 				62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */,
+				CF09285D1AA9AE750061927C /* archiveswt.png in Resources */,
 				62C4A5D41A97307E00F70F6D /* bgcleangray.jpg in Resources */,
 				62C4A5B81A97126F00F70F6D /* Images.xcassets in Resources */,
+				CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */,
+				CFC402791AAC86930094ED83 /* IssueCover.m in Sources */,
 				62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */,
 				62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */,
 				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
@@ -346,8 +403,11 @@
 				62E997831AA45CD300D8AD22 /* AggregatorLayoutView.m in Sources */,
 				62C4A5DA1A9731C400F70F6D /* Misc.m in Sources */,
 				62C4A5B31A97126F00F70F6D /* ViewController.m in Sources */,
+				CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */,
 				62C14C161AA0405000ADCE3D /* VolumeCellTableViewCell.m in Sources */,
+				CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */,
 				62C4A5B01A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld in Sources */,
+				CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
