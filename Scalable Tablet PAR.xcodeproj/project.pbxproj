@@ -33,6 +33,7 @@
 		62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */; };
 		62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */; };
 		62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */; };
+		96C6ABED8CA6DC3217F26992 /* libPods-Scalable Tablet PAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECF9DCAA398B474677B79CE /* libPods-Scalable Tablet PAR.a */; };
 		CF09285D1AA9AE750061927C /* archiveswt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF0928591AA9AE750061927C /* archiveswt.png */; };
 		CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09285A1AA9AE750061927C /* firstviewwt.png */; };
 		CF09285F1AA9AE750061927C /* latestwt.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09285B1AA9AE750061927C /* latestwt.png */; };
@@ -45,6 +46,12 @@
 		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
 		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
 		CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */; };
+		FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B51AAD948900E9C476 /* Journal.m */; };
+		FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B81AAD949400E9C476 /* Volume.m */; };
+		FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BB1AAD949C00E9C476 /* Issue.m */; };
+		FDA0E9C31AAD94A500E9C476 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BE1AAD94A500E9C476 /* Article.m */; };
+		FDA0E9C41AAD94A500E9C476 /* ArticleType.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9C01AAD94A500E9C476 /* ArticleType.m */; };
+		FDA0E9C51AAD94A500E9C476 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9C21AAD94A500E9C476 /* Author.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3ECF9DCAA398B474677B79CE /* libPods-Scalable Tablet PAR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scalable Tablet PAR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C00C361A9EC66700979A05 /* IssueCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueCover.xib; sourceTree = "<group>"; };
 		62C00C381A9EC8A000979A05 /* VolumeCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeCover.h; sourceTree = "<group>"; };
 		62C00C391A9EC8A000979A05 /* VolumeCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeCover.m; sourceTree = "<group>"; };
@@ -115,6 +123,20 @@
 		CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableViewCell.m; sourceTree = "<group>"; };
 		CFC762901AAD4B4E0072B1D6 /* VolumeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeTableView.h; sourceTree = "<group>"; };
 		CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableView.m; sourceTree = "<group>"; };
+		E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.release.xcconfig"; sourceTree = "<group>"; };
+		F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.debug.xcconfig"; sourceTree = "<group>"; };
+		FDA0E9B41AAD948900E9C476 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
+		FDA0E9B51AAD948900E9C476 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
+		FDA0E9B71AAD949400E9C476 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		FDA0E9B81AAD949400E9C476 /* Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
+		FDA0E9BA1AAD949C00E9C476 /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		FDA0E9BB1AAD949C00E9C476 /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
+		FDA0E9BD1AAD94A500E9C476 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		FDA0E9BE1AAD94A500E9C476 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		FDA0E9BF1AAD94A500E9C476 /* ArticleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleType.h; sourceTree = "<group>"; };
+		FDA0E9C01AAD94A500E9C476 /* ArticleType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleType.m; sourceTree = "<group>"; };
+		FDA0E9C11AAD94A500E9C476 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		FDA0E9C21AAD94A500E9C476 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C6ABED8CA6DC3217F26992 /* libPods-Scalable Tablet PAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21070DC146E97F2423D8DD3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */,
+				E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		62C00C351A9EC63F00979A05 /* Issue */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,9 +192,11 @@
 		62C4A59B1A97126F00F70F6D = {
 			isa = PBXGroup;
 			children = (
+				6E2122AB047FC8E5765BFFFF /* Frameworks */,
+				21070DC146E97F2423D8DD3B /* Pods */,
+				62C4A5A51A97126F00F70F6D /* Products */,
 				62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */,
 				62C4A5C31A97126F00F70F6D /* Scalable Tablet PARTests */,
-				62C4A5A51A97126F00F70F6D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,30 +212,31 @@
 		62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */ = {
 			isa = PBXGroup;
 			children = (
-				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
-				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
-				CF75FD701AAD6F8E00BBB79D /* Archive */,
-				62D5F48C1AA80F1400233B5E /* Article */,
-				62C14C101AA01F9800ADCE3D /* Volume */,
-				62C00C351A9EC63F00979A05 /* Issue */,
+				FDA0E9B31AAD947900E9C476 /* Model */,
+				62E997851AA4619000D8AD22 /* AFKPageFlipper.h */,
+				62E997861AA4619000D8AD22 /* AFKPageFlipper.m */,
 				62C4A5AB1A97126F00F70F6D /* AppDelegate.h */,
 				62C4A5AC1A97126F00F70F6D /* AppDelegate.m */,
+				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
+				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
 				62C4A5D81A9731C400F70F6D /* Misc.h */,
 				62C4A5D91A9731C400F70F6D /* Misc.m */,
 				62C4A5B11A97126F00F70F6D /* ViewController.h */,
-				62E997851AA4619000D8AD22 /* AFKPageFlipper.h */,
-				62E997861AA4619000D8AD22 /* AFKPageFlipper.m */,
 				62C4A5B21A97126F00F70F6D /* ViewController.m */,
-				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
-				62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */,
+				62C4A5B71A97126F00F70F6D /* Images.xcassets */,
 				62E9978E1AA4687500D8AD22 /* ArticleCell.xib */,
+				62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */,
+				62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */,
 				62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */,
 				62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */,
-				62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */,
-				62C4A5B71A97126F00F70F6D /* Images.xcassets */,
+				CF75FD701AAD6F8E00BBB79D /* Archive */,
+				62D5F48C1AA80F1400233B5E /* Article */,
+				62C00C351A9EC63F00979A05 /* Issue */,
 				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
+				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
 				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
 				62C4A5A71A97126F00F70F6D /* Supporting Files */,
+				62C14C101AA01F9800ADCE3D /* Volume */,
 			);
 			path = "Scalable Tablet PAR";
 			sourceTree = "<group>";
@@ -262,6 +297,14 @@
 			name = Article;
 			sourceTree = "<group>";
 		};
+		6E2122AB047FC8E5765BFFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ECF9DCAA398B474677B79CE /* libPods-Scalable Tablet PAR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF75FD701AAD6F8E00BBB79D /* Archive */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +321,25 @@
 			name = Archive;
 			sourceTree = "<group>";
 		};
+		FDA0E9B31AAD947900E9C476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDA0E9BD1AAD94A500E9C476 /* Article.h */,
+				FDA0E9BE1AAD94A500E9C476 /* Article.m */,
+				FDA0E9BF1AAD94A500E9C476 /* ArticleType.h */,
+				FDA0E9C01AAD94A500E9C476 /* ArticleType.m */,
+				FDA0E9C11AAD94A500E9C476 /* Author.h */,
+				FDA0E9C21AAD94A500E9C476 /* Author.m */,
+				FDA0E9BA1AAD949C00E9C476 /* Issue.h */,
+				FDA0E9BB1AAD949C00E9C476 /* Issue.m */,
+				FDA0E9B71AAD949400E9C476 /* Volume.h */,
+				FDA0E9B81AAD949400E9C476 /* Volume.m */,
+				FDA0E9B41AAD948900E9C476 /* Journal.h */,
+				FDA0E9B51AAD948900E9C476 /* Journal.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C4A5CA1A97127000F70F6D /* Build configuration list for PBXNativeTarget "Scalable Tablet PAR" */;
 			buildPhases = (
+				AADD256088815F895A1B2F89 /* Check Pods Manifest.lock */,
 				62C4A5A01A97126F00F70F6D /* Sources */,
 				62C4A5A11A97126F00F70F6D /* Frameworks */,
 				62C4A5A21A97126F00F70F6D /* Resources */,
+				00E4810FCF0CF63B57F6D61B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,6 +454,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00E4810FCF0CF63B57F6D61B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AADD256088815F895A1B2F89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62C4A5A01A97126F00F70F6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -397,18 +494,24 @@
 			files = (
 				62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */,
 				CFC402791AAC86930094ED83 /* IssueCover.m in Sources */,
+				FDA0E9C31AAD94A500E9C476 /* Article.m in Sources */,
 				62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */,
 				62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */,
 				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
 				62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */,
 				62E997871AA4619000D8AD22 /* AFKPageFlipper.m in Sources */,
+				FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */,
 				62E997801AA45CC400D8AD22 /* ArticleAggregatorViewController.m in Sources */,
 				62C4A5AA1A97126F00F70F6D /* main.m in Sources */,
 				62E997831AA45CD300D8AD22 /* AggregatorLayoutView.m in Sources */,
 				62C4A5DA1A9731C400F70F6D /* Misc.m in Sources */,
 				62C4A5B31A97126F00F70F6D /* ViewController.m in Sources */,
 				CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */,
+				FDA0E9C51AAD94A500E9C476 /* Author.m in Sources */,
+				FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */,
+				FDA0E9C41AAD94A500E9C476 /* ArticleType.m in Sources */,
 				62C14C161AA0405000ADCE3D /* VolumeCellTableViewCell.m in Sources */,
+				FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */,
 				CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */,
 				62C4A5B01A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld in Sources */,
 				CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */,
@@ -533,6 +636,7 @@
 		};
 		62C4A5CB1A97127000F70F6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
@@ -543,6 +647,7 @@
 		};
 		62C4A5CC1A97127000F70F6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
