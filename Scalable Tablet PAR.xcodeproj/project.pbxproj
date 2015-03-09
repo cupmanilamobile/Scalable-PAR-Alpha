@@ -40,6 +40,7 @@
 		CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0928621AA9B2CF0061927C /* DashboardViewController.m */; };
 		CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */; };
 		CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */; };
+		CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */; };
 		CFC402791AAC86930094ED83 /* IssueCover.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC402781AAC86930094ED83 /* IssueCover.m */; };
 		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
 		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
@@ -106,6 +107,7 @@
 		CF0928621AA9B2CF0061927C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashboardViewController.m; path = ../DashboardViewController.m; sourceTree = "<group>"; };
 		CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logo.png"; sourceTree = "<group>"; };
 		CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logobk.png"; sourceTree = "<group>"; };
+		CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeCover.xib; sourceTree = "<group>"; };
 		CFC402771AAC86930094ED83 /* IssueCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueCover.h; sourceTree = "<group>"; };
 		CFC402781AAC86930094ED83 /* IssueCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueCover.m; sourceTree = "<group>"; };
 		CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeTableViewCell.xib; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			children = (
 				62C4A5D51A97315C00F70F6D /* VolumeDashboardViewController.h */,
 				62C4A5D61A97315C00F70F6D /* VolumeDashboardViewController.m */,
+				CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */,
 				62C00C381A9EC8A000979A05 /* VolumeCover.h */,
 				62C00C391A9EC8A000979A05 /* VolumeCover.m */,
 				62C14C111AA01FFF00ADCE3D /* VolumeViewController.h */,
@@ -358,6 +361,7 @@
 				62C4A5B61A97126F00F70F6D /* Main.storyboard in Resources */,
 				62C4A5BB1A97126F00F70F6D /* LaunchScreen.xib in Resources */,
 				62C4A5D21A97138200F70F6D /* bg.jpg in Resources */,
+				CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */,
 				62D5F48E1AA8114000233B5E /* bg-01.png in Resources */,
 				62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */,
 				CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */,
