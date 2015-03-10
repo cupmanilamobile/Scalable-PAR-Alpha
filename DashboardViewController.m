@@ -11,10 +11,16 @@
 #import "VolumeTableViewCell.h"
 #import "IssueCover.h"
 #import "Misc.h"
+#import "Journal.h"
+#import "Volume.h"
+#import "Issue.h"
+
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <Parse/Parse.h>
 
 #define API_GET_JOURNAL_DETAILS_URL @"http://192.168.242.133:8080/release-15.1.PAR/journal/PAR"
 #define API_GET_ISSUES_BY_VOLUME_ID_URL @"http://192.168.242.133:8080/release-15.1.PAR/journal/PAR/%i"
-#define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%i_%@.jpg"
+#define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%@_%@.jpg"
 
 @interface DashboardViewController ()
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *journalDetailsViewHeightContraint;
@@ -29,15 +35,17 @@
 @property (strong, nonatomic) IBOutlet UIView *menuView;
 @property (strong, nonatomic) NSArray *arrVolumeList;
 @property (strong, nonatomic) NSArray *arrIssueList;
+
 @end
 
 @implementation DashboardViewController {
     int journalDetailsOriginalHeight;
-    int latestVolumeId;
+    NSString *latestVolumeId;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];    
     journalDetailsOriginalHeight = _journalDetailsView.frame.size.height;
     _tableView.delegate = self;
@@ -45,25 +53,34 @@
     
     // Download journal cover
     [Misc downloadingServerImageFromUrl:_journalCoverImageView AndUrl:@"http://journals.cambridge.org/cover_images/PAR/PAR.jpg"];
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:API_GET_JOURNAL_DETAILS_URL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSError* jsonError = nil;
-        NSDictionary *journalDetailsDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+
+    PFQuery *query = [Journal query];
+    [query whereKey:@"journalId" equalTo:@"PAR"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+        [self.view addSubview:hud];
+        [hud setLabelText:@"Loading..."];
+        [hud show:YES];
         
-        _arrVolumeList = [journalDetailsDictionary objectForKey:@"volumes"];
-        latestVolumeId = [[_arrVolumeList[0] objectForKey:@"volumeId"] intValue];
-        _arrIssueList = [self fetchIssueListByVolumeId:latestVolumeId];
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-            _journalEditorLabel.text = [NSString stringWithFormat:@"Editor(s): %@",  [journalDetailsDictionary objectForKey:@"editor"]];
-            _journalDescriptionTextView.text = [journalDetailsDictionary objectForKey:@"description"];
-            
-            [self buildIssueCover];
-            [_tableView reloadData]; // reloading tableview assuming the user taps on the VOlumes immediately
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                Journal *journal = [objects objectAtIndex:0];
+                _journalEditorLabel.text = journal[@"editor"];
+                _journalDescriptionTextView.text = journal[@"description"];
+                
+                _arrVolumeList = [self fetchAllVolumes];
+                latestVolumeId = ((Volume *) _arrVolumeList[0]).volumeId;
+                if (_arrVolumeList.count > 0) {
+                    _arrIssueList = [self fetchIssueListByVolumeId:latestVolumeId];
+                    if (_arrIssueList.count > 0) {
+                        [self buildIssueCover];
+                    }
+                }
+                
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            });
         });
-    }] resume];
-
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,21 +92,24 @@
     
     IssueCover *issueCover;
     for (int i = 0; i < _arrIssueList.count; i++) {
-        int tag = [[_arrIssueList[i] objectForKey:@"issueId"] intValue];
+        Issue *issue = [_arrIssueList objectAtIndex:i];
         
-        issueCover = [[[NSBundle mainBundle] loadNibNamed:@"IssueCover" owner:self options:nil] lastObject];
-        issueCover.volumeId = [[_arrIssueList[i] objectForKey:@"volumeId"] intValue];
-        issueCover.issueLabel.text = [NSString stringWithFormat:@"Issue %i", tag];
-        issueCover.translatesAutoresizingMaskIntoConstraints = NO;
-        issueCover.tag  = tag;
+        if ([self hasNumbericOnly:issue.issueId]) {
+            int tag = [issue.issueId intValue];
+            issueCover = [[[NSBundle mainBundle] loadNibNamed:@"IssueCover" owner:self options:nil] lastObject];
+            issueCover.issueLabel.text = [NSString stringWithFormat:@"Issue %i", tag];
+            issueCover.translatesAutoresizingMaskIntoConstraints = NO;
+            issueCover.volumeId = [issue.volumeId intValue];
+            issueCover.tag  = tag;
         
-        // Add gesture recognizer
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(issueTap:)];
-        [issueCover addGestureRecognizer:singleTap];
+            // Add gesture recognizer
+            UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(issueTap:)];
+            [issueCover addGestureRecognizer:singleTap];
         
-        // Setup constraints
-        [_scrollView addSubview:issueCover];
-        [self setConstraints:i];
+            // Setup constraints
+            [_scrollView addSubview:issueCover];
+            [self setConstraints:i];
+        }
     }
     
     [self.view layoutIfNeeded]; // Required
@@ -135,14 +155,17 @@
 }
 
 - (IssueCover *)issueCover:(int)index {
-    NSInteger issueTag = [[_arrIssueList[index] objectForKey:@"issueId"] integerValue];
-    return (IssueCover *) [_scrollView viewWithTag: issueTag];
+    Issue *issue = [_arrIssueList objectAtIndex:index];
+    return (IssueCover *) [_scrollView viewWithTag: [issue.issueId intValue]];
 }
 
 - (void)loadIssueImages {
     for (int i = 0; i < _arrIssueList.count; i++) {
-        NSString *url = [NSString stringWithFormat:CJOTEST_2_COVER_IMAGES_URL, latestVolumeId, [_arrIssueList[i] objectForKey:@"issueId"]];
-        [Misc downloadingServerImageFromUrl:[self issueCover:i].coverImage AndUrl:url];
+        Issue *issue = [_arrIssueList objectAtIndex:i];
+        if ([self hasNumbericOnly:issue.issueId]) {
+            NSString *url = [NSString stringWithFormat:CJOTEST_2_COVER_IMAGES_URL, issue.volumeId, issue.issueId];
+            [Misc downloadingServerImageFromUrl:[self issueCover:i].coverImage AndUrl:url];
+        }
     }
 }
 
@@ -164,17 +187,44 @@
 }
 
 // If there is CoreData already, TODO: fetch it instead in CoreData. (<< To Confirm..)
-- (NSArray *)fetchIssueListByVolumeId:(int)volumeId {
-    NSError *error;
-    NSData *issueData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:API_GET_ISSUES_BY_VOLUME_ID_URL, volumeId]]];
-    return [NSJSONSerialization JSONObjectWithData:issueData options:0 error:&error];
+- (NSArray *)fetchIssueListByVolumeId:(NSString *)volumeId {
+    PFQuery *issueQuery = [Issue query];
+    [issueQuery whereKey:@"volumeId" equalTo:volumeId];
+    [issueQuery orderByAscending:@"issueId"];
+    
+    NSError *issueError;
+    return[issueQuery findObjects:&issueError];
 }
 
-- (void)reloadIssueCovers:(int)volumeId {
-        _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
+- (NSArray *)fetchAllVolumes {
+    PFQuery *volumeQuery = [Volume query];
+    NSError *volumeError;
+    NSArray *arr = [volumeQuery findObjects:&volumeError];
+    
+    NSSortDescriptor *aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"volumeId" ascending:NO comparator:^(id obj1, id obj2) {
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        if ([obj1 integerValue] < [obj2 integerValue]) {
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+    return [NSMutableArray arrayWithArray:[arr sortedArrayUsingDescriptors:[NSArray arrayWithObject:aSortDescriptor]]];;
+}
+
+- (void)reloadIssueCovers:(NSString *)volumeId {
+    _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self buildIssueCover];
     });
+}
+
+- (BOOL)hasNumbericOnly:(NSString *)str {
+    NSError *error = nil;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[a-z]" options:NSRegularExpressionCaseInsensitive error:&error];
+    NSArray *matches = [regex matchesInString:str options:0 range:NSMakeRange(0, [str length])];
+    return matches.count == 0;
 }
 
 #pragma mark - Menu Actions
@@ -208,8 +258,7 @@
     [self performSegueWithIdentifier:@"articleAggregator" sender:sender];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"articleAggregator"]) {
         ArticleAggregatorViewController* nextVC = [segue destinationViewController];
         IssueCover *issueCover = (IssueCover *) [(UIGestureRecognizer *)sender view];
@@ -228,11 +277,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *volumeDictionary = _arrVolumeList[indexPath.row];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
     
+    Volume *volume = _arrVolumeList[indexPath.row];
     VolumeTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"VolumeTableViewCell" owner:self options:nil] lastObject];
-    cell.textLabel.text = [NSString stringWithFormat:@"Volume %@", [volumeDictionary objectForKey:@"volumeId"]];
-    cell.volumeYear.text = [[volumeDictionary objectForKey:@"circulationDate"] substringToIndex:4];
+    cell.textLabel.text = [NSString stringWithFormat:@"Volume %@", volume.volumeId];
+    cell.volumeYear.text = [formatter stringFromDate:volume.circulationDate];
     return cell;
 }
 
@@ -241,7 +292,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self reloadIssueCovers:[[_arrVolumeList[indexPath.row] objectForKey:@"volumeId"] intValue]];
+    Volume *volume = _arrVolumeList[indexPath.row];
+    [self reloadIssueCovers:volume.volumeId];
+    
     tableView.hidden = YES;
     _scrollView.hidden = NO;
 }

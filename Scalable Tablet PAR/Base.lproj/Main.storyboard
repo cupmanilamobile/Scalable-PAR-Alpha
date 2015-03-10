@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ieA-iH-7P4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iYm-pJ-mXI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -736,15 +735,6 @@
                                 <exclude reference="76u-kp-GxR"/>
                                 <exclude reference="QtF-Fm-JUJ"/>
                                 <exclude reference="rZy-66-apS"/>
-                                <exclude reference="C85-g1-ZYU"/>
-                                <exclude reference="gDS-LN-yf0"/>
-                                <exclude reference="mPn-BO-T1T"/>
-                                <exclude reference="tIh-OJ-heV"/>
-                                <exclude reference="1qr-dv-RYd"/>
-                                <exclude reference="7qw-HW-fUO"/>
-                                <exclude reference="oyU-IU-2pL"/>
-                                <exclude reference="g2a-VF-S6i"/>
-                                <exclude reference="yX6-qw-PLy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -767,15 +757,10 @@
                                 <include reference="qP0-sv-2E2"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="C85-g1-ZYU"/>
-                                <exclude reference="gDS-LN-yf0"/>
-                                <include reference="mPn-BO-T1T"/>
-                                <include reference="tIh-OJ-heV"/>
+                                <include reference="yX6-qw-PLy"/>
                                 <include reference="1qr-dv-RYd"/>
                                 <include reference="7qw-HW-fUO"/>
                                 <include reference="oyU-IU-2pL"/>
-                                <include reference="g2a-VF-S6i"/>
-                                <include reference="yX6-qw-PLy"/>
                             </mask>
                         </variation>
                     </view>
@@ -893,7 +878,7 @@
                                         <exclude reference="arW-Uh-4jW"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="699" width="800" height="31"/>
                                     <mask key="subviews">
                                         <include reference="lgf-UW-urw"/>
@@ -907,7 +892,7 @@
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-LU-5PZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="732" width="800" height="0.0"/>
                                 </variation>
                             </scrollView>
@@ -921,7 +906,7 @@
                             </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HyS-b8-0as">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="48" y="36" width="186" height="656"/>
                                 </variation>
                             </imageView>
