@@ -95,7 +95,7 @@
         if ([self hasNumbericOnly:issue.issueId]) {
             int tag = [issue.issueId intValue];
             issueCover = [[[NSBundle mainBundle] loadNibNamed:@"IssueCover" owner:self options:nil] lastObject];
-            issueCover.issueLabel.text = [NSString stringWithFormat:@"Issue %i", tag];
+            issueCover.issueLabel.text = [NSString stringWithFormat:@"Issue %02d", tag];
             issueCover.translatesAutoresizingMaskIntoConstraints = NO;
             issueCover.volumeId = [issue.volumeId intValue];
             issueCover.tag  = tag;
