@@ -18,8 +18,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Parse/Parse.h>
 
-#define API_GET_JOURNAL_DETAILS_URL @"http://192.168.242.133:8080/release-15.1.PAR/journal/PAR"
-#define API_GET_ISSUES_BY_VOLUME_ID_URL @"http://192.168.242.133:8080/release-15.1.PAR/journal/PAR/%i"
 #define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%@_%@.jpg"
 
 @interface DashboardViewController ()
@@ -243,14 +241,6 @@
 //        _tableView.frame = CGRectMake(0, _tableView.frame.origin.y, _tableView.frame.size.width, _tableView.frame.size.height);
 //        _scrollView.frame = CGRectMake(-_scrollView.frame.size.width, _scrollView.frame.origin.y, _scrollView.frame.size.width, _scrollView.frame.size.height);
 //    }];
-}
-
-- (IBAction)showFirstView:(id)sender {
-    NSLog(@"Put code to show FIRSTVIEW articles here..");
-}
-
-- (IBAction)showOpenAccess:(id)sender {
-    NSLog(@"Put code to show OPEN ACCESS articles here..");
 }
 
 #pragma mark - Segue

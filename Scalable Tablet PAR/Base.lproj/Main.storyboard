@@ -262,7 +262,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="showFirstView:" destination="uma-yZ-pWJ" eventType="touchUpInside" id="7Nr-jy-f3X"/>
+                                            <segue destination="62n-Y6-YLK" kind="show" id="tiW-K1-a5e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9m-ff-eYs">
@@ -314,7 +314,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="showOpenAccess:" destination="uma-yZ-pWJ" eventType="touchUpInside" id="eKa-uL-IEE"/>
+                                            <segue destination="62n-Y6-YLK" kind="show" id="jwB-hl-de4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hU-r7-yD7">
@@ -669,7 +669,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-ZS-DlG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="hidden" value="YES"/>
                                 </userDefinedRuntimeAttributes>

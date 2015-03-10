@@ -64,18 +64,22 @@
                     NSLog(@"Failed to create the html file");
                 }
                 
-            }else{
-                imgView.image = [UIImage imageNamed:@"NO_Image.png"];
+            }else{;
+                imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"issuecover%i.jpg", [self random1to5]]];
             }
             [actView removeFromSuperview];
             [imgView setBackgroundColor:[UIColor clearColor]];
         });
     });
-    
-    
-    
-    
 }
+
++ (int)random1to5 {
+    int smallest = 1;
+    int largest = 5;
+    int random = smallest + arc4random() % (largest+1-smallest);
+    return random;
+}
+
 //
 //-(void)save:(NSData* ) receivedData
 //{

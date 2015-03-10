@@ -41,6 +41,11 @@
 		CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0928621AA9B2CF0061927C /* DashboardViewController.m */; };
 		CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */; };
 		CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */ = {isa = PBXBuildFile; fileRef = CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */; };
+		CF374E491AAEEAEC00C8CE89 /* issuecover1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E441AAEEAEC00C8CE89 /* issuecover1.jpg */; };
+		CF374E4A1AAEEAEC00C8CE89 /* issuecover2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E451AAEEAEC00C8CE89 /* issuecover2.jpg */; };
+		CF374E4B1AAEEAEC00C8CE89 /* issuecover3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E461AAEEAEC00C8CE89 /* issuecover3.jpg */; };
+		CF374E4C1AAEEAEC00C8CE89 /* issuecover4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E471AAEEAEC00C8CE89 /* issuecover4.jpg */; };
+		CF374E4D1AAEEAEC00C8CE89 /* issuecover5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E481AAEEAEC00C8CE89 /* issuecover5.jpg */; };
 		CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */; };
 		CFC402791AAC86930094ED83 /* IssueCover.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC402781AAC86930094ED83 /* IssueCover.m */; };
 		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
@@ -115,6 +120,11 @@
 		CF0928621AA9B2CF0061927C /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashboardViewController.m; path = ../DashboardViewController.m; sourceTree = "<group>"; };
 		CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logo.png"; sourceTree = "<group>"; };
 		CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PARASITOLOGY-Logobk.png"; sourceTree = "<group>"; };
+		CF374E441AAEEAEC00C8CE89 /* issuecover1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover1.jpg; sourceTree = "<group>"; };
+		CF374E451AAEEAEC00C8CE89 /* issuecover2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover2.jpg; sourceTree = "<group>"; };
+		CF374E461AAEEAEC00C8CE89 /* issuecover3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover3.jpg; sourceTree = "<group>"; };
+		CF374E471AAEEAEC00C8CE89 /* issuecover4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover4.jpg; sourceTree = "<group>"; };
+		CF374E481AAEEAEC00C8CE89 /* issuecover5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover5.jpg; sourceTree = "<group>"; };
 		CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeCover.xib; sourceTree = "<group>"; };
 		CFC402771AAC86930094ED83 /* IssueCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueCover.h; sourceTree = "<group>"; };
 		CFC402781AAC86930094ED83 /* IssueCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueCover.m; sourceTree = "<group>"; };
@@ -271,6 +281,11 @@
 		62C4A5D01A97137800F70F6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CF374E441AAEEAEC00C8CE89 /* issuecover1.jpg */,
+				CF374E451AAEEAEC00C8CE89 /* issuecover2.jpg */,
+				CF374E461AAEEAEC00C8CE89 /* issuecover3.jpg */,
+				CF374E471AAEEAEC00C8CE89 /* issuecover4.jpg */,
+				CF374E481AAEEAEC00C8CE89 /* issuecover5.jpg */,
 				CF09286D1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png */,
 				CF09286B1AA9B89F0061927C /* PARASITOLOGY-Logo.png */,
 				CF0928591AA9AE750061927C /* archiveswt.png */,
@@ -424,13 +439,18 @@
 			files = (
 				62C4A5B61A97126F00F70F6D /* Main.storyboard in Resources */,
 				62C4A5BB1A97126F00F70F6D /* LaunchScreen.xib in Resources */,
+				CF374E4C1AAEEAEC00C8CE89 /* issuecover4.jpg in Resources */,
 				62C4A5D21A97138200F70F6D /* bg.jpg in Resources */,
 				CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */,
 				62D5F48E1AA8114000233B5E /* bg-01.png in Resources */,
 				62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */,
+				CF374E4B1AAEEAEC00C8CE89 /* issuecover3.jpg in Resources */,
 				CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */,
 				CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */,
+				CF374E4D1AAEEAEC00C8CE89 /* issuecover5.jpg in Resources */,
+				CF374E491AAEEAEC00C8CE89 /* issuecover1.jpg in Resources */,
 				CF0928601AA9AE750061927C /* Openaccesswt.png in Resources */,
+				CF374E4A1AAEEAEC00C8CE89 /* issuecover2.jpg in Resources */,
 				62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */,
 				CF09285F1AA9AE750061927C /* latestwt.png in Resources */,
 				CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */,
