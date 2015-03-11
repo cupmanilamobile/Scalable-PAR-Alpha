@@ -27,13 +27,17 @@
 
 
 
+//@property (strong, nonatomic) IBOutlet UIImageView *backgroundView;
+@property (strong, nonatomic) IBOutlet UILabel *pageDetail;
 @property (nonatomic, assign) NSMutableArray* viewControllerStack;
+@property (strong, nonatomic) IBOutlet UILabel *pageNumberLabel;
 @property (nonatomic, assign) UIGestureRecognizer* gestureRecognizer;
 @property (nonatomic, retain) NSString* wallTitle;
 @property (nonatomic, strong) NSArray* articleDetails;
 @property (nonatomic, assign) NSInteger volumeId;
 @property (nonatomic,assign) NSInteger issueId;
 
+@property (strong, nonatomic) IBOutlet UIView *flipperContainerView;
 
 
 

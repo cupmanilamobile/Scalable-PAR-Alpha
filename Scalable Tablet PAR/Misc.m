@@ -13,7 +13,15 @@
 //@synthesize managedObjectContext = _managedObjectContext;
 //@synthesize managedObjectModel = _managedObjectModel;
 //
-// 
+//
+
+-(NSString *) stringByStrippingHTML: string {
+    NSRange r;
+    NSString *s = [string copy];
+    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        s = [s stringByReplacingCharactersInRange:r withString:@""];
+    return s;
+}
 +(void)downloadingServerImageFromUrl:(UIImageView*)imgView AndUrl:(NSString*)strUrl{
     NSString* theFileName = [NSString stringWithFormat:@"%@.png",[[strUrl lastPathComponent] stringByDeletingPathExtension]];
     NSFileManager *fileManager =[NSFileManager defaultManager];

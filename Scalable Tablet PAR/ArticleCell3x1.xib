@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
@@ -17,22 +16,31 @@
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="270" id="l5h-yS-fyL"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-jw-ltp">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6z-jw-ltp">
                     <rect key="frame" x="12" y="640" width="488" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="ePA-dq-hIU"/>
+                    </constraints>
                     <string key="text">Trichinella spiralis newborn larvae: characterization of a stage specific serine proteinase expression, NBL1, using monoclonal antibodies</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-ho-nec">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-ho-nec">
                     <rect key="frame" x="12" y="791" width="488" height="246"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="260" id="UJv-7S-VUo"/>
+                    </constraints>
                     <string key="text">Trichinella spiralis is an intracellular parasitic nematode of mammalian skeletal muscle, causing a serious zoonotic disease in humans and showing a high economic impact mainly in pig breeding. Serine proteinases of T. spiralis play important roles in the host–parasite interactions mediating host invasion. In this study, we have focused on newborn larvae (NBL-1), the first identified serine proteinase from the NBL stage of T. spiralis. Five monoclonal antibodies (mAbs) directed against the C-terminal part of NBL1, were produced. These mAbs were IgG1κ isotype and specifically recognized as a common motif of 10 amino acids (PSSGSRPTYP). Selected mAbs were further characterized using antigens from various developmental stages of T. spiralis. Western blot revealed that selected mAbs reacted with the native NBL1 at Mr 50 kDa in the adult and NBL mixed antigens and NBL stage alone. Indirect immunofluorescence analysis revealed that selected mAbs intensely stained only the embryos within the gravid females and the NBL. Thus, the produced mAbs are useful tools for the characterization of NBL1 as a major antigen of Trichinella involved in the invasion of the host but also for the development of new serological tests with an early detection of T. spiralis infection.</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GRASSET-CHEVILLOT, SHUANG FENG, MING YUAN LIU, PASCAL BOIREAU and ISABELLE VALLÉE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="jJf-5J-rhI">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GRASSET-CHEVILLOT, SHUANG FENG, MING YUAN LIU, PASCAL BOIREAU and ISABELLE VALLÉE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="jJf-5J-rhI">
                     <rect key="frame" x="12" y="721" width="488" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="J9H-GM-2PQ"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -40,18 +48,17 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="G6z-jw-ltp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="0y0-H8-iL3"/>
+                <constraint firstItem="G6z-jw-ltp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="0y0-H8-iL3"/>
                 <constraint firstItem="jJf-5J-rhI" firstAttribute="top" secondItem="G6z-jw-ltp" secondAttribute="bottom" constant="8" id="1Bq-AA-M9y"/>
-                <constraint firstAttribute="trailing" secondItem="kwA-ho-nec" secondAttribute="trailing" constant="16" id="Idx-72-eAa"/>
-                <constraint firstAttribute="trailing" secondItem="G6z-jw-ltp" secondAttribute="trailing" constant="16" id="PlQ-v9-zmn"/>
-                <constraint firstItem="kwA-ho-nec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="UsL-BJ-HGa"/>
+                <constraint firstAttribute="trailing" secondItem="kwA-ho-nec" secondAttribute="trailing" constant="32" id="Idx-72-eAa"/>
+                <constraint firstAttribute="trailing" secondItem="G6z-jw-ltp" secondAttribute="trailing" constant="32" id="PlQ-v9-zmn"/>
+                <constraint firstItem="kwA-ho-nec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="UsL-BJ-HGa"/>
                 <constraint firstItem="vBF-1G-E3d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Z35-Pu-GfR"/>
                 <constraint firstAttribute="trailing" secondItem="vBF-1G-E3d" secondAttribute="trailing" constant="16" id="ZI6-Zg-EKv"/>
                 <constraint firstItem="vBF-1G-E3d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="mi4-Uj-Gh9"/>
                 <constraint firstItem="kwA-ho-nec" firstAttribute="top" secondItem="jJf-5J-rhI" secondAttribute="bottom" constant="8" id="pDM-Py-y8q"/>
-                <constraint firstItem="jJf-5J-rhI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uO1-VE-CCk"/>
-                <constraint firstAttribute="bottom" secondItem="kwA-ho-nec" secondAttribute="bottom" constant="16" id="uSI-q9-1mw"/>
-                <constraint firstAttribute="trailing" secondItem="jJf-5J-rhI" secondAttribute="trailing" constant="16" id="vIt-IP-CrM"/>
+                <constraint firstItem="jJf-5J-rhI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="uO1-VE-CCk"/>
+                <constraint firstAttribute="trailing" secondItem="jJf-5J-rhI" secondAttribute="trailing" constant="32" id="vIt-IP-CrM"/>
                 <constraint firstItem="G6z-jw-ltp" firstAttribute="top" secondItem="vBF-1G-E3d" secondAttribute="bottom" constant="16" id="viO-an-LJQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

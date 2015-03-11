@@ -9,6 +9,7 @@
 #import "ArticleAggregatorViewController.h"
 #import "AggregatorLayoutView.h"
 #import "Misc.h"
+#import "Article.h"
 
 
 @interface ArticleAggregatorViewController ()
@@ -21,40 +22,76 @@ int indexOfArticle = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
     // Do any additional setup after loading the view.
     
   //  self.articleDetails = [NSJSONSerialization JSONObjectWithData:[[self json] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil] ;
-    flipper = [[AFKPageFlipper alloc] initWithFrame:self.view.bounds];
+    flipper = [[AFKPageFlipper alloc] initWithFrame:self.flipperContainerView.bounds];
     flipper.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 //
     // flipper.dataSource = self;
    //   Misc* misc = [[Misc alloc]init];
     //loadingActivityView = [Misc loadActivityView:self.view.bounds.size];
-    [self.view addSubview:loadingActivityView];
+    [self.flipperContainerView addSubview:loadingActivityView];
     [loadingActivityView startAnimating];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8080/release-15.1.PAR/journal/PAR/%02ld/%02ld",(long)self.volumeId,(long)self.issueId]]
-            completionHandler:^(NSData *data,
-                                NSURLResponse *response,
-                                NSError *error) {
-             self.articleDetails = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil] ;
-                NSLog(@"done loading");
-                
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    flipper.dataSource = self;
-
-                    [self.view addSubview:flipper];
-
-                });
-               [loadingActivityView stopAnimating];
-               [loadingActivityView removeFromSuperview];
-                
-            }] resume];
+    //Test
+//    self.volumeId = 139;
+//    self.issueId = 01;
+//    
+    self.pageDetail.text = [NSString stringWithFormat:@"Parasitology Volume %02ld - Issue %02ld" ,self.volumeId,self.issueId];
     
+    //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"registrationbg.jpg"]]];
+
+    PFQuery* articleQuery = [Article query];
+    [articleQuery whereKey:@"issueId" equalTo:[NSString stringWithFormat: @"%02ld", (long)self.issueId]];
+    [articleQuery whereKey:@"volumeId" equalTo:[NSString stringWithFormat: @"%02ld", (long)self.volumeId]];
+    [articleQuery orderByAscending:@"firstPage"];
+    [articleQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        self.articleDetails = objects;
+        NSLog(@"done loading");
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+           //
+            // [self.backgroundView removeFromSuperview];
+           //  [self.view addSubview: self.backgroundView];
+            flipper.dataSource = self;
+            [self.flipperContainerView addSubview:flipper];
+           
+            //[self.view addSubview:self.backgroundView ];
+            
+           
+            
+
+            
+            
+                                       });
+    }];
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    [[session dataTaskWithURL:[NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8080/release-15.1.PAR/journal/PAR/%02ld/%02ld",(long)self.volumeId,(long)self.issueId]]
+//            completionHandler:^(NSData *data,
+//                                NSURLResponse *response,
+//                                NSError *error) {
+//             self.articleDetails = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil] ;
+//                NSLog(@"done loading");
+//                
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    flipper.dataSource = self;
+//
+//                    [self.view addSubview:flipper];
+//
+//                });
+//               [loadingActivityView stopAnimating];
+//               [loadingActivityView removeFromSuperview];
+//                
+//            }] resume];
+//    
    // flipper.layer.zPosition = 20;
+   [ flipper setBackgroundColor:[UIColor clearColor]];
     NSLog(@"http://localhost:8080/release-15.1.PAR/journal/PAR/%02ld/%02ld",(long)self.volumeId,(long)self.issueId);
-    [self.view addSubview:flipper];
+    [self.flipperContainerView addSubview:flipper];
 
        }
 
@@ -64,6 +101,7 @@ int indexOfArticle = 0;
 }
 
 - (NSInteger) numberOfPagesForPageFlipper:(AFKPageFlipper *)pageFlipper {
+    self.pageNumberLabel.text = [NSString stringWithFormat:@"page 1 of %ld",[self.articleDetails count]/6];
     return [self.articleDetails count]/6;
 }
 
@@ -73,6 +111,8 @@ int indexOfArticle = 0;
  //   result.pdfDocument = pdfDocument;
  //   result.pageNumber = page;
     
+    
+    self.pageNumberLabel.text = [NSString stringWithFormat:@"page %ld of %ld",page,[self.articleDetails count]/6];
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *myFile = [mainBundle pathForResource: @"articleAggregator" ofType: @"json"];
     
@@ -87,11 +127,12 @@ int indexOfArticle = 0;
     
     NSArray* article;
    AggregatorLayoutView * result = [[AggregatorLayoutView alloc] init];
+    [result setBackgroundColor:[UIColor blackColor]];
     result.dataSource = self;
-    [result initalizeFrame:self.view.frame];
+    [result initalizeFrame:self.flipperContainerView.frame];
     if(page %4 ==  0){
         indexOfArticle=0;
-            [result initalizeViews];
+        [result initalizeViews];
         
      }
     else if(page %4== 1){
