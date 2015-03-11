@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
     [Parse setApplicationId:@"nQdzK0Zx0RUYatcxakOMMewekXwCgGoaTWRjnZdK"
                   clientKey:@"SicAQvarBfBucWb51KAM0DOA7BdxZN2tDGsNTxM4"];
 
+    [PFFacebookUtils initializeFacebook];
+    
     // Override point for customization after application launch.
     return YES;
 }
