@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ieA-iH-7P4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ieA-iH-7P4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -204,36 +204,36 @@
                                     <mask key="constraints">
                                         <exclude reference="1TZ-gW-p0R"/>
                                         <exclude reference="FUf-kE-FZA"/>
-                                        <exclude reference="cFT-CG-MwO"/>
-                                        <exclude reference="sEo-vb-K6O"/>
-                                        <exclude reference="1qX-tG-dfD"/>
-                                        <exclude reference="4DB-u8-cOB"/>
-                                        <exclude reference="5gq-vD-Qqj"/>
-                                        <exclude reference="A9w-3r-aSn"/>
-                                        <exclude reference="W6V-d5-esE"/>
-                                        <exclude reference="Vd3-rp-Bqg"/>
                                         <exclude reference="8zw-f6-fee"/>
                                         <exclude reference="RjT-Ag-Pe2"/>
                                         <exclude reference="Rl9-Mc-S78"/>
                                         <exclude reference="Zht-0K-9Rh"/>
                                         <exclude reference="b3e-UH-5Xi"/>
                                         <exclude reference="l6M-1U-4QU"/>
+                                        <exclude reference="CSm-iD-0VC"/>
+                                        <exclude reference="UYi-e8-Z4B"/>
+                                        <exclude reference="i6H-2Z-CNa"/>
+                                        <exclude reference="nab-mV-EmW"/>
                                         <exclude reference="PFy-lU-lyO"/>
                                         <exclude reference="RUI-NX-UuJ"/>
                                         <exclude reference="jv5-32-dwZ"/>
                                         <exclude reference="lUu-bI-Hzy"/>
                                         <exclude reference="nNc-JT-2hO"/>
-                                        <exclude reference="CSm-iD-0VC"/>
-                                        <exclude reference="UYi-e8-Z4B"/>
-                                        <exclude reference="i6H-2Z-CNa"/>
-                                        <exclude reference="nab-mV-EmW"/>
-                                        <exclude reference="AXS-ub-c6t"/>
-                                        <exclude reference="kp6-IV-eDL"/>
-                                        <exclude reference="ucv-kl-UNK"/>
                                         <exclude reference="clF-yh-DuA"/>
                                         <exclude reference="hjh-7d-rGW"/>
                                         <exclude reference="omS-34-j7c"/>
                                         <exclude reference="ssf-kM-Vtc"/>
+                                        <exclude reference="AXS-ub-c6t"/>
+                                        <exclude reference="kp6-IV-eDL"/>
+                                        <exclude reference="ucv-kl-UNK"/>
+                                        <exclude reference="Vd3-rp-Bqg"/>
+                                        <exclude reference="1qX-tG-dfD"/>
+                                        <exclude reference="4DB-u8-cOB"/>
+                                        <exclude reference="5gq-vD-Qqj"/>
+                                        <exclude reference="A9w-3r-aSn"/>
+                                        <exclude reference="W6V-d5-esE"/>
+                                        <exclude reference="cFT-CG-MwO"/>
+                                        <exclude reference="sEo-vb-K6O"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -251,36 +251,36 @@
                                     <mask key="constraints">
                                         <include reference="1TZ-gW-p0R"/>
                                         <include reference="FUf-kE-FZA"/>
-                                        <include reference="cFT-CG-MwO"/>
-                                        <include reference="sEo-vb-K6O"/>
-                                        <include reference="1qX-tG-dfD"/>
-                                        <include reference="4DB-u8-cOB"/>
-                                        <include reference="5gq-vD-Qqj"/>
-                                        <include reference="A9w-3r-aSn"/>
-                                        <include reference="W6V-d5-esE"/>
-                                        <include reference="Vd3-rp-Bqg"/>
                                         <include reference="8zw-f6-fee"/>
                                         <include reference="RjT-Ag-Pe2"/>
                                         <include reference="Rl9-Mc-S78"/>
                                         <include reference="Zht-0K-9Rh"/>
                                         <include reference="b3e-UH-5Xi"/>
                                         <include reference="l6M-1U-4QU"/>
+                                        <include reference="CSm-iD-0VC"/>
+                                        <include reference="UYi-e8-Z4B"/>
+                                        <include reference="i6H-2Z-CNa"/>
+                                        <include reference="nab-mV-EmW"/>
                                         <include reference="PFy-lU-lyO"/>
                                         <include reference="RUI-NX-UuJ"/>
                                         <include reference="jv5-32-dwZ"/>
                                         <exclude reference="lUu-bI-Hzy"/>
                                         <include reference="nNc-JT-2hO"/>
-                                        <include reference="CSm-iD-0VC"/>
-                                        <include reference="UYi-e8-Z4B"/>
-                                        <include reference="i6H-2Z-CNa"/>
-                                        <include reference="nab-mV-EmW"/>
-                                        <include reference="AXS-ub-c6t"/>
-                                        <include reference="kp6-IV-eDL"/>
-                                        <include reference="ucv-kl-UNK"/>
                                         <include reference="clF-yh-DuA"/>
                                         <include reference="hjh-7d-rGW"/>
                                         <include reference="omS-34-j7c"/>
                                         <include reference="ssf-kM-Vtc"/>
+                                        <include reference="AXS-ub-c6t"/>
+                                        <include reference="kp6-IV-eDL"/>
+                                        <include reference="ucv-kl-UNK"/>
+                                        <include reference="Vd3-rp-Bqg"/>
+                                        <include reference="1qX-tG-dfD"/>
+                                        <include reference="4DB-u8-cOB"/>
+                                        <include reference="5gq-vD-Qqj"/>
+                                        <include reference="A9w-3r-aSn"/>
+                                        <include reference="W6V-d5-esE"/>
+                                        <include reference="cFT-CG-MwO"/>
+                                        <include reference="sEo-vb-K6O"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -981,7 +981,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34e-Mg-WB5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <mutableString key="text">&lt;I&gt;Parasitology&lt;/I&gt; is an important specialist journal covering the latest advances in the subject. It publishes original research and review papers on all aspects of parasitology and host-parasite relationships, including the latest discoveries in parasite biochemistry,  molecular biology and genetics, ecology and epidemiology in the context of the biological, medical and veterinary sciences.  Included in the subscription price are two special issues which contain reviews of current hot topics, one of which is the proceedings of the annual &lt;i&gt;Symposia of the British Society for Parasitology&lt;/I&gt;, while the second, covering areas of significant topical interest, is commissioned by the editors and the editorial board.&lt;P&gt;</mutableString>
+                                        <string key="text">&lt;I&gt;Parasitology&lt;/I&gt; is an important specialist journal covering the latest advances in the subject. It publishes original research and review papers on all aspects of parasitology and host-parasite relationships, including the latest discoveries in parasite biochemistry,  molecular biology and genetics, ecology and epidemiology in the context of the biological, medical and veterinary sciences.  Included in the subscription price are two special issues which contain reviews of current hot topics, one of which is the proceedings of the annual &lt;i&gt;Symposia of the British Society for Parasitology&lt;/I&gt;, while the second, covering areas of significant topical interest, is commissioned by the editors and the editorial board.&lt;P&gt;</string>
                                         <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1535,6 +1535,7 @@
         <image name="twitterbut.png" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oEK-gr-H8g"/>
         <segue reference="Krj-bu-ANe"/>
     </inferredMetricsTieBreakers>
 </document>

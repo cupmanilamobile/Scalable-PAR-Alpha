@@ -64,6 +64,10 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    return NO;
+}
 
 /**
  Determin if string is a valid email
@@ -190,7 +194,7 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
         _txtCountry.backgroundColor = [UIColor whiteColor];
     }
     
-    if (![_txtPassword.text isEqualToString:_txtRePassword.text]) {
+    if (![_txtPassword.text isEqualToString:_txtRePassword.text] && [[_txtRePassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
         _txtPassword.backgroundColor = [UIColor redColor];
         _txtPassword.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor]}];
         _txtRePassword.backgroundColor = [UIColor redColor];
