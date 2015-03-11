@@ -18,7 +18,7 @@
                             <constraint firstAttribute="width" constant="52" id="kfT-Zx-gTy"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -28,6 +28,14 @@
                     <constraint firstItem="neY-tU-NvY" firstAttribute="top" secondItem="dMj-jG-Tlt" secondAttribute="top" id="eWh-a3-H5d"/>
                 </constraints>
             </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="textLabel.textColor">
+                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="contentView.backgroundColor">
+                    <color key="value" red="0.19607843137254902" green="0.18823529411764706" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="volumeYear" destination="neY-tU-NvY" id="AAM-1h-2d6"/>
             </connections>
