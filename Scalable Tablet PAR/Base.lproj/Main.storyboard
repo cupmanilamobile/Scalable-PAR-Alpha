@@ -537,7 +537,7 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editor-in-Chief: Professor R. Stephen Phillips, University of Glasgow, UK" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-Sh-lan">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professor R. Stephen Phillips, &lt;I&gt; University of Glasgow, UK&lt;/i&gt;" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-Sh-lan">
                                         <rect key="frame" x="228" y="122" width="516" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="yUY-pa-opU"/>
@@ -564,7 +564,7 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34e-Mg-WB5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">&lt;I&gt;Parasitology&lt;/I&gt; is an important specialist journal covering the latest advances in the subject. It publishes original research and review papers on all aspects of parasitology and host-parasite relationships, including the latest discoveries in parasite biochemistry,  molecular biology and genetics, ecology and epidemiology in the context of the biological, medical and veterinary sciences.  Included in the subscription price are two special issues which contain reviews of current hot topics, one of which is the proceedings of the annual &lt;i&gt;Symposia of the British Society for Parasitology&lt;/I&gt;, while the second, covering areas of significant topical interest, is commissioned by the editors and the editorial board.&lt;P&gt;</mutableString>
                                         <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -43,15 +43,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];    
-    journalDetailsOriginalHeight = _journalDetailsView.frame.size.height;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
+    [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];    
+    journalDetailsOriginalHeight = _journalDetailsView.frame.size.height;
+
     // Download journal cover
     [Misc downloadingServerImageFromUrl:_journalCoverImageView AndUrl:@"http://journals.cambridge.org/cover_images/PAR/PAR.jpg"];
-
+    
     PFQuery *query = [Journal query];
     [query whereKey:@"journalId" equalTo:@"PAR"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -60,7 +60,7 @@
         [hud setLabelText:@"Loading..."];
         [hud show:YES];
         
-        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 Journal *journal = [objects objectAtIndex:0];
                 _journalEditorLabel.text = journal[@"editor"];
@@ -96,7 +96,6 @@
             int tag = [issue.issueId intValue];
             issueCover = [[[NSBundle mainBundle] loadNibNamed:@"IssueCover" owner:self options:nil] lastObject];
             issueCover.issueLabel.text = [NSString stringWithFormat:@"Issue %02d", tag];
-            issueCover.translatesAutoresizingMaskIntoConstraints = NO;
             issueCover.volumeId = [issue.volumeId intValue];
             issueCover.tag  = tag;
         
@@ -143,12 +142,10 @@
     NSArray *constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:visualHorizontal options:0 metrics:nil views:viewsDictionary];
     
     // Size constraints
-    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:currentCover attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:_scrollView attribute:NSLayoutAttributeHeight multiplier:0.0 constant:230];
     NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:currentCover attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_scrollView attribute:NSLayoutAttributeWidth multiplier:0.0 constant:125];
     
     [_scrollView addConstraints:constraint_POS_V];
     [_scrollView addConstraints:constraint_POS_H];
-    [_scrollView addConstraint:height];
     [_scrollView addConstraint:width];
 }
 
@@ -218,6 +215,7 @@
     });
 }
 
+// TODO: There are issueId with value 'S1'. For now, we disregard this but should be catered soon
 - (BOOL)hasNumbericOnly:(NSString *)str {
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[a-z]" options:NSRegularExpressionCaseInsensitive error:&error];

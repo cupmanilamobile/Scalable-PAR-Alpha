@@ -11,6 +11,6 @@
 @implementation IssueCover
 
 - (void)awakeFromNib {
-    
+    self.translatesAutoresizingMaskIntoConstraints = NO;
 }
 @end
