@@ -490,7 +490,7 @@
 		FDF920721AB00D2C00CD992A /* The_iOS_Apprentice_1_Getting_Started_v3.1.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = The_iOS_Apprentice_1_Getting_Started_v3.1.zip; sourceTree = "<group>"; };
 		FDF920741AB00D2C00CD992A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FDF920751AB00D2C00CD992A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		FDF920761AB00D2C00CD992A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FDF920761AB00D2C00CD992A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FDF920771AB00D2C00CD992A /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		FDF9207B1AB00D2C00CD992A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		FDF9207C1AB00D2C00CD992A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
