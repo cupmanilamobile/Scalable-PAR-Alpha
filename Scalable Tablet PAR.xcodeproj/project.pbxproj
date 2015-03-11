@@ -10,7 +10,6 @@
 		6230A9E81AAEAF2500B8C7A8 /* FullScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6230A9E71AAEAF2500B8C7A8 /* FullScreenView.m */; };
 		6230A9EC1AAEAFA000B8C7A8 /* FullScreenView.h in Sources */ = {isa = PBXBuildFile; fileRef = 6230A9EB1AAEAF8300B8C7A8 /* FullScreenView.h */; };
 		6230A9EE1AAEAFDC00B8C7A8 /* FullScreenArticleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6230A9ED1AAEAFDC00B8C7A8 /* FullScreenArticleView.xib */; };
-		6230A9F01AAEF15400B8C7A8 /* registrationbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6230A9EF1AAEF15400B8C7A8 /* registrationbg.jpg */; };
 		62B6C50A1AB0169E00723104 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5001AB0169E00723104 /* 1.jpg */; };
 		62B6C50B1AB0169E00723104 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5011AB0169E00723104 /* 2.jpg */; };
 		62B6C50C1AB0169E00723104 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5021AB0169E00723104 /* 3.jpg */; };
@@ -84,7 +83,6 @@
 		6230A9E71AAEAF2500B8C7A8 /* FullScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenView.m; sourceTree = "<group>"; };
 		6230A9EB1AAEAF8300B8C7A8 /* FullScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenView.h; sourceTree = "<group>"; };
 		6230A9ED1AAEAFDC00B8C7A8 /* FullScreenArticleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenArticleView.xib; sourceTree = "<group>"; };
-		6230A9EF1AAEF15400B8C7A8 /* registrationbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = registrationbg.jpg; sourceTree = "<group>"; };
 		62B6C5001AB0169E00723104 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		62B6C5011AB0169E00723104 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		62B6C5021AB0169E00723104 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 				62E997841AA460E100D8AD22 /* AggregatorLayoutView.h */,
 				62E997821AA45CD300D8AD22 /* AggregatorLayoutView.m */,
 				6230A9EB1AAEAF8300B8C7A8 /* FullScreenView.h */,
-				6230A9EF1AAEF15400B8C7A8 /* registrationbg.jpg */,
 				6230A9E71AAEAF2500B8C7A8 /* FullScreenView.m */,
 				6230A9ED1AAEAFDC00B8C7A8 /* FullScreenArticleView.xib */,
 				62E9978C1AA462AA00D8AD22 /* ArticleAggregatorViewController.h */,
@@ -497,7 +494,6 @@
 				62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */,
 				CF09285D1AA9AE750061927C /* archiveswt.png in Resources */,
 				62C4A5D41A97307E00F70F6D /* bgcleangray.jpg in Resources */,
-				6230A9F01AAEF15400B8C7A8 /* registrationbg.jpg in Resources */,
 				62C4A5B81A97126F00F70F6D /* Images.xcassets in Resources */,
 				CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */,
 			);
