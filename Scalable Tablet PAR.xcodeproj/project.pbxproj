@@ -51,12 +51,20 @@
 		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
 		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
 		CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */; };
+		FD0FE1951AAEE80700A24886 /* facebookbut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1921AAEE80700A24886 /* facebookbut.png */; };
+		FD0FE1961AAEE80700A24886 /* googlebut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1931AAEE80700A24886 /* googlebut.png */; };
+		FD0FE1971AAEE80700A24886 /* twitterbut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1941AAEE80700A24886 /* twitterbut.png */; };
+		FD0FE1991AAEE86000A24886 /* bgclean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1981AAEE86000A24886 /* bgclean.jpg */; };
+		FD0FE19B1AAEF7D100A24886 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */; };
+		FD13CC071AAEDCAA0090E565 /* registrationbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD13CC061AAEDCAA0090E565 /* registrationbg.jpg */; };
 		FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B51AAD948900E9C476 /* Journal.m */; };
 		FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B81AAD949400E9C476 /* Volume.m */; };
 		FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BB1AAD949C00E9C476 /* Issue.m */; };
 		FDA0E9C31AAD94A500E9C476 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BE1AAD94A500E9C476 /* Article.m */; };
 		FDA0E9C41AAD94A500E9C476 /* ArticleType.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9C01AAD94A500E9C476 /* ArticleType.m */; };
 		FDA0E9C51AAD94A500E9C476 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9C21AAD94A500E9C476 /* Author.m */; };
+		FDAC90D31AAD9CEB00948813 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAC90D21AAD9CEB00948813 /* LoginViewController.m */; };
+		FDCACB691AADA6360045F7E5 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCACB681AADA6360045F7E5 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +143,12 @@
 		CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableView.m; sourceTree = "<group>"; };
 		E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.release.xcconfig"; sourceTree = "<group>"; };
 		F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0FE1921AAEE80700A24886 /* facebookbut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookbut.png; sourceTree = "<group>"; };
+		FD0FE1931AAEE80700A24886 /* googlebut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googlebut.png; sourceTree = "<group>"; };
+		FD0FE1941AAEE80700A24886 /* twitterbut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterbut.png; sourceTree = "<group>"; };
+		FD0FE1981AAEE86000A24886 /* bgclean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgclean.jpg; sourceTree = "<group>"; };
+		FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.6.4/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		FD13CC061AAEDCAA0090E565 /* registrationbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = registrationbg.jpg; sourceTree = "<group>"; };
 		FDA0E9B41AAD948900E9C476 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
 		FDA0E9B51AAD948900E9C476 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
 		FDA0E9B71AAD949400E9C476 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
@@ -147,6 +161,10 @@
 		FDA0E9C01AAD94A500E9C476 /* ArticleType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleType.m; sourceTree = "<group>"; };
 		FDA0E9C11AAD94A500E9C476 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
 		FDA0E9C21AAD94A500E9C476 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		FDAC90D11AAD9CEB00948813 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FDAC90D21AAD9CEB00948813 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FDCACB671AADA6360045F7E5 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FDCACB681AADA6360045F7E5 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0FE19B1AAEF7D100A24886 /* ParseFacebookUtils.framework in Frameworks */,
 				96C6ABED8CA6DC3217F26992 /* libPods-Scalable Tablet PAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +241,7 @@
 		62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */ = {
 			isa = PBXGroup;
 			children = (
+				FDAC90D01AAD9CD400948813 /* Controller */,
 				FDA0E9B31AAD947900E9C476 /* Model */,
 				62E997851AA4619000D8AD22 /* AFKPageFlipper.h */,
 				62E997861AA4619000D8AD22 /* AFKPageFlipper.m */,
@@ -315,6 +335,7 @@
 		6E2122AB047FC8E5765BFFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */,
 				3ECF9DCAA398B474677B79CE /* libPods-Scalable Tablet PAR.a */,
 			);
 			name = Frameworks;
@@ -353,6 +374,17 @@
 				FDA0E9B51AAD948900E9C476 /* Journal.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FDAC90D01AAD9CD400948813 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC90D11AAD9CEB00948813 /* LoginViewController.h */,
+				FDAC90D21AAD9CEB00948813 /* LoginViewController.m */,
+				FDCACB671AADA6360045F7E5 /* RegisterViewController.h */,
+				FDCACB681AADA6360045F7E5 /* RegisterViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +478,7 @@
 				62E997921AA4687500D8AD22 /* ArticleCell1x2.xib in Resources */,
 				CF374E4B1AAEEAEC00C8CE89 /* issuecover3.jpg in Resources */,
 				CF09286E1AA9B8AD0061927C /* PARASITOLOGY-Logobk.png in Resources */,
+				FD0FE1971AAEE80700A24886 /* twitterbut.png in Resources */,
 				CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */,
 				CF374E4D1AAEEAEC00C8CE89 /* issuecover5.jpg in Resources */,
 				CF374E491AAEEAEC00C8CE89 /* issuecover1.jpg in Resources */,
@@ -456,12 +489,16 @@
 				CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */,
 				62E997941AA4687500D8AD22 /* ArticleCell2x1.xib in Resources */,
 				62E997961AA4687500D8AD22 /* ArticleCell1x3.xib in Resources */,
+				FD0FE1991AAEE86000A24886 /* bgclean.jpg in Resources */,
 				62C00C371A9EC66700979A05 /* IssueCover.xib in Resources */,
 				62E997951AA4687500D8AD22 /* ArticleCell3x1.xib in Resources */,
 				CF09285D1AA9AE750061927C /* archiveswt.png in Resources */,
 				62C4A5D41A97307E00F70F6D /* bgcleangray.jpg in Resources */,
 				62C4A5B81A97126F00F70F6D /* Images.xcassets in Resources */,
+				FD0FE1951AAEE80700A24886 /* facebookbut.png in Resources */,
+				FD0FE1961AAEE80700A24886 /* googlebut.png in Resources */,
 				CF09286C1AA9B89F0061927C /* PARASITOLOGY-Logo.png in Resources */,
+				FD13CC071AAEDCAA0090E565 /* registrationbg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,12 +557,14 @@
 				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
 				62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */,
 				62E997871AA4619000D8AD22 /* AFKPageFlipper.m in Sources */,
+				FDAC90D31AAD9CEB00948813 /* LoginViewController.m in Sources */,
 				FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */,
 				62E997801AA45CC400D8AD22 /* ArticleAggregatorViewController.m in Sources */,
 				62C4A5AA1A97126F00F70F6D /* main.m in Sources */,
 				62E997831AA45CD300D8AD22 /* AggregatorLayoutView.m in Sources */,
 				62C4A5DA1A9731C400F70F6D /* Misc.m in Sources */,
 				62C4A5B31A97126F00F70F6D /* ViewController.m in Sources */,
+				FDCACB691AADA6360045F7E5 /* RegisterViewController.m in Sources */,
 				CF0928631AA9B2CF0061927C /* DashboardViewController.m in Sources */,
 				FDA0E9C51AAD94A500E9C476 /* Author.m in Sources */,
 				FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */,
@@ -659,6 +698,10 @@
 			baseConfigurationReference = F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jlundang/Downloads/parse-library-1.6.4",
+				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -670,6 +713,10 @@
 			baseConfigurationReference = E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jlundang/Downloads/parse-library-1.6.4",
+				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
