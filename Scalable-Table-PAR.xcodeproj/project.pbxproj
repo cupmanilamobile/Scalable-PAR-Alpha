@@ -222,10 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F74CE51AB134AA005246D4 /* GoogleOpenSource.framework in Frameworks */,
-				62F74CE61AB134AA005246D4 /* GooglePlus.framework in Frameworks */,
-				62F74CE41AB13475005246D4 /* GooglePlus.bundle in Frameworks */,
-				62F74CE31AB13448005246D4 /* ParseFacebookUtils.framework in Frameworks */,
+				CF8EB25F1AB1318800C89BC9 /* GoogleOpenSource.framework in Frameworks */,
 				FDF923991AB00EB500CD992A /* AddressBook.framework in Frameworks */,
 				CF8EB2611AB1318800C89BC9 /* GooglePlus.framework in Frameworks */,
 				CF8EB25B1AB1308100C89BC9 /* ParseFacebookUtils.framework in Frameworks */,
@@ -412,8 +409,10 @@
 		6E2122AB047FC8E5765BFFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62F74CE21AB13448005246D4 /* ParseFacebookUtils.framework */,
-				FD5C12A41AB04EA800C6DB5E /* GooglePlus.bundle */,
+				CF8EB25A1AB1308100C89BC9 /* ParseFacebookUtils.framework */,
+				CF8EB25C1AB1318800C89BC9 /* GoogleOpenSource.framework */,
+				CF8EB25D1AB1318800C89BC9 /* GooglePlus.bundle */,
+				CF8EB25E1AB1318800C89BC9 /* GooglePlus.framework */,
 				FDF9238A1AB00E2700CD992A /* libPods-Scalable Tablet PAR.a */,
 				FDF91F681AB00B6B00CD992A /* UIKit.framework */,
 				FDF91F661AB00B6500CD992A /* SystemConfiguration.framework */,
@@ -841,8 +840,7 @@
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
 					"/Users/jlundang/Downloads/google-plus-ios-sdk-1.7.1",
-					"/Users/cvflores/Downloads/parse-library-1",
-					"/Users/cvflores/Downloads/google-plus-ios-sdk-1.7.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -913,8 +911,7 @@
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
 					"/Users/jlundang/Downloads/google-plus-ios-sdk-1.7.1",
-					"/Users/cvflores/Downloads/parse-library-1",
-					"/Users/cvflores/Downloads/google-plus-ios-sdk-1.7.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;

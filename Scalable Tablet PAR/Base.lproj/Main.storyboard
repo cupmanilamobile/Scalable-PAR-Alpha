@@ -1534,6 +1534,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8pK-1h-Kb9">
                                 <rect key="frame" x="0.0" y="57" width="600" height="499"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="65" width="800" height="693"/>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="page 1 of 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnm-L3-xbi">
                                 <rect key="frame" x="260" y="573" width="81" height="19"/>
@@ -1623,18 +1626,11 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="kz8-6F-uJW">
-                                <rect key="frame" x="0.0" y="0.0" width="71" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="pageIndicatorTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Cambridge University Press 2014 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-hw-Orc">
-                                <rect key="frame" x="291" y="559" width="285" height="33"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Cambridge University Press 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-hw-Orc">
+                                <rect key="frame" x="349" y="559" width="227" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="lIC-Zz-8f1"/>
-                                    <constraint firstAttribute="width" constant="285" id="p9m-0Q-R8a"/>
+                                    <constraint firstAttribute="width" constant="227" id="p9m-0Q-R8a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                 <color key="textColor" red="0.18075800010000001" green="0.38980702519999999" blue="0.680863361" alpha="1" colorSpace="calibratedRGB"/>
@@ -1644,6 +1640,17 @@
                                 <rect key="frame" x="48" y="124" width="504" height="426.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="kz8-6F-uJW">
+                                <rect key="frame" x="241" y="559" width="71" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="1Se-YF-YQj"/>
+                                    <constraint firstAttribute="height" constant="37" id="JVT-a4-YIN"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1654,6 +1661,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="mXM-8h-hDJ" secondAttribute="trailing" constant="32" id="PM8-iV-wzQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n9w-hw-Orc" secondAttribute="trailing" constant="8" id="QJk-Um-PM7"/>
                             <constraint firstItem="39x-F5-VPF" firstAttribute="top" secondItem="J4Q-qt-Tfz" secondAttribute="bottom" constant="16" id="iEs-Pk-wk1"/>
+                            <constraint firstItem="N7q-AH-rGD" firstAttribute="top" secondItem="kz8-6F-uJW" secondAttribute="bottom" constant="8" id="iwj-PI-UkK"/>
+                            <constraint firstAttribute="centerX" secondItem="kz8-6F-uJW" secondAttribute="centerX" id="lvh-bg-lc2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="39x-F5-VPF" secondAttribute="trailing" constant="32" id="n2r-qE-KnE"/>
                             <constraint firstItem="39x-F5-VPF" firstAttribute="leading" secondItem="NSl-Z8-j27" secondAttribute="leadingMargin" constant="32" id="xoo-jr-936"/>
                         </constraints>
@@ -1692,7 +1701,7 @@
         <image name="twitterbut.png" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mv9-IQ-LI1"/>
-        <segue reference="fmg-mB-drX"/>
+        <segue reference="oEK-gr-H8g"/>
+        <segue reference="tiW-K1-a5e"/>
     </inferredMetricsTieBreakers>
 </document>
