@@ -290,22 +290,22 @@
 //    return results;
 //}
 //
-//#pragma NSURLConnection
-//+ (NSURLConnection *)getURLConnection:(NSString *)link param:(NSString *)param id:(id)delegate
-//{
-//    NSMutableString* mutableLink = [[NSMutableString alloc] initWithString:link];
-//    [mutableLink replaceOccurrencesOfString:@"xxx" withString:param options:NSLiteralSearch range: NSMakeRange(0, [mutableLink length])];
-//    [mutableLink replaceOccurrencesOfString:@"&amp;" withString:@"&" options:NSLiteralSearch range: NSMakeRange(0, [mutableLink length])];
-//    NSURL *myURL = [NSURL URLWithString:[mutableLink stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-//    NSLog(@"loading url : %@", myURL );
-//    NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:myURL];
-//    NSString *authStr = [NSString stringWithFormat:@"%@:%@", @"cjo", @"cjo"];
-//    NSData *authData = [authStr dataUsingEncoding:NSASCIIStringEncoding];
-//    
-//    return [NSURLConnection connectionWithRequest:myRequest delegate:delegate];
-//    
-//}
-//
+#pragma NSURLConnection
++ (NSURLConnection *)getURLConnection:(NSString *)link param:(NSString *)param id:(id)delegate
+{
+    NSMutableString* mutableLink = [[NSMutableString alloc] initWithString:link];
+    [mutableLink replaceOccurrencesOfString:@"xxx" withString:param options:NSLiteralSearch range: NSMakeRange(0, [mutableLink length])];
+    [mutableLink replaceOccurrencesOfString:@"&amp;" withString:@"&" options:NSLiteralSearch range: NSMakeRange(0, [mutableLink length])];
+    NSURL *myURL = [NSURL URLWithString:[mutableLink stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSLog(@"loading url : %@", myURL );
+    NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:myURL];
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", @"cjo", @"cjo"];
+    NSData *authData = [authStr dataUsingEncoding:NSASCIIStringEncoding];
+    
+    return [NSURLConnection connectionWithRequest:myRequest delegate:delegate];
+    
+}
+
 //#pragma LoadingActivity
 //+ (UIActivityIndicatorView *)loadActivityView:(CGSize)boundsSize
 //{

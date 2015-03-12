@@ -121,6 +121,7 @@
             <connections>
                 <outlet property="articleAbstract" destination="Q7s-BL-X8c" id="nEm-Hr-t9j"/>
                 <outlet property="articleTitle" destination="5EC-ws-mZo" id="aAf-7B-Tia"/>
+                <outlet property="purchaseButton" destination="Ex9-F0-yhX" id="H4a-fc-tKP"/>
             </connections>
             <point key="canvasLocation" x="453" y="337"/>
         </view>

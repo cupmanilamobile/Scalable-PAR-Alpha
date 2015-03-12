@@ -8,6 +8,9 @@
 
 #import "ArticleAggregatorViewController.h"
 #import "AggregatorLayoutView.h"
+#import "ArticleViewController.h"
+#import "ArticleAggregatorItemView.h"
+#import "FullScreenView.h"
 #import "Misc.h"
 #import "Article.h"
 
@@ -43,7 +46,7 @@ int indexOfArticle = 0;
     self.pageDetail.text = [NSString stringWithFormat:@"Parasitology Volume %02ld - Issue %02ld" ,self.volumeId,self.issueId];
     
     //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"registrationbg.jpg"]]];
-
+[MBProgressHUD showHUDAddedTo:self.view animated:YES];
     PFQuery* articleQuery = [Article query];
     [articleQuery whereKey:@"issueId" equalTo:[NSString stringWithFormat: @"%02ld", (long)self.issueId]];
     [articleQuery whereKey:@"volumeId" equalTo:[NSString stringWithFormat: @"%02ld", (long)self.volumeId]];
@@ -59,7 +62,7 @@ int indexOfArticle = 0;
            //  [self.view addSubview: self.backgroundView];
             flipper.dataSource = self;
             [self.flipperContainerView addSubview:flipper];
-           
+           [MBProgressHUD hideHUDForView:self.view animated:YES];
             //[self.view addSubview:self.backgroundView ];
             
            
@@ -170,6 +173,24 @@ int indexOfArticle = 0;
         
     }
     return nil;
+}
+-(IBAction)purchaseArticle:(id)sender{
+    
+    [self performSegueWithIdentifier:@"articleView" sender:sender];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"articleView"])
+    {
+        UIButton* button = (UIButton*) sender;
+        FullScreenView* articleItem =(FullScreenView*)button.superview;
+     
+        ArticleViewController* nextVC  =(ArticleViewController*) segue.destinationViewController;
+        nextVC.articleLink = [NSString stringWithFormat:@"%ld", button.superview.tag ];
+        nextVC.articleTitle=articleItem.articleTitle.text;
+    }
 }
 
 

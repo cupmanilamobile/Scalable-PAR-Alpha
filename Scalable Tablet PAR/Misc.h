@@ -25,7 +25,7 @@
 //-(NSManagedObject*)instantiateManagedObject:(NSString*)managedObjectType;
 //-(BOOL)saveManagedObject;
 //-(NSArray *)fetchObjects:(NSDictionary*)predicates type:(NSString *)type;
-//+(NSURLConnection *)getURLConnection:(NSString *)link param:(NSString *)param id:(id)delegate; // NSURLConnection
++(NSURLConnection *)getURLConnection:(NSString *)link param:(NSString *)param id:(id)delegate; // NSURLConnection
 //+ (UIActivityIndicatorView *)loadActivityView:(CGSize)boundsSize; // Load Activity View
 
 
