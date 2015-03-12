@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ieA-iH-7P4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ieA-iH-7P4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -111,23 +110,55 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFI-mB-RBL" userLabel="Facebook">
                                         <rect key="frame" x="157" y="259" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8FF-ne-WTu"/>
+                                            <constraint firstAttribute="width" constant="46" id="Adk-uf-gyh"/>
+                                        </constraints>
                                         <state key="normal" image="facebookbut.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8FF-ne-WTu"/>
+                                                <exclude reference="Adk-uf-gyh"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="8FF-ne-WTu"/>
+                                                <include reference="Adk-uf-gyh"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="actionFacebook:" destination="ieA-iH-7P4" eventType="touchUpInside" id="kEv-Y3-JJG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1d-dg-zLq" userLabel="Google+" customClass="GPPSignInButton">
                                         <rect key="frame" x="265" y="259" width="70" height="70"/>
-                                        <state key="normal" backgroundImage="googlebut.png"/>
+                                        <state key="normal" backgroundImage="gpp_sign_in_dark_icon_normal.png"/>
                                         <state key="disabled" image="gpp_sign_in_dark_button_normal.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3da-8K-yDF" userLabel="Twitter">
                                         <rect key="frame" x="367" y="259" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="7Fq-Vc-fuB"/>
+                                            <constraint firstAttribute="height" constant="48" id="914-JY-hpg"/>
+                                        </constraints>
                                         <state key="normal" image="twitterbut.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7Fq-Vc-fuB"/>
+                                                <exclude reference="914-JY-hpg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="7Fq-Vc-fuB"/>
+                                                <include reference="914-JY-hpg"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="actionTwitter:" destination="H2L-Eo-1BV" eventType="touchUpInside" id="8dV-RG-drg"/>
                                             <action selector="actionTwitter:" destination="ieA-iH-7P4" eventType="touchUpInside" id="D0i-wM-y3O"/>
@@ -254,13 +285,13 @@
                                         <include reference="8zw-f6-fee"/>
                                         <include reference="RjT-Ag-Pe2"/>
                                         <include reference="Rl9-Mc-S78"/>
-                                        <include reference="Zht-0K-9Rh"/>
-                                        <include reference="b3e-UH-5Xi"/>
+                                        <exclude reference="Zht-0K-9Rh"/>
+                                        <exclude reference="b3e-UH-5Xi"/>
                                         <include reference="l6M-1U-4QU"/>
-                                        <include reference="CSm-iD-0VC"/>
+                                        <exclude reference="CSm-iD-0VC"/>
                                         <include reference="UYi-e8-Z4B"/>
                                         <include reference="i6H-2Z-CNa"/>
-                                        <include reference="nab-mV-EmW"/>
+                                        <exclude reference="nab-mV-EmW"/>
                                         <include reference="PFy-lU-lyO"/>
                                         <include reference="RUI-NX-UuJ"/>
                                         <include reference="jv5-32-dwZ"/>
@@ -367,8 +398,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXn-I2-IcH" userLabel="Register">
-                                <rect key="frame" x="66" y="535" width="219" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXn-I2-IcH" userLabel="Register">
+                                <rect key="frame" x="66" y="513" width="219" height="45"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7pC-fE-I5g"/>
@@ -391,8 +422,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYu-Pq-kkc" userLabel="Facebook">
-                                <rect key="frame" x="157" y="259" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYu-Pq-kkc" userLabel="Facebook">
+                                <rect key="frame" x="193" y="259" width="46" height="48"/>
                                 <state key="normal" image="facebookbut.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -400,17 +431,16 @@
                                     <action selector="actionFacebook:" destination="H2L-Eo-1BV" eventType="touchUpInside" id="uEa-Sx-e7Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-4S-Bvi" userLabel="Google+" customClass="GPPSignInButton">
-                                <rect key="frame" x="265" y="259" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-4S-Bvi" userLabel="Google+" customClass="GPPSignInButton">
+                                <rect key="frame" x="277" y="259" width="46" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="6qp-sJ-lGS"/>
                                     <constraint firstAttribute="width" constant="46" id="eEE-tX-JWS"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="googlebut.png"/>
                                 <state key="disabled" image="gpp_sign_in_dark_button_normal.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qym-OJ-uzr" userLabel="Twitter">
-                                <rect key="frame" x="367" y="259" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qym-OJ-uzr" userLabel="Twitter">
+                                <rect key="frame" x="355" y="259" width="46" height="48"/>
                                 <state key="normal" image="twitterbut.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -418,18 +448,18 @@
                                     <action selector="actionTwitter:" destination="H2L-Eo-1BV" eventType="touchUpInside" id="DFB-QX-cHs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-mP-j7b" userLabel="First Name">
-                                <rect key="frame" x="66" y="364" width="468" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-mP-j7b" userLabel="First Name">
+                                <rect key="frame" x="66" y="342" width="468" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OXZ-0a-F15" userLabel="Country">
-                                <rect key="frame" x="66" y="479" width="468" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OXZ-0a-F15" userLabel="Country">
+                                <rect key="frame" x="66" y="457" width="468" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZH-Zq-L1K" userLabel="Reset">
-                                <rect key="frame" x="315" y="535" width="219" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZH-Zq-L1K" userLabel="Reset">
+                                <rect key="frame" x="315" y="513" width="219" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Reset">
@@ -442,8 +472,8 @@
                                     <action selector="actionReset:" destination="H2L-Eo-1BV" eventType="touchUpInside" id="9jE-wF-NoV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-KQ-ddU" userLabel="Last Name">
-                                <rect key="frame" x="66" y="418" width="468" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-KQ-ddU" userLabel="Last Name">
+                                <rect key="frame" x="66" y="396" width="468" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1370,7 +1400,7 @@
                                         <exclude reference="arW-Uh-4jW"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="699" width="800" height="31"/>
                                     <mask key="subviews">
                                         <include reference="lgf-UW-urw"/>
@@ -1384,7 +1414,7 @@
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-LU-5PZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="732" width="800" height="0.0"/>
                                 </variation>
                             </scrollView>
@@ -1398,7 +1428,7 @@
                             </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HyS-b8-0as">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="48" y="36" width="186" height="656"/>
                                 </variation>
                             </imageView>
@@ -1637,7 +1667,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXM-8h-hDJ">
-                                <rect key="frame" x="48" y="124" width="504" height="426.5"/>
+                                <rect key="frame" x="48" y="124" width="504" height="427"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="kz8-6F-uJW">
@@ -1694,14 +1724,14 @@
         <image name="bgcleangray.jpg" width="768" height="1009"/>
         <image name="facebookbut.png" width="70" height="70"/>
         <image name="firstviewwt.png" width="56" height="49"/>
-        <image name="googlebut.png" width="70" height="70"/>
         <image name="gpp_sign_in_dark_button_normal.png" width="93" height="48"/>
+        <image name="gpp_sign_in_dark_icon_normal.png" width="46" height="48"/>
         <image name="latestwt.png" width="56" height="49"/>
         <image name="registrationbg.jpg" width="768" height="1009"/>
         <image name="twitterbut.png" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oEK-gr-H8g"/>
         <segue reference="tiW-K1-a5e"/>
+        <segue reference="oEK-gr-H8g"/>
     </inferredMetricsTieBreakers>
 </document>

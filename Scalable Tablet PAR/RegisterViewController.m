@@ -48,6 +48,9 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
 //    signIn.scopes = @[ @"profile" ];            // "profile" scope
     // Optional: declare signIn.actions, see "app activities"
     signIn.delegate = self;
+    
+    [self.signInButton setStyle:kGPPSignInButtonStyleIconOnly];
+    [self.signInButton setColorScheme:kGPPSignInButtonColorSchemeLight];
 }
 
 - (void)didReceiveMemoryWarning {
