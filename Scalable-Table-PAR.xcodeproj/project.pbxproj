@@ -46,6 +46,10 @@
 		CF374E4C1AAEEAEC00C8CE89 /* issuecover4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E471AAEEAEC00C8CE89 /* issuecover4.jpg */; };
 		CF374E4D1AAEEAEC00C8CE89 /* issuecover5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF374E481AAEEAEC00C8CE89 /* issuecover5.jpg */; };
 		CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */; };
+		CF8EB25B1AB1308100C89BC9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8EB25A1AB1308100C89BC9 /* ParseFacebookUtils.framework */; };
+		CF8EB25F1AB1318800C89BC9 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8EB25C1AB1318800C89BC9 /* GoogleOpenSource.framework */; };
+		CF8EB2601AB1318800C89BC9 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF8EB25D1AB1318800C89BC9 /* GooglePlus.bundle */; };
+		CF8EB2611AB1318800C89BC9 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8EB25E1AB1318800C89BC9 /* GooglePlus.framework */; };
 		CFC402791AAC86930094ED83 /* IssueCover.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC402781AAC86930094ED83 /* IssueCover.m */; };
 		CFC7628C1AAD49B30072B1D6 /* VolumeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */; };
 		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
@@ -55,10 +59,6 @@
 		FD0FE1971AAEE80700A24886 /* twitterbut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1941AAEE80700A24886 /* twitterbut.png */; };
 		FD0FE1991AAEE86000A24886 /* bgclean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1981AAEE86000A24886 /* bgclean.jpg */; };
 		FD13CC071AAEDCAA0090E565 /* registrationbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD13CC061AAEDCAA0090E565 /* registrationbg.jpg */; };
-		FD5C12A21AB04EA700C6DB5E /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF91F6A1AB00B8000CD992A /* GoogleOpenSource.framework */; };
-		FD5C12A31AB04EA700C6DB5E /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF91F6B1AB00B8000CD992A /* GooglePlus.framework */; };
-		FD5C12A51AB04EA800C6DB5E /* GooglePlus.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5C12A41AB04EA800C6DB5E /* GooglePlus.bundle */; };
-		FD5C12A61AB04EC200C6DB5E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */; };
 		FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B51AAD948900E9C476 /* Journal.m */; };
 		FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B81AAD949400E9C476 /* Volume.m */; };
 		FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BB1AAD949C00E9C476 /* Issue.m */; };
@@ -150,6 +150,10 @@
 		CF374E471AAEEAEC00C8CE89 /* issuecover4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover4.jpg; sourceTree = "<group>"; };
 		CF374E481AAEEAEC00C8CE89 /* issuecover5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = issuecover5.jpg; sourceTree = "<group>"; };
 		CF75FD711AAD75CB00BBB79D /* VolumeCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeCover.xib; sourceTree = "<group>"; };
+		CF8EB25A1AB1308100C89BC9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		CF8EB25C1AB1318800C89BC9 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		CF8EB25D1AB1318800C89BC9 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		CF8EB25E1AB1318800C89BC9 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		CFC402771AAC86930094ED83 /* IssueCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueCover.h; sourceTree = "<group>"; };
 		CFC402781AAC86930094ED83 /* IssueCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueCover.m; sourceTree = "<group>"; };
 		CFC7628B1AAD49B30072B1D6 /* VolumeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeTableViewCell.xib; sourceTree = "<group>"; };
@@ -163,9 +167,7 @@
 		FD0FE1931AAEE80700A24886 /* googlebut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googlebut.png; sourceTree = "<group>"; };
 		FD0FE1941AAEE80700A24886 /* twitterbut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterbut.png; sourceTree = "<group>"; };
 		FD0FE1981AAEE86000A24886 /* bgclean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgclean.jpg; sourceTree = "<group>"; };
-		FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.6.4/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 		FD13CC061AAEDCAA0090E565 /* registrationbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = registrationbg.jpg; sourceTree = "<group>"; };
-		FD5C12A41AB04EA800C6DB5E /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
 		FDA0E9B41AAD948900E9C476 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
 		FDA0E9B51AAD948900E9C476 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
 		FDA0E9B71AAD949400E9C476 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
@@ -195,8 +197,6 @@
 		FDF91F641AB00B5E00CD992A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FDF91F661AB00B6500CD992A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FDF91F681AB00B6B00CD992A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FDF91F6A1AB00B8000CD992A /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
-		FDF91F6B1AB00B8000CD992A /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.framework"; sourceTree = "<group>"; };
 		FDF9238A1AB00E2700CD992A /* libPods-Scalable Tablet PAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Scalable Tablet PAR.a"; path = "Pods/build/Debug-iphoneos/libPods-Scalable Tablet PAR.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,11 +205,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5C12A61AB04EC200C6DB5E /* ParseFacebookUtils.framework in Frameworks */,
-				FD5C12A51AB04EA800C6DB5E /* GooglePlus.bundle in Frameworks */,
-				FD5C12A21AB04EA700C6DB5E /* GoogleOpenSource.framework in Frameworks */,
-				FD5C12A31AB04EA700C6DB5E /* GooglePlus.framework in Frameworks */,
+				CF8EB25F1AB1318800C89BC9 /* GoogleOpenSource.framework in Frameworks */,
 				FDF923991AB00EB500CD992A /* AddressBook.framework in Frameworks */,
+				CF8EB2611AB1318800C89BC9 /* GooglePlus.framework in Frameworks */,
+				CF8EB25B1AB1308100C89BC9 /* ParseFacebookUtils.framework in Frameworks */,
 				FDF923981AB00EB100CD992A /* AssetsLibrary.framework in Frameworks */,
 				FDF923971AB00EAB00CD992A /* Foundation.framework in Frameworks */,
 				FDF923961AB00E9C00CD992A /* CoreLocation.framework in Frameworks */,
@@ -296,8 +295,6 @@
 				62E997861AA4619000D8AD22 /* AFKPageFlipper.m */,
 				62C4A5AB1A97126F00F70F6D /* AppDelegate.h */,
 				62C4A5AC1A97126F00F70F6D /* AppDelegate.m */,
-				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
-				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
 				62C4A5D81A9731C400F70F6D /* Misc.h */,
 				62C4A5D91A9731C400F70F6D /* Misc.m */,
 				62C4A5B11A97126F00F70F6D /* ViewController.h */,
@@ -309,13 +306,13 @@
 				62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */,
 				62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */,
 				CF75FD701AAD6F8E00BBB79D /* Archive */,
-				62D5F48C1AA80F1400233B5E /* Article */,
+				62C14C101AA01F9800ADCE3D /* Volume */,
 				62C00C351A9EC63F00979A05 /* Issue */,
+				62D5F48C1AA80F1400233B5E /* Article */,
 				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
 				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
 				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
 				62C4A5A71A97126F00F70F6D /* Supporting Files */,
-				62C14C101AA01F9800ADCE3D /* Volume */,
 			);
 			path = "Scalable Tablet PAR";
 			sourceTree = "<group>";
@@ -389,10 +386,11 @@
 		6E2122AB047FC8E5765BFFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD5C12A41AB04EA800C6DB5E /* GooglePlus.bundle */,
+				CF8EB25A1AB1308100C89BC9 /* ParseFacebookUtils.framework */,
+				CF8EB25C1AB1318800C89BC9 /* GoogleOpenSource.framework */,
+				CF8EB25D1AB1318800C89BC9 /* GooglePlus.bundle */,
+				CF8EB25E1AB1318800C89BC9 /* GooglePlus.framework */,
 				FDF9238A1AB00E2700CD992A /* libPods-Scalable Tablet PAR.a */,
-				FDF91F6A1AB00B8000CD992A /* GoogleOpenSource.framework */,
-				FDF91F6B1AB00B8000CD992A /* GooglePlus.framework */,
 				FDF91F681AB00B6B00CD992A /* UIKit.framework */,
 				FDF91F661AB00B6500CD992A /* SystemConfiguration.framework */,
 				FDF91F641AB00B5E00CD992A /* Security.framework */,
@@ -406,7 +404,6 @@
 				FDF91F541AB00B2200CD992A /* AddressBook.framework */,
 				FDF91F521AB005BE00CD992A /* Social.framework */,
 				FDF91F501AB005B900CD992A /* Accounts.framework */,
-				FD0FE19A1AAEF7D100A24886 /* ParseFacebookUtils.framework */,
 				3ECF9DCAA398B474677B79CE /* libPods-Scalable Tablet PAR.a */,
 			);
 			name = Frameworks;
@@ -454,6 +451,8 @@
 				FDAC90D21AAD9CEB00948813 /* LoginViewController.m */,
 				FDCACB671AADA6360045F7E5 /* RegisterViewController.h */,
 				FDCACB681AADA6360045F7E5 /* RegisterViewController.m */,
+				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
+				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -590,6 +589,7 @@
 				CF374E491AAEEAEC00C8CE89 /* issuecover1.jpg in Resources */,
 				CF0928601AA9AE750061927C /* Openaccesswt.png in Resources */,
 				CF374E4A1AAEEAEC00C8CE89 /* issuecover2.jpg in Resources */,
+				CF8EB2601AB1318800C89BC9 /* GooglePlus.bundle in Resources */,
 				62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */,
 				CF09285F1AA9AE750061927C /* latestwt.png in Resources */,
 				CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */,
@@ -806,12 +806,15 @@
 			baseConfigurationReference = F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
 					"/Users/jlundang/Downloads/google-plus-ios-sdk-1.7.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -874,12 +877,15 @@
 			baseConfigurationReference = E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
 					"/Users/jlundang/Downloads/google-plus-ios-sdk-1.7.1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
