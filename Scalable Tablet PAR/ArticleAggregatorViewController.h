@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AFKPageFlipper.h"
 #import "AggregatorLayoutView.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 
 @interface ArticleAggregatorViewController : UIViewController<AFKPageFlipperDataSource,AggregatorLayoutDelegate>

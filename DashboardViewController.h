@@ -10,4 +10,5 @@
 
 @interface DashboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextViewDelegate>
 
+- (IBAction)logout:(id)sender;
 @end

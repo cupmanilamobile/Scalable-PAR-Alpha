@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *articleTitle;
 
 @property (strong, nonatomic) IBOutlet UILabel *articleAbstract;
+@property (strong, nonatomic) IBOutlet UIButton *purchaseButton;
 
 @end

@@ -15,6 +15,7 @@
 
 - (id) getData:(AggregatorLayoutView *) aggregatorLayoutView;
 - (NSDictionary*) getArticle;
+ -(void)purchaseArticle;
 
 
 

@@ -30,6 +30,7 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     _txtUsername.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Email / Username" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor]}];
     _txtPassword.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor]}];
@@ -48,6 +49,9 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
 //    signIn.scopes = @[ @"profile" ];            // "profile" scope
     // Optional: declare signIn.actions, see "app activities"
     signIn.delegate = self;
+    
+    [self.signInButton setStyle:kGPPSignInButtonStyleIconOnly];
+    [self.signInButton setColorScheme:kGPPSignInButtonColorSchemeLight];
 }
 
 - (void)didReceiveMemoryWarning {
