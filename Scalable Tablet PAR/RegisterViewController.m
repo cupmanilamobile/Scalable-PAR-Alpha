@@ -30,6 +30,7 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     _txtUsername.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Email / Username" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor]}];
     _txtPassword.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{ NSForegroundColorAttributeName : [UIColor lightGrayColor]}];

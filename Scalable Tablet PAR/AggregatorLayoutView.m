@@ -140,7 +140,7 @@
     NSArray* array = [self subviews];
     UIView* view;
     
-    CGFloat borderWidth = 0.4f;
+    CGFloat borderWidth = 0.6f;
     
     for(int i = 0; i< array.count;i++){
         
