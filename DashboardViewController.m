@@ -14,12 +14,10 @@
 #import "Journal.h"
 #import "Volume.h"
 #import "Issue.h"
-#import "SyntaxHighlightTextStorage.h"
 
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Parse/Parse.h>
-#define API_GET_JOURNAL_DETAILS_URL @"http://192.168.242.121:8080/release-15.1.PAR/journal/PAR"
-#define API_GET_ISSUES_BY_VOLUME_ID_URL @"http://192.168.242.121:8080/release-15.1.PAR/journal/PAR/%i"
+
 #define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%@_%@.jpg"
 
 @interface DashboardViewController ()
@@ -42,7 +40,6 @@
 @end
 
 @implementation DashboardViewController {
-    SyntaxHighlightTextStorage *_textStorage;
     int journalDetailsOriginalViewHeight;
     NSString *latestVolumeId;
 }

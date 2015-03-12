@@ -52,7 +52,6 @@
 		CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC7628E1AAD4A950072B1D6 /* VolumeTableViewCell.m */; };
 		CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */; };
 		CFC830C31AAFF5A90014750B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC830C21AAFF5A90014750B /* ParseFacebookUtils.framework */; };
-		CFC830C61AAFFAD20014750B /* SyntaxHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC830C51AAFFAD20014750B /* SyntaxHighlightTextStorage.m */; };
 		CFC830C81AB048360014750B /* journalDescription.htm in Resources */ = {isa = PBXBuildFile; fileRef = CFC830C71AB048360014750B /* journalDescription.htm */; };
 		FD0FE1951AAEE80700A24886 /* facebookbut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1921AAEE80700A24886 /* facebookbut.png */; };
 		FD0FE1961AAEE80700A24886 /* googlebut.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0FE1931AAEE80700A24886 /* googlebut.png */; };
@@ -144,8 +143,6 @@
 		CFC762901AAD4B4E0072B1D6 /* VolumeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeTableView.h; sourceTree = "<group>"; };
 		CFC762911AAD4B4E0072B1D6 /* VolumeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeTableView.m; sourceTree = "<group>"; };
 		CFC830C21AAFF5A90014750B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		CFC830C41AAFFAD20014750B /* SyntaxHighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlightTextStorage.h; sourceTree = "<group>"; };
-		CFC830C51AAFFAD20014750B /* SyntaxHighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlightTextStorage.m; sourceTree = "<group>"; };
 		CFC830C71AB048360014750B /* journalDescription.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = journalDescription.htm; sourceTree = "<group>"; };
 		E6EF7BD031B2C06712F315A5 /* Pods-Scalable Tablet PAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.release.xcconfig"; sourceTree = "<group>"; };
 		F62826D23762D189CEF141DE /* Pods-Scalable Tablet PAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scalable Tablet PAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scalable Tablet PAR/Pods-Scalable Tablet PAR.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,8 +251,6 @@
 				62C4A5AC1A97126F00F70F6D /* AppDelegate.m */,
 				CF0928611AA9B2CF0061927C /* DashboardViewController.h */,
 				CF0928621AA9B2CF0061927C /* DashboardViewController.m */,
-				CFC830C41AAFFAD20014750B /* SyntaxHighlightTextStorage.h */,
-				CFC830C51AAFFAD20014750B /* SyntaxHighlightTextStorage.m */,
 				62C4A5D81A9731C400F70F6D /* Misc.h */,
 				62C4A5D91A9731C400F70F6D /* Misc.m */,
 				62C4A5B11A97126F00F70F6D /* ViewController.h */,
@@ -569,7 +564,6 @@
 				62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */,
 				62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */,
 				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
-				CFC830C61AAFFAD20014750B /* SyntaxHighlightTextStorage.m in Sources */,
 				62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */,
 				62E997871AA4619000D8AD22 /* AFKPageFlipper.m in Sources */,
 				FDAC90D31AAD9CEB00948813 /* LoginViewController.m in Sources */,
