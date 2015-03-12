@@ -58,10 +58,7 @@
     PFQuery *query = [Journal query];
     [query whereKey:@"journalId" equalTo:@"PAR"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
-        [self.view addSubview:hud];
-        [hud setLabelText:@"Loading..."];
-        [hud show:YES];
+        [self showProgressHud];
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -177,10 +174,22 @@
 }
 
 - (void)reloadIssueCovers:(NSString *)volumeId {
-    _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self buildIssueCover];
+    [self showProgressHud];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        _arrIssueList = [self fetchIssueListByVolumeId:volumeId];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self buildIssueCover];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
     });
+}
+
+- (void)showProgressHud {
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:hud];
+    [hud setLabelText:@"Loading..."];
+    [hud show:YES];
 }
 
 // TODO: There are issueId with value 'S1'. For now, we disregard this but should be catered soon
@@ -250,7 +259,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Volume *volume = _arrVolumeList[indexPath.row];
     [self reloadIssueCovers:volume.volumeId];
-    
     tableView.hidden = YES;
     _scrollView.hidden = NO;
 }
