@@ -219,7 +219,7 @@
     ArticleAggregatorItemView* article =(ArticleAggregatorItemView*) [(UIGestureRecognizer *)sender view];
     
   
-    UIView* tintView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,self.frame.size.width, self.frame.size.height)];
+    UIView* tintView = [[UIView alloc] initWithFrame:CGRectMake(-150, -150,self.frame.size.width*2, self.frame.size.height*2)];
     
     [self addSubview:tintView];
     
@@ -232,7 +232,7 @@
        FullScreenView* view =  [[[NSBundle mainBundle] loadNibNamed:@"FullScreenArticleView" owner:self options:nil] lastObject];
     
     
-    view.frame = CGRectMake(50, 30,0,0 );
+    view.frame = CGRectMake(self.frame.size.width/2, self.frame.size.width/2,0,0 );
     
     [UIView animateWithDuration:0.5 animations:^{
         view.frame =  CGRectMake(50, 30, self.frame.size.width-100, self.frame.size.height-100);

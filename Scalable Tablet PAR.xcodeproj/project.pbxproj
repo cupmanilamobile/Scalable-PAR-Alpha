@@ -21,6 +21,7 @@
 		62B6C5121AB0169E00723104 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5081AB0169E00723104 /* 9.jpg */; };
 		62B6C5131AB0169E00723104 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5091AB0169E00723104 /* 10.jpg */; };
 		62B6C5151AB03A3F00723104 /* icon-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B6C5141AB03A3F00723104 /* icon-menu@2x.png */; };
+		62B6C5171AB043CE00723104 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B6C5161AB043CE00723104 /* ParseFacebookUtils.framework */; };
 		62C00C371A9EC66700979A05 /* IssueCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C00C361A9EC66700979A05 /* IssueCover.xib */; };
 		62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C00C391A9EC8A000979A05 /* VolumeCover.m */; };
 		62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C14C121AA01FFF00ADCE3D /* VolumeViewController.m */; };
@@ -107,6 +108,7 @@
 		62B6C5081AB0169E00723104 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		62B6C5091AB0169E00723104 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		62B6C5141AB03A3F00723104 /* icon-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-menu@2x.png"; sourceTree = "<group>"; };
+		62B6C5161AB043CE00723104 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		62C00C361A9EC66700979A05 /* IssueCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueCover.xib; sourceTree = "<group>"; };
 		62C00C381A9EC8A000979A05 /* VolumeCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeCover.h; sourceTree = "<group>"; };
 		62C00C391A9EC8A000979A05 /* VolumeCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeCover.m; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			files = (
 				FD0FE19B1AAEF7D100A24886 /* ParseFacebookUtils.framework in Frameworks */,
 				96C6ABED8CA6DC3217F26992 /* libPods-Scalable Tablet PAR.a in Frameworks */,
+				62B6C5171AB043CE00723104 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +296,7 @@
 				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
 				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
 				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
+				62B6C5161AB043CE00723104 /* ParseFacebookUtils.framework */,
 				62C4A5A71A97126F00F70F6D /* Supporting Files */,
 				62C14C101AA01F9800ADCE3D /* Volume */,
 			);
@@ -522,6 +526,7 @@
 				62B6C5121AB0169E00723104 /* 9.jpg in Resources */,
 				62C4A5BB1A97126F00F70F6D /* LaunchScreen.xib in Resources */,
 				62B6C50E1AB0169E00723104 /* 5.jpg in Resources */,
+				CF374E4C1AAEEAEC00C8CE89 /* issuecover4.jpg in Resources */,
 				62C4A5D21A97138200F70F6D /* bg.jpg in Resources */,
 				62B6C5151AB03A3F00723104 /* icon-menu@2x.png in Resources */,
 				CF75FD721AAD75CB00BBB79D /* VolumeCover.xib in Resources */,
@@ -539,6 +544,7 @@
 				CF0928601AA9AE750061927C /* Openaccesswt.png in Resources */,
 				62B6C50D1AB0169E00723104 /* 4.jpg in Resources */,
 				62B6C50F1AB0169E00723104 /* 6.jpg in Resources */,
+				CF374E4A1AAEEAEC00C8CE89 /* issuecover2.jpg in Resources */,
 				62E997931AA4687500D8AD22 /* ArticleCell.xib in Resources */,
 				CF09285F1AA9AE750061927C /* latestwt.png in Resources */,
 				CF09285E1AA9AE750061927C /* firstviewwt.png in Resources */,
@@ -760,6 +766,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
+					"$(PROJECT_DIR)/Scalable",
+					Tablet,
+					PAR,
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -775,6 +784,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jlundang/Downloads/parse-library-1.6.4",
+					"$(PROJECT_DIR)/Scalable",
+					Tablet,
+					PAR,
 				);
 				INFOPLIST_FILE = "Scalable Tablet PAR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
