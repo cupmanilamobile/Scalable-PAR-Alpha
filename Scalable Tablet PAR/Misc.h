@@ -12,6 +12,7 @@
 
 
 @interface Misc : NSObject
++ (int)randomNumber:(int)smallest largest:(int)largest;
 +(void)downloadingServerImageFromUrl:(UIImageView*)imgView AndUrl:(NSString*)strUrl;
 -(NSString *) stringByStrippingHTML:(NSString*)string ;
 //@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;

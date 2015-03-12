@@ -73,7 +73,7 @@
                 }
                 
             }else{;
-                imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"issuecover%i.jpg", [self random1to5]]];
+                imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"issuecover%i.jpg", [self randomNumber:1 largest:5]]];
             }
             [actView removeFromSuperview];
             [imgView setBackgroundColor:[UIColor clearColor]];
@@ -81,9 +81,7 @@
     });
 }
 
-+ (int)random1to5 {
-    int smallest = 1;
-    int largest = 5;
++ (int)randomNumber:(int)smallest largest:(int)largest {
     int random = smallest + arc4random() % (largest+1-smallest);
     return random;
 }

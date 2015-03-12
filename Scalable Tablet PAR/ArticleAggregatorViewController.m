@@ -39,9 +39,14 @@ int indexOfArticle = 0;
     //Test
 //    self.volumeId = 139;
 //    self.issueId = 01;
-//    
-    self.pageDetail.text = [NSString stringWithFormat:@"Parasitology Volume %02ld - Issue %02ld" ,self.volumeId,self.issueId];
-    
+//
+    NSString *pageDetailText = self.pageDetail.text;
+    if (!([_pageHeaderText isEqualToString:@"First View"] ||
+          [_pageHeaderText isEqualToString:@"Open Access"])) {
+        self.pageDetail.text = [NSString stringWithFormat:@"Parasitology Volume %02ld - Issue %02ld" ,self.volumeId,self.issueId];
+    } else {
+        self.pageDetail.text = _pageHeaderText;
+    }
     //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"registrationbg.jpg"]]];
 
     PFQuery* articleQuery = [Article query];

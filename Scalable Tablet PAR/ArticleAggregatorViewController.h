@@ -36,6 +36,7 @@
 @property (nonatomic, strong) NSArray* articleDetails;
 @property (nonatomic, assign) NSInteger volumeId;
 @property (nonatomic,assign) NSInteger issueId;
+@property (nonatomic, assign) NSString *pageHeaderText;
 
 @property (strong, nonatomic) IBOutlet UIView *flipperContainerView;
 

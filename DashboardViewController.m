@@ -217,6 +217,24 @@
 //        _scrollView.frame = CGRectMake(-_scrollView.frame.size.width, _scrollView.frame.origin.y, _scrollView.frame.size.width, _scrollView.frame.size.height);
 //    }];
 }
+- (IBAction)showFirstViewArticles:(id)sender {
+    [self performSegueWithIdentifier:@"articleAggregator" sender:sender];
+}
+
+- (IBAction)showOpenAccessArticles:(id)sender {
+    [self performSegueWithIdentifier:@"articleAggregator" sender:sender];
+}
+
+// THIS IS TEMPORARY ONLY
+- (IssueCover *)getIssueCoverFromRandom {
+    int randomNumber = [Misc randomNumber:1 largest:(int) [_arrIssueList count]];
+    IssueCover *issueCover = [self issueCover:randomNumber];
+    
+    if (issueCover == nil) {
+        [self getIssueCoverFromRandom];
+    }
+    return issueCover;
+}
 
 #pragma mark - Segue
 - (void)issueTap:(id) sender {
@@ -226,10 +244,26 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"articleAggregator"]) {
         ArticleAggregatorViewController* nextVC = [segue destinationViewController];
-        IssueCover *issueCover = (IssueCover *) [(UIGestureRecognizer *)sender view];
+        IssueCover *issueCover;
+        
+        if ([sender isKindOfClass:UIButton.class]) {
+            issueCover = [self getIssueCoverFromRandom];
+            nextVC.pageHeaderText = ((UIButton *)sender).titleLabel.text;
+            
+        } else {
+            issueCover = (IssueCover *) [(UIGestureRecognizer *)sender view];
+
+        }
         nextVC.volumeId = issueCover.volumeId;
         nextVC.issueId = issueCover.tag;
     }
+    
+    // Original
+//    ArticleAggregatorViewController* nextVC = [segue destinationViewController];
+//    IssueCover *issueCover = [self getIssueCoverFromRandom];
+//    nextVC.volumeId = issueCover.volumeId;
+//    nextVC.issueId = issueCover.tag;
+
 }
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate
@@ -261,6 +295,7 @@
     [self reloadIssueCovers:volume.volumeId];
     tableView.hidden = YES;
     _scrollView.hidden = NO;
+    
 }
 
 #pragma mark - Constraints
