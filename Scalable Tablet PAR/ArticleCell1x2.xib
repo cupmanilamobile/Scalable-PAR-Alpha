@@ -53,7 +53,7 @@
                 <constraint firstItem="boH-3P-vRb" firstAttribute="leading" secondItem="M0g-Cj-Xzt" secondAttribute="trailing" constant="98" id="imh-bv-JqS"/>
                 <constraint firstAttribute="trailing" secondItem="boH-3P-vRb" secondAttribute="trailing" constant="8" id="rHw-l1-4Jf"/>
                 <constraint firstItem="boH-3P-vRb" firstAttribute="top" secondItem="hdJ-Q3-yK4" secondAttribute="bottom" constant="8" id="rk1-d9-gmm"/>
-                <constraint firstItem="M0g-Cj-Xzt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="wfj-YU-HiS"/>
+                <constraint firstItem="M0g-Cj-Xzt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="wfj-YU-HiS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">

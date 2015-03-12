@@ -12,6 +12,9 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hch-0p-zyL">
                     <rect key="frame" x="16" y="621" width="488" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="t2o-Io-xcL"/>
+                    </constraints>
                     <string key="text">Trichinella spiralis newborn larvae: characterization of a stage specific serine proteinase expression, NBL1, using monoclonal antibodies</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -40,14 +43,14 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="hch-0p-zyL" firstAttribute="top" secondItem="bUF-J1-cGC" secondAttribute="bottom" constant="16" id="AKF-up-3Gh"/>
-                <constraint firstAttribute="trailing" secondItem="hch-0p-zyL" secondAttribute="trailing" constant="16" id="IAe-wa-klf"/>
+                <constraint firstAttribute="trailing" secondItem="hch-0p-zyL" secondAttribute="trailing" constant="32" id="IAe-wa-klf"/>
                 <constraint firstItem="IAg-Tv-vt9" firstAttribute="top" secondItem="vqD-MM-FCp" secondAttribute="bottom" constant="8" id="KG2-4e-55G"/>
                 <constraint firstAttribute="trailing" secondItem="bUF-J1-cGC" secondAttribute="trailing" constant="32" id="OMQ-23-DgN"/>
                 <constraint firstItem="vqD-MM-FCp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Yeq-yM-wxg"/>
                 <constraint firstItem="bUF-J1-cGC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="fmR-jj-SlS"/>
-                <constraint firstItem="IAg-Tv-vt9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="g35-Sv-XFA"/>
-                <constraint firstAttribute="trailing" secondItem="IAg-Tv-vt9" secondAttribute="trailing" constant="8" id="nFX-PF-9jZ"/>
-                <constraint firstItem="hch-0p-zyL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="tvp-Ck-1Rc"/>
+                <constraint firstItem="IAg-Tv-vt9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="g35-Sv-XFA"/>
+                <constraint firstAttribute="trailing" secondItem="IAg-Tv-vt9" secondAttribute="trailing" constant="32" id="nFX-PF-9jZ"/>
+                <constraint firstItem="hch-0p-zyL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="tvp-Ck-1Rc"/>
                 <constraint firstAttribute="trailing" secondItem="vqD-MM-FCp" secondAttribute="trailing" constant="8" id="v7g-JH-t1V"/>
                 <constraint firstItem="vqD-MM-FCp" firstAttribute="top" secondItem="hch-0p-zyL" secondAttribute="bottom" constant="8" id="wxp-rS-Jbf"/>
                 <constraint firstItem="bUF-J1-cGC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="yes-Nz-srP"/>
