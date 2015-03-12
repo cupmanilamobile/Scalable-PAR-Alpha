@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlus/GooglePlus.h>
 
-@interface LoginViewController : UIViewController
+@class GPPSignInButton;
+
+@interface LoginViewController : UIViewController <GPPSignInDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *txtUsername;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnForgotPassword;
 @property (weak, nonatomic) IBOutlet UIButton *btnSignUp;
 - (IBAction)forgotPassword:(id)sender;
+
+- (IBAction)actionFacebook:(id)sender;
+@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
+- (IBAction)actionTwitter:(id)sender;
 @end

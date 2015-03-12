@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlus/GooglePlus.h>
+@class GPPSignInButton;
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <GPPSignInDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txtUsername;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 @property (weak, nonatomic) IBOutlet UITextField *txtRePassword;
 
 - (IBAction)actionFacebook:(id)sender;
-- (IBAction)actionGoogle:(id)sender;
+@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
 - (IBAction)actionTwitter:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *txtFirstName;
@@ -24,4 +26,5 @@
 - (IBAction)actionRegister:(id)sender;
 - (IBAction)actionReset:(id)sender;
 
++ (BOOL) NSStringIsValidEmail:(NSString *)checkString;
 @end
