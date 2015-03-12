@@ -227,7 +227,7 @@
 
 // THIS IS TEMPORARY ONLY
 - (IssueCover *)getIssueCoverFromRandom {
-    int randomNumber = [Misc randomNumber:1 largest:(int) [_arrIssueList count]];
+    int randomNumber = [Misc randomNumber:1 largest:((int) [_arrIssueList count]-1)];
     IssueCover *issueCover = [self issueCover:randomNumber];
     
     if (issueCover == nil) {
