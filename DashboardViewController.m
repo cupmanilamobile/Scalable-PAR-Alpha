@@ -14,12 +14,13 @@
 #import "Journal.h"
 #import "Volume.h"
 #import "Issue.h"
+#import "SyntaxHighlightTextStorage.h"
 
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Parse/Parse.h>
 #define API_GET_JOURNAL_DETAILS_URL @"http://192.168.242.121:8080/release-15.1.PAR/journal/PAR"
 #define API_GET_ISSUES_BY_VOLUME_ID_URL @"http://192.168.242.121:8080/release-15.1.PAR/journal/PAR/%i"
-#define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%i_%@.jpg"
+#define CJOTEST_2_COVER_IMAGES_URL @"http://cjotest-2.uat.cambridge.org/cover_images/PAR/PAR%@_%@.jpg"
 
 @interface DashboardViewController ()
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *journalDetailsViewHeightContraint;
@@ -28,6 +29,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *journalDescriptionTextView;
 @property (strong, nonatomic) IBOutlet UIImageView *journalCoverImageView;
 @property (strong, nonatomic) IBOutlet UILabel *journalEditorLabel;
+@property (strong, nonatomic) IBOutlet UILabel *journalDescriptionLabel;
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -35,10 +37,13 @@
 @property (strong, nonatomic) NSArray *arrVolumeList;
 @property (strong, nonatomic) NSArray *arrIssueList;
 
+@property (strong, nonatomic) IBOutlet UIWebView *journalEditorWebview;
+@property (strong, nonatomic) IBOutlet UIWebView *journalDescriptionWebview;
 @end
 
 @implementation DashboardViewController {
-    int journalDetailsOriginalHeight;
+    SyntaxHighlightTextStorage *_textStorage;
+    int journalDetailsOriginalViewHeight;
     NSString *latestVolumeId;
 }
 
@@ -47,9 +52,9 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];    
-    journalDetailsOriginalHeight = _journalDetailsView.frame.size.height;
-
+    [_journalDetailsView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bgcleangray.jpg"]]];
+    journalDetailsOriginalViewHeight = _journalDetailsView.frame.size.height;
+    
     // Download journal cover
     [Misc downloadingServerImageFromUrl:_journalCoverImageView AndUrl:@"http://journals.cambridge.org/cover_images/PAR/PAR.jpg"];
     
@@ -64,8 +69,8 @@
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 Journal *journal = [objects objectAtIndex:0];
-                _journalEditorLabel.text = journal[@"editor"];
-                _journalDescriptionTextView.text = journal[@"description"];
+                [self loadWebview:_journalEditorWebview with:journal[@"editor"] type:@"editor"];
+                [self loadWebview:_journalDescriptionWebview with:journal[@"description"] type:@"description"];
                 
                 _arrVolumeList = [self fetchAllVolumes];
                 latestVolumeId = ((Volume *) _arrVolumeList[0]).volumeId;
@@ -106,48 +111,13 @@
         
             // Setup constraints
             [_scrollView addSubview:issueCover];
-            [self setConstraints:i];
+            [self setIssueCoverConstraints:i];
         }
     }
     
     [self.view layoutIfNeeded]; // Required
     [_scrollView setContentSize:CGSizeMake(_scrollView.frame.size.width, issueCover.frame.origin.y + issueCover.frame.size.height + 24)];
     [self loadIssueImages];
-}
-
-- (void)setConstraints:(int)index
-{
-    IssueCover *currentCover = [self issueCover:index];
-    IssueCover *previousCover;
-    if (index == 0) {
-        previousCover = [self issueCover:index];
-    } else if (index < 5) {
-        previousCover = [self issueCover:index - 1];
-    } else {
-        previousCover = [self issueCover:index - 5];
-    }
-    
-    NSDictionary *viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
-    
-    // Vertical Constraint
-    NSString *visualVertical = index < 5 ? @"V:|-10-[currentCover]" : @"V:[previousCover]-24-[currentCover]";
-    NSArray *constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:visualVertical options:0 metrics:nil views:viewsDictionary];
-    
-    if (index > 5) { // Improve this
-        previousCover = [self issueCover:index - 1];
-        viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
-    }
-
-    // Horizontal Constraint
-    NSString *visualHorizontal = index == 0 || index % 5 == 0 ? @"H:|-20-[currentCover]" : @"H:[previousCover]-25-[currentCover]";
-    NSArray *constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:visualHorizontal options:0 metrics:nil views:viewsDictionary];
-    
-    // Size constraints
-    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:currentCover attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_scrollView attribute:NSLayoutAttributeWidth multiplier:0.0 constant:125];
-    
-    [_scrollView addConstraints:constraint_POS_V];
-    [_scrollView addConstraints:constraint_POS_H];
-    [_scrollView addConstraint:width];
 }
 
 - (IssueCover *)issueCover:(int)index {
@@ -169,12 +139,12 @@
 - (IBAction)showHideButtonPressed:(UIButton *)button {
     [UIView animateWithDuration:.4f animations:^{
         if (_journalDetailsView.frame.size.height == 0) {
-            _journalDetailsViewHeightContraint.constant += journalDetailsOriginalHeight;
+            _journalDetailsViewHeightContraint.constant += journalDetailsOriginalViewHeight;
             [button setTitle:@"Hide" forState:UIControlStateNormal];
             _journalDetailsView.alpha = 1;
 
         } else {
-            _journalDetailsViewHeightContraint.constant -= journalDetailsOriginalHeight;
+            _journalDetailsViewHeightContraint.constant -= journalDetailsOriginalViewHeight;
             [button setTitle:@"Show" forState:UIControlStateNormal];
             _journalDetailsView.alpha = 0;
         }
@@ -288,4 +258,60 @@
     _scrollView.hidden = NO;
 }
 
+#pragma mark - Constraints
+- (void)setIssueCoverConstraints:(int)index {
+    IssueCover *currentCover = [self issueCover:index];
+    IssueCover *previousCover;
+    if (index == 0) {
+        previousCover = [self issueCover:index];
+    } else if (index < 5) {
+        previousCover = [self issueCover:index - 1];
+    } else {
+        previousCover = [self issueCover:index - 5];
+    }
+    
+    NSDictionary *viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
+    
+    // Vertical Constraint
+    NSString *visualVertical = index < 5 ? @"V:|-10-[currentCover]" : @"V:[previousCover]-24-[currentCover]";
+    NSArray *constraint_POS_V = [NSLayoutConstraint constraintsWithVisualFormat:visualVertical options:0 metrics:nil views:viewsDictionary];
+    
+    if (index > 5) { // Improve this
+        previousCover = [self issueCover:index - 1];
+        viewsDictionary = index == 0 ? NSDictionaryOfVariableBindings(currentCover) : NSDictionaryOfVariableBindings(previousCover, currentCover);
+    }
+    
+    // Horizontal Constraint
+    NSString *visualHorizontal = index == 0 || index % 5 == 0 ? @"H:|-20-[currentCover]" : @"H:[previousCover]-25-[currentCover]";
+    NSArray *constraint_POS_H = [NSLayoutConstraint constraintsWithVisualFormat:visualHorizontal options:0 metrics:nil views:viewsDictionary];
+    
+    // Size constraints
+    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:currentCover attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_scrollView attribute:NSLayoutAttributeWidth multiplier:0.0 constant:125];
+    
+    [_scrollView addConstraints:constraint_POS_V];
+    [_scrollView addConstraints:constraint_POS_H];
+    [_scrollView addConstraint:width];
+}
+
+- (void)loadWebview:(UIWebView *)webview with:(NSString *)string type:(NSString *)type {
+    int i;
+    NSString *tmp, *editorText = @"";;
+    if ([type isEqualToString:@"editor"]) {
+        i = 12;
+        tmp = @"editor";
+        editorText = @"Editor(s):";
+    } else {
+        i = 13;
+        tmp = @"description";
+    }
+    
+    NSString *html = [NSString stringWithFormat:@"<html><body style='font-family:Helvetica Neue; font-size:%ipx; color:#555'>%@ %@</body><html>", i, editorText, string];
+    NSString *docsFolder = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *filename = [docsFolder stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.html", tmp]];
+
+    NSError *error;
+    [html writeToFile:filename atomically:NO encoding:NSUTF8StringEncoding error:&error];
+    [webview loadHTMLString:html baseURL:nil];
+
+}
 @end
