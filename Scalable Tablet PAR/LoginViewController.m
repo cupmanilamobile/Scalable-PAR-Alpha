@@ -39,7 +39,6 @@ static NSString * const kClientId = @"836816363012-g6f7embp8j6hgppb4gg20j62vp2f5
     
     [self.signInButton setStyle:kGPPSignInButtonStyleIconOnly];
     [self.signInButton setColorScheme:kGPPSignInButtonColorSchemeDark];
-//    self.signInButton.imageView.
 }
 
 - (void)didReceiveMemoryWarning {

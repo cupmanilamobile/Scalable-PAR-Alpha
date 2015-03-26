@@ -1,0 +1,160 @@
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0" xml:lang="en">
+   <front>
+      <journal-meta>
+         <journal-id journal-id-type="publisher-id">PAR</journal-id>
+         <journal-title-group>
+            <journal-title xml:lang="en">Parasitology</journal-title>
+            <abbrev-journal-title abbrev-type="publisher">Parasitology</abbrev-journal-title>
+         </journal-title-group>
+         <issn pub-type="ppub">0031-1820</issn>
+         <issn pub-type="epub">1469-8161</issn>
+         <publisher>
+            <publisher-name>Cambridge University Press</publisher-name>
+            <publisher-loc>Cambridge, UK</publisher-loc>
+         </publisher>
+      </journal-meta>
+      <article-meta>
+         <article-id pub-id-type="doi">10.1017/S0031182014001565</article-id>
+         <article-id pub-id-type="pii">S0031182014001565</article-id>
+         <article-id pub-id-type="publisher-id">00156</article-id>
+         <title-group>
+            <article-title>Characterization of a novel spore wall protein NbSWP16 with proline-rich tandem repeats from <italic>Nosema bombycis</italic> (microsporidia)</article-title>
+            <alt-title alt-title-type="left-running">Ying Wang and others</alt-title>
+            <alt-title alt-title-type="right-running">Characterization of a novel spore wall protein</alt-title>
+         </title-group>
+         <contrib-group content-type="authors">
+            <contrib>
+               <name name-style="western">
+                  <surname>WANG</surname>
+                  <given-names>YING</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>DANG</surname>
+                  <given-names>XIAOQUN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+               <xref ref-type="aff" rid="aff2">2</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>MA</surname>
+                  <given-names>QIANG</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>LIU</surname>
+                  <given-names>FANGYAN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>PAN</surname>
+                  <given-names>GUOQING</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>LI</surname>
+                  <given-names>TIAN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>ZHOU</surname>
+                  <given-names>ZEYANG</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+               <xref ref-type="aff" rid="aff2">2</xref>
+               <xref ref-type="corresp" rid="cor1">*</xref>
+            </contrib>
+         </contrib-group>
+         <aff id="aff1">
+            <label>
+               <sup>1</sup>
+            </label>
+            <addr-line>State Key Laboratory of Silkworm genome Biology</addr-line>, <institution>Southwest University</institution>, <addr-line>Chongqing 400716</addr-line>, <country>China</country>
+         </aff>
+         <aff id="aff2">
+            <label>
+               <sup>2</sup>
+            </label>
+            <addr-line>Laboratory of Animal Biology</addr-line>, <institution>Chongqing Normal University</institution>, <addr-line>Chongqing 400047</addr-line>, <country>China</country>
+         </aff>
+         <author-notes>
+            <corresp id="cor1">
+               <label>*</label>
+               <addr-line>Corresponding author. State Key Laboratory of Silkworm genome Biology</addr-line>, <institution>Southwest University</institution>, <addr-line>Chongqing 400716</addr-line>, <country>China</country>. E-mail: <email xlink:type="simple">zyzhou@swu.edu.cn</email>
+            </corresp>
+         </author-notes>
+         <pub-date pub-type="ppub">
+            <month>04</month>
+            <year>2015</year>
+         </pub-date>
+         <pub-date pub-type="epub">
+            <day>03</day>
+            <month>11</month>
+            <year>2014</year>
+         </pub-date>
+         <volume>142</volume>
+         <issue seq="4">4</issue>
+         <fpage>534</fpage>
+         <lpage>542</lpage>
+         <history>
+            <date date-type="received">
+               <day>28</day>
+               <month>03</month>
+               <year>2014</year>
+            </date>
+            <date date-type="rev-recd">
+               <day>02</day>
+               <month>08</month>
+               <year>2014</year>
+            </date>
+            <date date-type="accepted">
+               <day>27</day>
+               <month>08</month>
+               <year>2014</year>
+            </date>
+         </history>
+         <permissions>
+            <copyright-statement>Copyright © Cambridge University Press 2014 </copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>Cambridge University Press</copyright-holder>
+         </permissions>
+         <abstract abstract-type="normal">
+            <title>SUMMARY</title>
+            <p>
+               <italic>Nosema bombycis</italic>, a pathogen of silkworm pebrine, is an obligate unicellular eukaryotic parasite. It is reported that the spore wall proteins have essential functions in the adherence and infection process of microsporidia. To date, the information related to spore wall proteins from microsporidia is still limited. Here, a 44 kDa spore wall protein NbSWP16 was characterized in <italic>N. bombycis.</italic> In NbSWP16, a 25 amino acids signal peptide and 3 heparin binding motifs were predicted. Interestingly, a region that contains 3 proline-rich tandem repeats lacking homology to any known protein was also present in this protein. The immunofluorescence analysis (IFA) demonstrated that distinct fluorescent signals were detected both on the surface of mature spores and the germinated spore coats. Immunolocation by electron microscopy revealed that NbSWP16 localized on the exospore regions. Finally, spore adherence analysis indicated that spore adherence to host cell was decreased more than 20% by anti-NbSWP16 blocking compared with the negative control <italic>in vitro</italic>. In contrast with anti-NbSWP16, no remarkable decrement inhibition was detected when antibodies of NbSWP16 and NbSWP5 were used simultaneously. Collectively, these results suggest that NbSWP16 is a new exospore protein and probably be involved in spore adherence of <italic>N. bombycis</italic>.</p>
+         </abstract>
+         <kwd-group>
+            <title>Key words</title>
+            <kwd>spore wall protein</kwd>
+            <kwd>NbSWP16</kwd>
+            <kwd>tandem repeat</kwd>
+            <kwd>
+               <italic>Nosema bombycis</italic>
+            </kwd>
+         </kwd-group>
+         <counts>
+            <fig-count count="8"/>
+            <table-count count="2"/>
+            <ref-count count="27"/>
+            <page-count count="9"/>
+         </counts>
+         <custom-meta-group>
+            <custom-meta>
+               <meta-name>pdf</meta-name>
+               <meta-value>S0031182014001565a.pdf</meta-value>
+            </custom-meta>
+         </custom-meta-group>
+      </article-meta>
+   </front>
+</article>

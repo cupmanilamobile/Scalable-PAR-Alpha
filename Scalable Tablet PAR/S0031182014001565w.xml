@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0" xml:lang="en">
+   <front>
+      <journal-meta>
+         <journal-id journal-id-type="publisher-id">PAR</journal-id>
+         <journal-title-group>
+            <journal-title xml:lang="en">Parasitology</journal-title>
+            <abbrev-journal-title abbrev-type="publisher">Parasitology</abbrev-journal-title>
+         </journal-title-group>
+         <issn pub-type="ppub">0031-1820</issn>
+         <issn pub-type="epub">1469-8161</issn>
+         <publisher>
+            <publisher-name>Cambridge University Press</publisher-name>
+            <publisher-loc>Cambridge, UK</publisher-loc>
+         </publisher>
+      </journal-meta>
+      <article-meta>
+         <article-id pub-id-type="doi">10.1017/S0031182014001565</article-id>
+         <article-id pub-id-type="pii">S0031182014001565</article-id>
+         <article-id pub-id-type="publisher-id">00156</article-id>
+         <title-group>
+            <article-title>Characterization of a novel spore wall protein NbSWP16 with proline-rich tandem repeats from <italic>Nosema bombycis</italic> (microsporidia)</article-title>
+            <alt-title alt-title-type="left-running">Ying Wang and others</alt-title>
+            <alt-title alt-title-type="right-running">Characterization of a novel spore wall protein</alt-title>
+         </title-group>
+         <contrib-group content-type="authors">
+            <contrib>
+               <name name-style="western">
+                  <surname>WANG</surname>
+                  <given-names>YING</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>DANG</surname>
+                  <given-names>XIAOQUN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+               <xref ref-type="aff" rid="aff2">2</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>MA</surname>
+                  <given-names>QIANG</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>LIU</surname>
+                  <given-names>FANGYAN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>PAN</surname>
+                  <given-names>GUOQING</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>LI</surname>
+                  <given-names>TIAN</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+            </contrib>
+            <contrib>
+               <name name-style="western">
+                  <surname>ZHOU</surname>
+                  <given-names>ZEYANG</given-names>
+               </name>
+               <xref ref-type="aff" rid="aff1">1</xref>
+               <xref ref-type="aff" rid="aff2">2</xref>
+               <xref ref-type="corresp" rid="cor1">*</xref>
+            </contrib>
+         </contrib-group>
+         <aff id="aff1">
+            <label>
+               <sup>1</sup>
+            </label>
+            <addr-line>State Key Laboratory of Silkworm genome Biology</addr-line>, <institution>Southwest University</institution>, <addr-line>Chongqing 400716</addr-line>, <country>China</country>
+         </aff>
+         <aff id="aff2">
+            <label>
+               <sup>2</sup>
+            </label>
+            <addr-line>Laboratory of Animal Biology</addr-line>, <institution>Chongqing Normal University</institution>, <addr-line>Chongqing 400047</addr-line>, <country>China</country>
+         </aff>
+         <author-notes>
+            <corresp id="cor1">
+               <label>*</label>
+               <addr-line>Corresponding author. State Key Laboratory of Silkworm genome Biology</addr-line>, <institution>Southwest University</institution>, <addr-line>Chongqing 400716</addr-line>, <country>China</country>. E-mail: <email xlink:type="simple">zyzhou@swu.edu.cn</email>
+            </corresp>
+         </author-notes>
+         <pub-date pub-type="ppub">
+            <month>04</month>
+            <year>2015</year>
+         </pub-date>
+         <pub-date pub-type="epub">
+            <day>03</day>
+            <month>11</month>
+            <year>2014</year>
+         </pub-date>
+         <volume>142</volume>
+         <issue seq="4">4</issue>
+         <fpage>534</fpage>
+         <lpage>542</lpage>
+         <history>
+            <date date-type="received">
+               <day>28</day>
+               <month>03</month>
+               <year>2014</year>
+            </date>
+            <date date-type="rev-recd">
+               <day>02</day>
+               <month>08</month>
+               <year>2014</year>
+            </date>
+            <date date-type="accepted">
+               <day>27</day>
+               <month>08</month>
+               <year>2014</year>
+            </date>
+         </history>
+         <permissions>
+            <copyright-statement>Copyright © Cambridge University Press 2014 </copyright-statement>
+            <copyright-year>2014</copyright-year>
+            <copyright-holder>Cambridge University Press</copyright-holder>
+         </permissions>
+         <abstract abstract-type="normal">
+            <title>SUMMARY</title>
+            <p>
+               <italic>Nosema bombycis</italic>, a pathogen of silkworm pebrine, is an obligate unicellular eukaryotic parasite. It is reported that the spore wall proteins have essential functions in the adherence and infection process of microsporidia. To date, the information related to spore wall proteins from microsporidia is still limited. Here, a 44 kDa spore wall protein NbSWP16 was characterized in <italic>N. bombycis.</italic> In NbSWP16, a 25 amino acids signal peptide and 3 heparin binding motifs were predicted. Interestingly, a region that contains 3 proline-rich tandem repeats lacking homology to any known protein was also present in this protein. The immunofluorescence analysis (IFA) demonstrated that distinct fluorescent signals were detected both on the surface of mature spores and the germinated spore coats. Immunolocation by electron microscopy revealed that NbSWP16 localized on the exospore regions. Finally, spore adherence analysis indicated that spore adherence to host cell was decreased more than 20% by anti-NbSWP16 blocking compared with the negative control <italic>in vitro</italic>. In contrast with anti-NbSWP16, no remarkable decrement inhibition was detected when antibodies of NbSWP16 and NbSWP5 were used simultaneously. Collectively, these results suggest that NbSWP16 is a new exospore protein and probably be involved in spore adherence of <italic>N. bombycis</italic>.</p>
+         </abstract>
+         <kwd-group>
+            <title>Key words</title>
+            <kwd>spore wall protein</kwd>
+            <kwd>NbSWP16</kwd>
+            <kwd>tandem repeat</kwd>
+            <kwd>
+               <italic>Nosema bombycis</italic>
+            </kwd>
+         </kwd-group>
+         <counts>
+            <fig-count count="8"/>
+            <table-count count="2"/>
+            <ref-count count="27"/>
+            <page-count count="9"/>
+         </counts>
+         <custom-meta-group>
+            <custom-meta>
+               <meta-name>pdf</meta-name>
+               <meta-value>S0031182014001565a.pdf</meta-value>
+            </custom-meta>
+         </custom-meta-group>
+      </article-meta>
+   </front>
+   <body>
+      <sec id="sec1" sec-type="intro">
+         <title>INTRODUCTION</title>
+         <p>Microsporidia are obligate intracellular unicellular organisms, which are kinds of spore-forming fungal pathogens. Microsporidia can infect a wide variety of animals ranging from vertebrate to invertebrate species, including human beings (Didier <italic>et al</italic>. <xref ref-type="bibr" rid="ref4">1998</xref>). To date, more than 1300 species are identified. Of these, at least 13 species have been described as pathogens in humans, especially the AIDS patients (Didier <italic>et al</italic>. <xref ref-type="bibr" rid="ref4">1998</xref>; Corradi <italic>et al.</italic> 
+            <xref ref-type="bibr" rid="ref3">2008</xref>). Also, more than 150 species are reported using insect as host (Becnel and Andreadis, <xref ref-type="bibr" rid="ref1">1999</xref>), such as <italic>Nosema bombycis</italic>, which is the first identified microsporidia infecting <italic>Bombyx mori</italic> (Nageli, <xref ref-type="bibr" rid="ref14">1857</xref>; Becnel and Andreadis, <xref ref-type="bibr" rid="ref1">1999</xref>). In 2013, the genome of <italic>N. bombycis</italic> was released (Pan <italic>et al</italic>. <xref ref-type="bibr" rid="ref14a">2013</xref>). There is no doubt that it will facilitate strongly to unveil the mystery underlying this parasite, such as the process of infection and invasion.</p>
+         <p>Now, it is reported that the spore wall proteins play key roles in the host–pathogens interaction process, including the pathogen infection, invasion and other pathogenic process (Weidner <italic>et al</italic>. <xref ref-type="bibr" rid="ref23">1992</xref>; Weidner and Halonen, <xref ref-type="bibr" rid="ref22">1993</xref>). Some researchers discovered that spore wall proteins adhere to host cell using a mechanism involving host cell surface glycosaminoglycan (GAGs) (Hayman <italic>et al</italic>. <xref ref-type="bibr" rid="ref9">2005</xref>; Southern <italic>et al</italic>. <xref ref-type="bibr" rid="ref19">2006</xref>, <xref ref-type="bibr" rid="ref20">2007</xref>). In <italic>Encephalitozoon cuniculi</italic>, 2 exospores SWP1, SWP2, 1 endospore SWP3, and a protein named EcEnP1 had been identified. It was indicated that EcEnP1 could function as a potential spore adherence ligand and be involved in host cell adherence and infection (Bohne <italic>et al</italic>. <xref ref-type="bibr" rid="ref2">2000</xref>; Peuvel-Fanget <italic>et al</italic>. <xref ref-type="bibr" rid="ref15">2006</xref>; Xu <italic>et al</italic>. <xref ref-type="bibr" rid="ref25">2006</xref>; Southern <italic>et al</italic>. <xref ref-type="bibr" rid="ref20">2007</xref>). In 2001, 2 exospore proteins, SWP1 and SWP2, were described in <italic>Encephalitozoon intestinalis</italic> (Hayman <italic>et al</italic>. <xref ref-type="bibr" rid="ref8">2001</xref>). Recently, 14 hypothetical spore wall proteins were identified using proteomic-based approach in <italic>N. bombycis</italic> (Wu <italic>et al</italic>. <xref ref-type="bibr" rid="ref24">2008</xref>). To date, SWP1, SWP2 and SWP26 were expressed mainly on the endospore, other 2 proteins SWP3 and SWP5 were expressed on exospores in <italic>N. bombycis</italic> (Wu <italic>et al</italic>. <xref ref-type="bibr" rid="ref24">2008</xref>; Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13a">2009</xref>, <xref ref-type="bibr" rid="ref13b">2012</xref>). In function analysis, SWP26 was proved to be associated with the host cell adherence via the heparin binding motif (HBMs) (Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13a">2009</xref>). SWP5 can interact with the polar tube proteins PTP2 and PTP3 and mediate the infection of <italic>N. bombycis</italic> (Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13b">2012</xref>) or host cell invasion (Cai <italic>et al</italic>. <xref ref-type="bibr" rid="ref2a">2011</xref>). In addition, SWP26, SWP1, SWP3 and SWP12 were proved to be able of binding to deproteinated chitin spore coat of <italic>N. bombycis</italic> (Yang <italic>et al</italic>. <xref ref-type="bibr" rid="ref26">2014</xref>; Chen <italic>et al</italic>. <xref ref-type="bibr" rid="ref2b">2013</xref>). However, among these reported proteins, only 2 spore wall proteins having tandem repeats were reported, including SWP1 of <italic>E. cuniculi</italic> and SWP2 of <italic>E. intestinalis</italic>. In these 2 proteins, SWP1 of <italic>E. cuniculi</italic> has 5 glycine- and serine-rich repeats at C-terminal and SWP2 of <italic>E. intestinalis</italic> has 50 repeats with 12-or 15-amino acids length at C-terminal , both of them having no proline in the tandem repeats (Bohne <italic>et al</italic>. <xref ref-type="bibr" rid="ref2">2000</xref>; Hayman <italic>et al</italic>. <xref ref-type="bibr" rid="ref8">2001</xref>). In this paper, a new spore wall protein NbSWP16 with 3 proline-rich tandem repeats was identified in <italic>N. bombycis</italic>.</p>
+      </sec>
+      <sec id="sec2" sec-type="materialsandmethods">
+         <title>MATERIALS AND METHODS</title>
+         <sec id="sec2-1">
+            <title>Microsporidian spore production and purification</title>
+            <p>
+               <italic>Nosema bombycis</italic> CQ1, isolated from infected silkworms in Chongqing, China, was conserved in the China Veterinary Culture Collection Center (CVCC No.102059). The production and purification procedure of the spores was as described previously (Wu <italic>et al</italic>. <xref ref-type="bibr" rid="ref24">2008</xref>).</p>
+         </sec>
+         <sec id="sec2-2">
+            <title>Sequence analysis</title>
+            <p>To date, 15 spore wall proteins have been described in <italic>N. bombycis</italic> (Appendix, Table A1). Here, by scanning the genome of <italic>N. bombycis</italic>, a protein (GenBank NO: EOB14338) annotated as spore wall protein and anchoring dick complex was found, we named it as NbHSWP16. The signal peptide of protein sequence was predicted using online tools (<uri xlink:href="http://www.cbs.dtu.dk/services/SignalP" xlink:type="simple">http://www.cbs.dtu.dk/services/SignalP</uri>) (Julenius <italic>et al</italic>. <xref ref-type="bibr" rid="ref11">2005</xref>). Protein motif prediction was carried out using SMART proteomic tools (<uri xlink:href="http://smart.embl-heidelberg.de" xlink:type="simple">http://smart.embl-heidelberg.de</uri>). The glycosylation sites (<uri xlink:href="http://www.cbs.dtu.dk/services/NetNGlyc" xlink:type="simple">http://www.cbs.dtu.dk/services/NetNGlyc</uri>) and phosphorylation sites (<uri xlink:href="http://www.cbs.dtu.dk/services/NetPhos" xlink:type="simple">http://www.cbs.dtu.dk/services/NetPhos</uri>) were predicted. Glycosylphosphatidylinositol (GPI) anchor motif was predicted using the online program big-PI predictor (<uri xlink:href="http://mendel.imp.ac.at/sat/gpi/gpi_server.html" xlink:type="simple">http://mendel.imp.ac.at/sat/gpi/gpi_server.html</uri>). Subcellular localization predication was performed using the PSORT server (<uri xlink:href="http://psort.hgc.jp/" xlink:type="simple">http://psort.hgc.jp/</uri>). To find the homology proteins of NbHSWP16, BLASTP analysis was performed on the local database. Amino acid sequence alignments were generated using the ClustalX program. Multiple sequence alignment of NbHSWP16 and its homologous proteins were analysed phylogenetically using MEGA5 software to prepare a phylogenetic tree. The tree was constructed using the neighbour-joining method.</p>
+         </sec>
+         <sec id="sec2-3">
+            <title>Analysis of gene transcription pattern</title>
+            <p>RT-PCR was performed to analyse the transcription of gene <italic>Nbhswp16</italic>. The midguts of infected silkworms were collected at 1–8 days and stored at −80°C. The methods used to extract the total RNA were as described previously (Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13b">2012</xref>). The primers used to amplify the <italic>Nbhswp16</italic> gene are as followed: forward primer: 5′-TTTAGCACCAATCCTCAACC-3′ and reverse primer: 5-TTGCCATAATAATGAAGGAG-3′. The <italic>tubulin-β</italic> gene used as an internal control was amplified using the primers: forward primer: 5′-TGGACGCCATTAGACAAG-3′ and reverse primer: 5′-GGCTCGAGTTCATAACATCTAACC-3′. PCR conditions of <italic>tubulin-β</italic> and <italic>Nbhswp16</italic> were as follows: 94°C for 4 min, 25 cycles of 94°C for 45 s, 55°C for 45 s and 72°C for 1 min.</p>
+         </sec>
+         <sec id="sec2-4">
+            <title>Expression, purification and polyclonal antibody production</title>
+            <p>The NbHSWP16 protein was expressed as a truncated form without the signal peptide in the N-terminal. Based on the genomic DNA sequence, polymerase chain reaction primers were designed as follows: forward primer: 5′-cgcggatccTCTGTGGAAATAAGAAAAGGC-3′ and reverse primer: 5′-gcgtcgacGTCAAAGGAAACACCATAAA-3′. The forward primer and the reverse primer contained a <italic>BamHI</italic> and <italic>SalI</italic> restriction site, respectively. When the PCR finished, a genomic DNA fragment that coded the amino acid region of 26–383 of NbHSWP16 protein was obtained. Then, the amplified fragment was cloned into the pMD19T vector (Invitrogen). After the DNA fragment was verified by sequence, it was cloned into prokaryotic expression vectors pET30a. The resulting recombinant plasmids were introduced into the <italic>Escherichia coli</italic> BL21 strain. The recombinant NbHSWP16 (rNbHSWP16) was induced at 37°C for 6 h in the presence of 0·4 m<sc>m</sc> IPTG. The expressed fusion protein was purified with a Ni-NTA Superflow Cartridge (Qiagen). Four mice were immunized with rNbHSWP16 mixed with Freund's adjuvant (1:1; sigma) and one more mice was injected PBS using as negative control. One week after the 4th injection, the mice were sacrificed and their sera were collected and stored at −20°C.</p>
+         </sec>
+         <sec id="sec2-5">
+            <title>Western-blotting analysis</title>
+            <p>The spore protein of mature spores was extracted. Briefly, spores (1×10<sup>9</sup> spores mL<sup>−1</sup>) were disrupted with 0·4 g acid-washed glass beads in buffer PBS pH 7·4 containing PMSF for 5 min. After centrifugation at 12 000 r m<sup>−1</sup> for 10 min at 4°C, the supernatant was removed and the pellet was treated with 2·5% SDS, 0·1 <sc>m</sc> DTT and 2-Mercaptoethanol for 4 h at 4°C, then centrifuged and captured supernatant as spore protein sample. For immunoblotting analysis, about 10 <italic>μ</italic>g protein sample was subjected to SDS-PAGE and transferred to a PVDF membrane (Millipore). After blocked with 5% (w/v) skim milk overnight at 4°C, the membrane was incubated with anti-NbHSWP16 or negative sera (1:1000) for 1 h at 37°C, then membranes were reacted with horseradish peroxidase-labelled goat anti-mouse IgG (Sigma). Following several washes, the membranes were developed with ECL Western blot detection kit (Thermo).</p>
+         </sec>
+         <sec id="sec2-6">
+            <title>Immunofluorescence analysis</title>
+            <p>The purified mature spores were treated with 1% tritonX-100 for 30 min, then washed 3 times with PBS pH 7·4 and fixed with 4% paraformaldehyde at room temperature for 30 min. After rinsed 3 times with PBS, the fixed spores were blocked and incubated with polyclonal antibody or a negative serum for 60 min at 37°C. After 3 PBS washing, the spores were treated with FITC-conjugated goat anti-mouse IgG (1:100, Sigma). DNA was stained with 5 <italic>μ</italic>g mL<sup>−1</sup> DAPI for 10 min at room temperature. After several rinsed, spores were examined using OLYMPUS BX50 fluorescence microscope. The germinated spore coats were obtained by inducing the purified mature spores with 0·1 <sc>m</sc> K<sub>2</sub>CO<sub>3</sub> for 2 h at 28°C <italic>in vitro</italic> and then the following treatment method used was similar as above.</p>
+         </sec>
+         <sec id="sec2-7">
+            <title>Immunoelectron microscopy (IEM) analysis</title>
+            <p>Purified spores were fixed with 4% paraformaldehyde and 0·1% glutaraldehyde in 0·1 <sc>m</sc> sodium cacodylate buffer, pH 7·2, rinsed with PBS, dehydrated with graded ethanol and sequentially permeabilized in K4M at −20°C. The samples were then embedded and photopolymerized in K4M resin. Ultrathin sections were placed on nickel grids and immune-staining was performed. After blocked with standard blocking solution, the grids were incubated with anti-NbHSWP16 serum (1:20) or negative serum as primary antibody for 1 h at room temperature. Followed by incubation with gold conjugated anti-mouse IgG (1:100, Sigma), grids were rinsed with sterile water, dried, examined and photographed with an HITACHI H-7500 transmission electron microscope.</p>
+         </sec>
+         <sec id="sec2-8">
+            <title>Spore adherence analysis</title>
+            <p>To analyse the role of NbSWP16 in spore adherence, antibody blocking was performed. Briefly, BmE-SWU1 cells that were used as host cells were seeded on a 24-well plate and allowed to grow for 16 h at 28°C. After the culture was removed, spores incubated with anti-NbSWP16 sera (dilution 1:50) as well as the negative sera were added onto the monolayer and incubated for 2 h at 28°C. After removing the unbounded spores and several washing, the average numbers of bounded spores per host cell were counted in at least 20 fields for each sample. Meanwhile, the anti-NbSWP5 was added together with anti-NbSWP16 to determine whether the antibodies have synergistic effect. The significance of the difference between the control and experimental assays was measured using <italic>t</italic>-test. Experiments were repeated at least 3 times.</p>
+         </sec>
+         <sec id="sec2-9">
+            <title>Ethics statement</title>
+            <p>The approval for animal experiments was obtained from The Laboratory Animal Welfare and Ethics Committee of The Third Medical University, Chongqing, China. The agreement number is SYXK-PLA-20120031.</p>
+         </sec>
+      </sec>
+      <sec id="sec3" sec-type="results">
+         <title>RESULTS</title>
+         <sec id="sec3-1">
+            <title>Characterization of the gene coding for the hypothetical spore wall protein NbHSWP16</title>
+            <p>The gene <italic>Nbhswp16</italic> is 1152 bp and encodes a 383 amino acid protein which has a calculated molecular mass of 44 kDa and a theoretical pI of 9·17. One copy gene (GenBank accession number: EOB12060) having 99% identity with <italic>Nbhswp16</italic> was also found in the genome of <italic>N. bombycis</italic>. As shown in <xref ref-type="fig" rid="fig01">Fig. 1A</xref>, a 25-amino acid signal peptide was predicted at the N-terminal NbHSWP16, but no GPI anchor sequence signals or transmembrane domain was predicted. According to NetNglyc and NetOglyc analysis, NbHSWP16 contained 2 potential N-glycosylation sites. More than 30 phosphorylation sites, most of which occurred on the residue serine, were predicted. It is worth to notice that there are 3 predicted HBMs at the C-terminal NbHSWP16. More interestingly, a region consisting of 3 proline-rich tandem repeats with no homology to any known protein was also predicted in NbHSWP16. In DNA sequence, not only it was noticed that these tandem sequences are conserved, but also single nucleotide polymorphism (SNP) sites were found in partial synonymous codes (<xref ref-type="fig" rid="fig01">Fig. 1B</xref>). By BLASTP analysis, several homologous proteins of NbHSWP16 were found in several microsporidia, including <italic>Nosema apis, Nosema antheraeae, Nosema ceranae, E. cuniculi, E. intestinalis, Encephalitozoon hellem, Encephalitozoon romaleae</italic> and <italic>Antonospora locustae</italic>, but no homologous was found in <italic>Encephalitozoon bieneusi</italic>. These proteins share 26–34% identity with NbHSWP16. The phylogenetic analysis indicated that NbHSWP16 were conserved comparatively in the evolution process (<xref ref-type="fig" rid="fig02">Fig. 2</xref>).
+<fig id="fig01" position="float">
+                  <label>Fig. 1.</label>
+                  <caption>
+                     <p>The sequence character of NbHSWP16. (A) Amino acid sequence alignment of HSWP16 from several microsporidia. The identical amino acids are shaded. The signal peptide is indicated by a thin underline. The conserved cysteines are indicated by arrows. The predicted HBMs and the ‘RGD/E’ motif are boxed in thin and bold rectangle, respectively. The 3 proline-rich tandem repeats are bracketed and numbered as R1, R2 and R3; (B) the DNA sequence alignment of 3 tandem repeats in gene <italic>Nbhswp16.</italic> The SNP sites are indicated by arrow heads. The amino acids are shown as single letters.</p>
+                  </caption>
+                  <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_fig1" xlink:type="simple"/>
+               </fig>
+               <fig id="fig02" position="float">
+                  <label>Fig. 2.</label>
+                  <caption>
+                     <p>The phylogenetic analysis of NbHSWP16 in microsporidia. Neighbour-joining tree was constructed with the MEGA5 software. The GenBank accession numbers of the protein sequences used are as following: <italic>N. bombycis</italic>: EOB14338, <italic>N. apis</italic>: EQB62243, <italic>N. ceranae</italic>: EEQ82233, <italic>E. cuniculi</italic>: CAD24952, <italic>E. intestinalis</italic>: ABU24317, <italic>E. romaleae</italic>: AFN82405. The protein sequence of <italic>A. locustae</italic> is from database (<uri xlink:href="http://gmod.mbl.edu/cgi-bin/site/antonospora01" xlink:type="simple">http://gmod.mbl.edu/cgi-bin/site/antonospora01</uri>) and <italic>N. antheraeae</italic> is from database (<uri xlink:href="http://silkpathdb.swu.edu.cn/silkpathdb/" xlink:type="simple">http://silkpathdb.swu.edu.cn/silkpathdb/</uri>).</p>
+                  </caption>
+                  <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_fig2" xlink:type="simple"/>
+               </fig>
+            </p>
+         </sec>
+         <sec id="sec3-2">
+            <title>Transcriptional analysis of <italic>Nbhswp16</italic> gene</title>
+            <p>To investigate the transcriptional pattern of <italic>Nbhswp16</italic> gene, RT-PCR was performed using RNA from the midguts of infected silkworms at 1–8 days post-infection. As shown in <xref ref-type="fig" rid="fig03">Fig. 3</xref>, <italic>Nbhswp16</italic> started to transcribe at the third day post-infection and the transcriptional level is with a slow increment at 3–8 days post-infection. <italic>Nbhswp16</italic> was not detected during the first 2 days post-infection, the reason may be that the template using for RT-PCR is not enough.
+<fig id="fig03" position="float">
+                  <label>Fig. 3.</label>
+                  <caption>
+                     <p>Analysis of transcriptional pattern of <italic>Nbhswp16</italic> gene. Transcriptional analysis was performed by RT-PCR using the RNA from the midguts of infected silkworms at 1–8 days post-infection. The <italic>tubulin-β</italic> gene was used as an internal control.</p>
+                  </caption>
+                  <graphic mime-subtype="jpeg" mimetype="image" position="float" xlink:href="S0031182014001565_fig3" xlink:type="simple"/>
+               </fig>
+            </p>
+         </sec>
+         <sec id="sec3-3">
+            <title>Expression of rNbHSWP16 and western-blotting</title>
+            <p>To study NbHSWP16 in <italic>N. bombycis</italic>, a recombinant NbHSWP16 without the signal peptide was expressed in <italic>E. coli</italic> BL21 strain and purified by Ni-NTA Superflow Cartridge (Qiagen) (Appendix, Fig. A1). A polyclonal antibody against rNbHSWP16 was generated by immunizing mice with the purified fusion protein and used in immunoblotting analysis. A special band about 44 kDa consistent with the calculated molecular weight of NbHSWP16 was detected using anti-NbHSWP16 as primary antibody and no signals was detected in the negative control (<xref ref-type="fig" rid="fig04">Fig. 4</xref>).
+<fig id="fig04" position="float">
+                  <label>Fig. 4.</label>
+                  <caption>
+                     <p>Western blot analysis of <italic>N. bombycis</italic> NbHSWP16. (A) NbHSWP16 was detected from <italic>N. bombycis</italic> total protein preparation using mouse anti-NbHSWP16; (B) negative control.</p>
+                  </caption>
+                  <graphic mime-subtype="jpeg" mimetype="image" position="float" xlink:href="S0031182014001565_fig4" xlink:type="simple"/>
+               </fig>
+            </p>
+         </sec>
+         <sec id="sec3-4">
+            <title>Localization of NbHSWP16 in N. bombycis</title>
+            <p>In order to survey NbHSWP16 subcellular localization, IFA was performed. From the result of IFA, we noticed that fluorescence signals were detected on the surface of the mature spores as well as on the germinated spore coats (<xref ref-type="fig" rid="fig05">Fig. 5</xref>). To further determine the cellular location of NbHSWP16, IEM was employed. The results of IEM demonstrated that labelled gold particles were mainly distributed on the exospore regions of the mature spores. These results suggested that the NbHSWP16 is localized mainly on the exospore wall of the mature spore (<xref ref-type="fig" rid="fig06">Fig. 6</xref>). So, we renamed NbHSWP16 as NbSWP16.
+<fig id="fig05" position="float">
+                  <label>Fig. 5.</label>
+                  <caption>
+                     <p>Indirect immunofluorescence of NbHSWP16 in mature spore and germinated spore coats of <italic>N. bombycis</italic>. (A) NbHSWP16 was detected on the mature spores with anti-NbHswp16; (B) negative control; (C) NbHSWP16 was detected on the germinated spore coats with antibody against NbHSWP16. (D): negative control. Anti-NbHSWP16 was diluted at 1:100. FITC-conjugated goat anti-mouse IgG was diluted at 1:64. The scale bar represents 10 <italic>μ</italic>
+                        <sc>m</sc>.</p>
+                  </caption>
+                  <graphic mime-subtype="jpeg" mimetype="image" position="float" xlink:href="S0031182014001565_fig5" xlink:type="simple"/>
+               </fig>
+               <fig id="fig06" position="float">
+                  <label>Fig. 6.</label>
+                  <caption>
+                     <p>IEM of NbHSWP16 in mature <italic>N. bombycis</italic>. (A) Negative control; (B), (C), (D) spore labelled on the exospore region. Anti-NbSWP16 serum was used at 1:20 dilution. Secondary antibody was goat anti-mouse IgG conjugated with 10 nm colloidal gold particles (sigma). The labelled gold particles were marked with arrowheads. The scale bar represents 0·2 <italic>μ</italic>
+                        <sc>m</sc>. Ex, exospore; En, endospore.</p>
+                  </caption>
+                  <graphic mime-subtype="jpeg" mimetype="image" position="float" xlink:href="S0031182014001565_fig6" xlink:type="simple"/>
+               </fig>
+            </p>
+         </sec>
+         <sec id="sec3-5">
+            <title>Anti-NbSWP16 decrease the N. bombycis adherence to host cell</title>
+            <p>Based on the sequence analysis and subcellular localization of NbSWP16 above, we discovered that NbSWP16 had 3 protein–heparin protein interaction motifs (HBMs), but also can be localized on the exospore of mature spore. To dissect whether NbSWP16 protein is involved in spore adherence or not, spore adherence analysis was performed. The statistical result (Appendix, Table A2) showed that the rate of spore adherence to host cell was decreased more than 20% by anti-NbSWP16 blocking compared with the negative control <italic>in vitro</italic>. But in contrast with anti-NbSWP16 used alone, no remarkable decrement inhibition was detected when antibodies of NbSWP16 and NbSWP5 were used simultaneously (<xref ref-type="fig" rid="fig07">Fig. 7</xref>).
+<fig id="fig07" position="float">
+                  <label>Fig. 7.</label>
+                  <caption>
+                     <p>Antibody of NbSWP16 inhibiting spores adherence to host cell <italic>in vitro</italic>. The spore adherence analysis of NbSWP16 was performed used BmE-SWU1 as host cell. Antibodies of NbSWP16 and NbSWP5 as well as negative mouse sera were used at 1:50 dilution. Statistically significant difference is indicated with asterisk (<italic>P</italic>&lt;0·05). NC, negative control.</p>
+                  </caption>
+                  <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_fig7" xlink:type="simple"/>
+               </fig>
+            </p>
+         </sec>
+      </sec>
+      <sec id="sec4" sec-type="discussion">
+         <title>DISCUSSION</title>
+         <p>As an obligate unicellular eukaryotic parasite, one of the prominent features of microsporidia is that it could deposit a rigid spore wall on the surface. The spore wall is capable of protecting microsporidia against the environment stress (Shadduck and Polley, <xref ref-type="bibr" rid="ref16">1978</xref>). Now it is documented that the spore wall proteins of microsporidia may function in spore adherence and infection process (Weidner <italic>et al</italic>. <xref ref-type="bibr" rid="ref23">1992</xref>; Weidner and Halonen, <xref ref-type="bibr" rid="ref22">1993</xref>). However, although 10 years has passed since the publication of the first microsporidian genome of <italic>E. cuniculi</italic> (Katinka, <xref ref-type="bibr" rid="ref12">2001</xref>), the available information about the spore wall protein of microsporidia is still limited, especially the ones having tandem repeat.</p>
+         <p>At the present study, a new spore wall protein NbSWP16 was identified in <italic>N. bombycis</italic>. A 25-amino acid signal peptide was predicted at the N-terminal NbSWP16, but no transmembrane domain was predicted. It is proposed that this protein may be secreted. In the western-blotting analysis, NbSWP16 could only be detected in the protein sample obtained in the presence of high concentration of thiolreducing agents dithiothreitol and 2-mercaptoethanol, but not be detected in the protein sample prepared with PBS or SDS. This result indicated that disulfide bridges may exist in NbSWP16 and may be required to retain the stability of the spore wall.</p>
+         <p>To date, 13 proteins have been described having HBMs in microsporidia, including EcEnP1 in <italic>E. cuniculi</italic> (Southern <italic>et al</italic>. <xref ref-type="bibr" rid="ref20">2007</xref>), EiEnP1 in <italic>E. intestinalis</italic> (Southern <italic>et al</italic>. <xref ref-type="bibr" rid="ref20">2007</xref>), SWP2, SWP26, SWP3 and 8 other hypothetical spore wall proteins in <italic>N. bombycis</italic> (Wu <italic>et al</italic>. <xref ref-type="bibr" rid="ref24">2008</xref>; Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13a">2009</xref>). Among these proteins, EcEnP1 and SWP26 were proved to be involved in spore adherence process (Southern <italic>et al.</italic> 
+            <xref ref-type="bibr" rid="ref20">2007</xref>; Li <italic>et al</italic>. <xref ref-type="bibr" rid="ref13a">2009</xref>). In this paper, 3 HBMs were predicted in NbSWP16, it suggested the HBMs motifs may contribute to the spore adherence of NbSWP16. From the result of spore adherence analysis, we discovered that anti-NbSWP16 could decrease the spore adherence rate more than 20%. In addition, in contrast with anti-NbSWP16 used alone, no remarkable decrement inhibition was detected when antibodies of NbSWP16 and NbSWP5 were used simultaneously, indicating the anti-NbSWP16 combining anti-NbSWP5 may not have synergistic effect in inhibition. It is still a long way to clarify the molecular mechanism of spore adherence. Unfortunately, it is not success to obtain the soluble protein of NbSWP16. To confirm whether the HBMs is responsible for the spore adherence function of NbSWP16, further work is need.</p>
+         <p>A previous data survey using tandem repeats in protein sequence (TRIPS) revealed that proteins with tandem repeats are conspicuous in structural and cell surface proteins (Katti <italic>et al</italic>. <xref ref-type="bibr" rid="ref13">2000</xref>). Moreover, tandem repeats functioning in some species were described previously. In <italic>Listeria monocytogenes</italic>, an ActA protein containing 4 repeats, which are 11 amino acids in length and consist of 3 or 4 consecutive prolines, can contribute to the movement rate of this species (Smith <italic>et al</italic>. <xref ref-type="bibr" rid="ref18">1996</xref>). The <italic>Saccharomyces cerevisiae FlO1</italic> gene consisting of tandem repeated units encodes a cell-surface adhesin that mediates cell–cell and cell-surface adhesion and phenotypic tests illustrated that the intensity of the adhesion directly correlated with the length of the repeat (Verstrepen <italic>et al</italic>. <xref ref-type="bibr" rid="ref21">2005</xref>). Here, 3 proline-rich tandem repeats were found in NbSWP16 and the results of IFA and IEM proved that NbSWP16 is an exospore wall protein. It suggests that the tandem repeats existing in NbSWP16 might be responsible for the function to this protein. Besides, in DNA sequence, though the tandem repeats are conserved in gene <italic>nbswp16</italic>, 6 SNP sites were noticed in some synonymous codes (<xref ref-type="fig" rid="fig01">Fig. 1B</xref>). This may be associated with the evolution and adaptation of <italic>N. bombycis</italic>. Because some evidence previously mentioned that the variations in tandem repeats can influence organism's phenotypes and facilitate evolution and rapid adaptation (Gemayel <italic>et al</italic>. <xref ref-type="bibr" rid="ref6">2012</xref>).</p>
+         <p>In conclusion, a novel exospore protein NbSWP16 with 3 proline-rich tandem repeats was characterized in <italic>N. bombycis</italic>. Spore adherence analysis demonstrated NbSWP16 might contribute to the spore adherence <italic>in vitro</italic>. The works focusing on the function of NbSWP16 will be carried out in the future.</p>
+      </sec>
+   </body>
+   <back>
+      <ack id="ack">
+         <title>ACKNOWLEDGEMENTS</title>
+         <p>We are of pleasure to say thanks to those people who provided the means for us to access software free of charge used and cited in this article.</p>
+      </ack>
+      <notes id="nts1" notes-type="other">
+         <title>FINANCIAL SUPPORT</title>
+         <p>This work was supported by Key Project of Natural Science Foundation of China under grant no. 30930067; National Basic Research Program of China (973 Program) under grant no. 2012CB114604; Project of Natural Science Foundation of China under grant no. 31270138; Chongqing Natural Science Foundation of China under grant no. cstc2013jcyja0363; Natural Science Foundation of China (grant no. 31101770) and the Natural Science Foundation Project of CQ CSTC (grant no. cstc2011jjA1111).</p>
+      </notes>
+      <notes id="nts2" notes-type="supplementary-material">
+         <title>SUPPLEMENTARY MATERIAL</title>
+         <p>To view supplementary material for this article, please visit <uri xlink:href="http://dx.doi.org/10.1017/S0031182014001565" xlink:type="simple">http://dx.doi.org/10.1017/S0031182014001565</uri>.</p>
+      </notes>
+      <ref-list id="reflist1">
+         <title>REFERENCES</title>
+         <ref>
+            <mixed-citation id="ref1" publication-type="book">
+               <name name-style="western">
+                  <surname>Becnel</surname>
+                  <given-names>J.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Andreadis</surname>
+                  <given-names>T. G.</given-names>
+               </name> (<year>1999</year>). <chapter-title>Microsporidia in insects</chapter-title>. In <source>The Microsporidia and Microsporidiosis</source> (ed. <name name-style="western">
+                  <surname>Wittner</surname>
+                  <given-names>M.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Weiss</surname>
+                  <given-names>L. M.</given-names>
+               </name>), pp. <fpage>447</fpage>–<lpage>501</lpage>. <publisher-name>ASM Press</publisher-name>, <publisher-loc>Washington, DC, USA</publisher-loc>.<pub-id pub-id-type="doi">10.1128/9781555818227.ch14</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref2" publication-type="journal">
+               <name name-style="western">
+                  <surname>Bohne</surname>
+                  <given-names>W.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Ferguson</surname>
+                  <given-names>D. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Kohler</surname>
+                  <given-names>K.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Gross</surname>
+                  <given-names>U.</given-names>
+               </name> (<year>2000</year>). <article-title>Developmental expression of a tandemly repeated, glycine-and serine-rich spore wall protein in the microsporidian pathogen <italic>Encephalitozoon cuniculi</italic>
+               </article-title>. <source>Infection and Immunity</source> 
+               <volume>68</volume>, <fpage>2268</fpage>–<lpage>2275</lpage>.<pub-id pub-id-type="doi">10.1128/IAI.68.4.2268-2275.2000</pub-id><pub-id pub-id-type="pmid">10722629</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref2a" publication-type="journal">
+               <name name-style="western">
+                  <surname>Cai</surname>
+                  <given-names>S. F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Lu</surname>
+                  <given-names>X. M.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Qiu</surname>
+                  <given-names>H. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>M. Q.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Feng</surname>
+                  <given-names>Z. Z.</given-names>
+               </name> (<year>2011</year>). <article-title>Identification of a <italic>Nosema bombycis</italic> (Microsporidia) spore wall protein corresponding to spore phagocytosis</article-title>. <source>Parasitology</source> 
+               <volume>138</volume>, <fpage>1102</fpage>–<lpage>1109</lpage>.<pub-id pub-id-type="doi">10.1017/S0031182011000801</pub-id><pub-id pub-id-type="pmid">21756420</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref2b" publication-type="journal">
+               <name name-style="western">
+                  <surname>Chen</surname>
+                  <given-names>J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Long</surname>
+                  <given-names>M. X.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Geng</surname>
+                  <given-names>L. N.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Yang</surname>
+                  <given-names>D. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Ma</surname>
+                  <given-names>C.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wu</surname>
+                  <given-names>H. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Ma</surname>
+                  <given-names>Z. G.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>C. F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Zhou</surname>
+                  <given-names>Z. Y.</given-names>
+               </name> (<year>2013</year>). <article-title>Identification of a novel chitin-binding spore wall protein (NbSWP12) with a BAR-2 domain from <italic>Nosema bombycis</italic> (microsporidia)</article-title>. <source>Parasitology</source> 
+               <volume>140</volume>, <fpage>1394</fpage>–<lpage>1402</lpage>.<pub-id pub-id-type="doi">10.1017/S0031182013000875</pub-id><pub-id pub-id-type="pmid">23920053</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref3" publication-type="journal">
+               <name name-style="western">
+                  <surname>Corradi</surname>
+                  <given-names>N.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Gangaeva</surname>
+                  <given-names>A.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Keeling</surname>
+                  <given-names>P. J.</given-names>
+               </name> (<year>2008</year>). <article-title>Comparative profiling of overlapping transcription in the compacted genomes of microsporidia <italic>Antonospora locustae</italic> and <italic>Encephalitozoon cuniculi</italic>
+               </article-title>. <source>Genomics</source> 
+               <volume>91</volume>, <fpage>388</fpage>–<lpage>393</lpage>.<pub-id pub-id-type="doi">10.1016/j.ygeno.2007.12.006</pub-id><pub-id pub-id-type="pmid">18280697</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref4" publication-type="journal">
+               <name name-style="western">
+                  <surname>Didier</surname>
+                  <given-names>E.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Snowden</surname>
+                  <given-names>K.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Shadduck</surname>
+                  <given-names>J.</given-names>
+               </name> (<year>1998</year>). <article-title>Biology of microsporidian species infecting mammals</article-title>. <source>Advances in Parasitology</source> 
+               <volume>40</volume>, <fpage>283</fpage>–<lpage>320</lpage>.<pub-id pub-id-type="doi">10.1016/S0065-308X(08)60125-6</pub-id><pub-id pub-id-type="pmid">9554077</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref6" publication-type="journal">
+               <name name-style="western">
+                  <surname>Gemayel</surname>
+                  <given-names>R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Cho</surname>
+                  <given-names>J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Boeynaems</surname>
+                  <given-names>S.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Verstrepen</surname>
+                  <given-names>K. J.</given-names>
+               </name> (<year>2012</year>). <article-title>Beyond junk-variable tandem repeats as facilitators of rapid evolution of regulatory and coding sequences</article-title>. <source>Genes</source> 
+               <volume>3</volume>, <fpage>461</fpage>–<lpage>480</lpage>.<pub-id pub-id-type="doi">10.3390/genes3030461</pub-id><pub-id pub-id-type="pmid">24704980</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref8" publication-type="journal">
+               <name name-style="western">
+                  <surname>Hayman</surname>
+                  <given-names>J. R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Hayes</surname>
+                  <given-names>S. F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Amon</surname>
+                  <given-names>J.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Nash</surname>
+                  <given-names>T. E.</given-names>
+               </name> (<year>2001</year>). <article-title>Developmental expression of two spore wall proteins during maturation of the microsporidian <italic>Encephalitozoon intestinalis</italic>
+               </article-title>. <source>Infection and Immunity</source> 
+               <volume>69</volume>, <fpage>7057</fpage>–<lpage>7066</lpage>.<pub-id pub-id-type="doi">10.1128/IAI.69.11.7057-7066.2001</pub-id><pub-id pub-id-type="pmid">11598081</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref9" publication-type="journal">
+               <name name-style="western">
+                  <surname>Hayman</surname>
+                  <given-names>J. R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Southern</surname>
+                  <given-names>T. R.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Nash</surname>
+                  <given-names>T. E.</given-names>
+               </name> (<year>2005</year>). <article-title>Role of sulfated glycans in adherence of the microsporidian <italic>Encephalitozoon intestinalis</italic> to host cells <italic>in vitro</italic>
+               </article-title>. <source>Infection and Immunity</source> 
+               <volume>73</volume>, <fpage>841</fpage>–<lpage>848</lpage>.<pub-id pub-id-type="doi">10.1128/IAI.73.2.841-848.2005</pub-id><pub-id pub-id-type="pmid">15664924</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref11" publication-type="journal">
+               <name name-style="western">
+                  <surname>Julenius</surname>
+                  <given-names>K.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Mølgaard</surname>
+                  <given-names>A.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Gupta</surname>
+                  <given-names>R.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Brunak</surname>
+                  <given-names>S.</given-names>
+               </name> (<year>2005</year>). <article-title>Prediction, conservation analysis, and structural characterization of mammalian mucin-type O-glycosylation sites</article-title>. <source>Glycobiology</source> 
+               <volume>15</volume>, <fpage>153</fpage>–<lpage>164</lpage>.<pub-id pub-id-type="pmid">15385431</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref12" publication-type="journal">
+               <name name-style="western">
+                  <surname>Katinka</surname>
+                  <given-names>M. D.</given-names>
+               </name> (<year>2001</year>). <article-title>Genome sequence and gene compaction of the eukaryote parasite <italic>Encephalitozoon cuniculi</italic>
+               </article-title>. <source>Nature</source> 
+               <volume>414</volume>, <fpage>450</fpage>–<lpage>453</lpage>.<pub-id pub-id-type="doi">10.1038/35106579</pub-id><pub-id pub-id-type="pmid">11719806</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref13" publication-type="journal">
+               <name name-style="western">
+                  <surname>Katti</surname>
+                  <given-names>M. V.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Sami-Subbu</surname>
+                  <given-names>R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Ranjekar</surname>
+                  <given-names>P. K.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Gupta</surname>
+                  <given-names>V. S.</given-names>
+               </name> (<year>2000</year>). <article-title>Amino acid repeat patterns in protein sequences: their diversity and structural-functional implications</article-title>. <source>Protein Science</source> 
+               <volume>9</volume>, <fpage>1203</fpage>–<lpage>1209</lpage>.<pub-id pub-id-type="doi">10.1110/ps.9.6.1203</pub-id><pub-id pub-id-type="pmid">10892812</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref13a" publication-type="journal">
+               <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Y. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wu</surname>
+                  <given-names>Z. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>He</surname>
+                  <given-names>W. W.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhang</surname>
+                  <given-names>R. Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Hu</surname>
+                  <given-names>J. H.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Zhou</surname>
+                  <given-names>Z. Y.</given-names>
+               </name> (<year>2009</year>). <article-title>Identification of a novel spore wall protein (SWP26) from microsporidia <italic>Nosema bombycis</italic>
+               </article-title>. <source>International Journal for Parasitology</source> 
+               <volume>39</volume>, <fpage>391</fpage>–<lpage>398</lpage>.<pub-id pub-id-type="doi">10.1016/j.ijpara.2008.08.011</pub-id><pub-id pub-id-type="pmid">18854188</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref13b" publication-type="journal">
+               <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Huang</surname>
+                  <given-names>W.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Chen</surname>
+                  <given-names>J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Geng</surname>
+                  <given-names>L. N.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Yang</surname>
+                  <given-names>D. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wang</surname>
+                  <given-names>L. L.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Zhou</surname>
+                  <given-names>Z. Y.</given-names>
+               </name> (<year>2012</year>). <article-title>SWP5, a spore wall protein, interacts with polar tube proteins in the parasitic microsporidian <italic>Nosema bombycis</italic>
+               </article-title>. <source>Eukaryotic cell</source> 
+               <volume>11</volume>, <fpage>229</fpage>–<lpage>237</lpage>.<pub-id pub-id-type="doi">10.1128/EC.05127-11</pub-id><pub-id pub-id-type="pmid">22140229</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref14" publication-type="journal">
+               <name name-style="western">
+                  <surname>Nageli</surname>
+                  <given-names>K.</given-names>
+               </name> (<year>1857</year>). <article-title>Uber die neue Krankheit der Seidenraupe und verwandte Organismen</article-title>. <source>Bot Z</source> 
+               <volume>15</volume>, <fpage>760</fpage>–<lpage>761</lpage>.</mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref14a" publication-type="journal">
+               <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Xu</surname>
+                  <given-names>J. S.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Xia</surname>
+                  <given-names>Q. Y.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Liu</surname>
+                  <given-names>S. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhang</surname>
+                  <given-names>G. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>S. G.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>C. F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Liu</surname>
+                  <given-names>H. D.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Yang</surname>
+                  <given-names>L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Liu</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhang</surname>
+                  <given-names>X.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wu</surname>
+                  <given-names>Z. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Fan</surname>
+                  <given-names>W.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Dang</surname>
+                  <given-names>X. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Xiang</surname>
+                  <given-names>H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Tao</surname>
+                  <given-names>M. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Y. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Hu</surname>
+                  <given-names>J. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Lin</surname>
+                  <given-names>L. P.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Luo</surname>
+                  <given-names>J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Geng</surname>
+                  <given-names>L. N.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wang</surname>
+                  <given-names>L. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Long</surname>
+                  <given-names>M. X.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wan</surname>
+                  <given-names>Y. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>He</surname>
+                  <given-names>N. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhang</surname>
+                  <given-names>Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Lu</surname>
+                  <given-names>C.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Patrick</surname>
+                  <given-names>J. K.</given-names>
+               </name> 
+               <etal/> (<year>2013</year>). <article-title>Comparative genomics of parasitic silkworm microsporidia reveal an association between genome expansion and host adaptation</article-title>. <source>BMC genomics</source> 
+               <volume>14</volume>, <fpage>186</fpage>.<pub-id pub-id-type="doi">10.1186/1471-2164-14-186</pub-id><pub-id pub-id-type="pmid">23496955</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref15" publication-type="journal">
+               <name name-style="western">
+                  <surname>Peuvel-Fanget</surname>
+                  <given-names>I.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Polonais</surname>
+                  <given-names>V.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Brosson</surname>
+                  <given-names>D.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Texier</surname>
+                  <given-names>C.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Kuhn</surname>
+                  <given-names>L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Peyret</surname>
+                  <given-names>P.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Vivarè</surname>
+                  <given-names>C.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Delbac</surname>
+                  <given-names>F.</given-names>
+               </name> (<year>2006</year>). <article-title>EnP1 and EnP2, two proteins associated with the <italic>Encephalitozoon cuniculi</italic> endospore, the chitin-rich inner layer of the microsporidian spore wall</article-title>. <source>International Journal for Parasitology</source> 
+               <volume>36</volume>, <fpage>309</fpage>–<lpage>318</lpage>.<pub-id pub-id-type="doi">10.1016/j.ijpara.2005.10.005</pub-id><pub-id pub-id-type="pmid">16368098</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref16" publication-type="journal">
+               <name name-style="western">
+                  <surname>Shadduck</surname>
+                  <given-names>J. A.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Polley</surname>
+                  <given-names>M. B.</given-names>
+               </name> (<year>1978</year>). <article-title>Some factors influencing the <italic>in vitro</italic> infectivity and replication of <italic>Encephalitozoon cuniculi</italic>
+               </article-title>. <source>Journal of Eukaryotic Microbiology</source> 
+               <volume>25</volume>, <fpage>491</fpage>–<lpage>496</lpage>.</mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref18" publication-type="journal">
+               <name name-style="western">
+                  <surname>Smith</surname>
+                  <given-names>G. A.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Theriot</surname>
+                  <given-names>J. A.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Portnoy</surname>
+                  <given-names>D. A.</given-names>
+               </name> (<year>1996</year>). <article-title>The tandem repeat domain in the <italic>Listeria monocytogenes</italic> ActA protein controls the rate of actin-based motility, the percentage of moving bacteria, and the localization of vasodilator-stimulated phosphoprotein and profilin</article-title>. <source>Journal of Cell Biology</source> 
+               <volume>135</volume>, <fpage>647</fpage>–<lpage>660</lpage>.<pub-id pub-id-type="doi">10.1083/jcb.135.3.647</pub-id><pub-id pub-id-type="pmid">8909540</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref19" publication-type="journal">
+               <name name-style="western">
+                  <surname>Southern</surname>
+                  <given-names>T. R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Jolly</surname>
+                  <given-names>C. E.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Russell Hayman</surname>
+                  <given-names>J.</given-names>
+               </name> (<year>2006</year>). <article-title>Augmentation of microsporidia adherence and host cell infection by divalent cations</article-title>. <source>FEMS Microbiology Letters</source> 
+               <volume>260</volume>, <fpage>143</fpage>–<lpage>149</lpage>.<pub-id pub-id-type="doi">10.1111/j.1574-6968.2006.00288.x</pub-id><pub-id pub-id-type="pmid">16842337</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref20" publication-type="journal">
+               <name name-style="western">
+                  <surname>Southern</surname>
+                  <given-names>T. R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Jolly</surname>
+                  <given-names>C. E.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Lester</surname>
+                  <given-names>M. E.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Hayman</surname>
+                  <given-names>J. R.</given-names>
+               </name> (<year>2007</year>). <article-title>EnP1, a microsporidian spore wall protein that enables spores to adhere to and infect host cells <italic>in vitro</italic>
+               </article-title>. <source>Eukaryotic Cell</source> 
+               <volume>6</volume>, <fpage>1354</fpage>–<lpage>1362</lpage>.<pub-id pub-id-type="doi">10.1128/EC.00113-07</pub-id><pub-id pub-id-type="pmid">17557882</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref21" publication-type="journal">
+               <name name-style="western">
+                  <surname>Verstrepen</surname>
+                  <given-names>K. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Jansen</surname>
+                  <given-names>A.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Lewitter</surname>
+                  <given-names>F.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Fink</surname>
+                  <given-names>G. R.</given-names>
+               </name> (<year>2005</year>). <article-title>Intragenic tandem repeats generate functional variability</article-title>. <source>Nature Genetics</source> 
+               <volume>37</volume>, <fpage>986</fpage>–<lpage>990</lpage>.<pub-id pub-id-type="doi">10.1038/ng1618</pub-id><pub-id pub-id-type="pmid">16086015</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref22" publication-type="journal">
+               <name name-style="western">
+                  <surname>Weidner</surname>
+                  <given-names>E.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Halonen</surname>
+                  <given-names>S. K.</given-names>
+               </name> (<year>1993</year>). <article-title>Microsporidian spore envelope keratins phosphorylate and disassemble during spore activation</article-title>. <source>Journal of Eukaryotic Microbiology</source> 
+               <volume>40</volume>, <fpage>783</fpage>–<lpage>788</lpage>.<pub-id pub-id-type="doi">10.1111/j.1550-7408.1993.tb04474.x</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref23" publication-type="journal">
+               <name name-style="western">
+                  <surname>Weidner</surname>
+                  <given-names>E.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Avila</surname>
+                  <given-names>J.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Harris</surname>
+                  <given-names>J.</given-names>
+               </name> (<year>1992</year>). <article-title>Cytoskeletal proteins expressed by microsporidian parasites. Subcellular biochemistry</article-title>. <source>Intracellular Parasites</source> 
+               <volume>18</volume>, <fpage>385</fpage>–<lpage>399</lpage>.<pub-id pub-id-type="doi">10.1007/978-1-4899-1651-8_12</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref24" publication-type="journal">
+               <name name-style="western">
+                  <surname>Wu</surname>
+                  <given-names>Z. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Y. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Tan</surname>
+                  <given-names>X. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Hu</surname>
+                  <given-names>J. H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhou</surname>
+                  <given-names>Z. Y.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Xiang</surname>
+                  <given-names>Z.</given-names>
+               </name> (<year>2008</year>). <article-title>Proteomic analysis of spore wall proteins and identification of two spore wall proteins from <italic>Nosema bombycis</italic> (Microsporidia)</article-title>. <source>Proteomics</source> 
+               <volume>8</volume>, <fpage>2447</fpage>–<lpage>2461</lpage>.<pub-id pub-id-type="doi">10.1002/pmic.200700584</pub-id><pub-id pub-id-type="pmid">18563739</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref25" publication-type="journal">
+               <name name-style="western">
+                  <surname>Xu</surname>
+                  <given-names>Y. J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Peter</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Ann</surname>
+                  <given-names>C.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Wang</surname>
+                  <given-names>F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Zhang</surname>
+                  <given-names>H.</given-names>
+               </name>, <name name-style="western">
+                  <surname>George</surname>
+                  <given-names>O.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Louis</surname>
+                  <given-names>M. W.</given-names>
+               </name> (<year>2006</year>). <article-title>Identification of a new spore wall protein from <italic>Encephalitozoon cuniculi</italic>
+               </article-title>. <source>Infection and Immunity</source> 
+               <volume>74</volume>, <fpage>239</fpage>–<lpage>247</lpage>.<pub-id pub-id-type="doi">10.1128/IAI.74.1.239-247.2006</pub-id><pub-id pub-id-type="pmid">16368977</pub-id></mixed-citation>
+         </ref>
+         <ref>
+            <mixed-citation id="ref26" publication-type="journal">
+               <name name-style="western">
+                  <surname>Yang</surname>
+                  <given-names>D. L.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Dang</surname>
+                  <given-names>X. Q.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Tian</surname>
+                  <given-names>R.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Long</surname>
+                  <given-names>M. X.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>C. F.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>T.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Chen</surname>
+                  <given-names>J.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Li</surname>
+                  <given-names>Z.</given-names>
+               </name>, <name name-style="western">
+                  <surname>Pan</surname>
+                  <given-names>G. Q.</given-names>
+               </name> and <name name-style="western">
+                  <surname>Zhou</surname>
+                  <given-names>Z. Y.</given-names>
+               </name> (<year>2014</year>). <article-title>Development of an approach to analyze the interaction between <italic>Nosema bombycis</italic> (microsporidia) deproteinated chitin spore coats and spore wall proteins</article-title>. <source>Journal of Invertebrate Pathology</source> 
+               <volume>115</volume>, <fpage>1</fpage>–<lpage>7</lpage>.<pub-id pub-id-type="doi">10.1016/j.jip.2013.10.004</pub-id><pub-id pub-id-type="pmid">24161881</pub-id></mixed-citation>
+         </ref>
+      </ref-list>
+      <app-group id="appg1">
+         <app id="app01">
+            <title>APPENDIX</title>
+            <p>
+               <table-wrap id="tab01" position="float">
+                  <label>Table A1.</label>
+                  <caption>
+                     <p>The spore wall proteins studied in our group</p>
+                  </caption>
+                  <alternatives>
+                     <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_tab1" xlink:type="simple"/>
+                     <table frame="hsides">
+                        <col align="left" span="1" width="1*"/>
+                        <col align="char" char="." span="1" width="1*"/>
+                        <col align="left" span="1" width="1*"/>
+                        <thead>
+                           <tr>
+                              <th align="left" colspan="1" rowspan="1">Protein name</th>
+                              <th align="left" colspan="1" rowspan="1">Sequence length (aa)</th>
+                              <th align="left" colspan="1" rowspan="1">Accession number</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP1</td>
+                              <td colspan="1" rowspan="1">278</td>
+                              <td colspan="1" rowspan="1">ABV48889</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP2</td>
+                              <td colspan="1" rowspan="1">268</td>
+                              <td colspan="1" rowspan="1">ABV48890</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP3</td>
+                              <td colspan="1" rowspan="1">316</td>
+                              <td colspan="1" rowspan="1">ABV48891</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP4</td>
+                              <td colspan="1" rowspan="1">451</td>
+                              <td colspan="1" rowspan="1">ABV48892</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP5</td>
+                              <td colspan="1" rowspan="1">186</td>
+                              <td colspan="1" rowspan="1">ABV48893</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP6</td>
+                              <td colspan="1" rowspan="1">487</td>
+                              <td colspan="1" rowspan="1">ABV48894</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP7</td>
+                              <td colspan="1" rowspan="1">291</td>
+                              <td colspan="1" rowspan="1">ABV48895</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP8</td>
+                              <td colspan="1" rowspan="1">162</td>
+                              <td colspan="1" rowspan="1">ABV48896</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP9</td>
+                              <td colspan="1" rowspan="1">331</td>
+                              <td colspan="1" rowspan="1">ABV48897</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP10</td>
+                              <td colspan="1" rowspan="1">236</td>
+                              <td colspan="1" rowspan="1">ABV48898</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP11</td>
+                              <td colspan="1" rowspan="1">446</td>
+                              <td colspan="1" rowspan="1">ABV48899</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP12</td>
+                              <td colspan="1" rowspan="1">228</td>
+                              <td colspan="1" rowspan="1">ABV48900</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP13</td>
+                              <td colspan="1" rowspan="1">833</td>
+                              <td colspan="1" rowspan="1">ABY49795</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP14</td>
+                              <td colspan="1" rowspan="1">423</td>
+                              <td colspan="1" rowspan="1">ABY49796</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP15</td>
+                              <td colspan="1" rowspan="1">357</td>
+                              <td colspan="1" rowspan="1">EOB12803</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1">NbHSWP16</td>
+                              <td colspan="1" rowspan="1">383</td>
+                              <td colspan="1" rowspan="1">EOB14338</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </alternatives>
+                  <table-wrap-foot>
+                     <fn-group content-type="footnotes" id="fng">
+                        <fn>
+                           <p>The spore adherence analysis of NbSWP16.</p>
+                        </fn>
+                     </fn-group>
+                  </table-wrap-foot>
+               </table-wrap>
+            </p>
+            <p>To analyse the role of NbSWP16 in spore adherence, antibody blocking analysis was performed. In each group data (C1/S1, C2/S2 and C3/S3), the spores bounded to 5 selected randomly host cells were counted in 21 independent field and it was repeated 3 times. S1, S2 and S3 represent the 3 times of anti-NbSWP16 blocking analysis, respectively. C1, C2 and C3 represent the control. The raw data of spore counting for each experimental analysis was shown in Tables 1, 2 and 3, respectively.</p>
+            <p>The raw data of spore counting with 3 times. Please see supplementary material online (Excel spreadsheet: go to <uri xlink:href="http://journals.cambridge.org/PAR" xlink:type="simple">http://journals.cambridge.org/PAR</uri>.).
+<fig id="fig08" position="float">
+                  <label>Fig. A1.</label>
+                  <caption>
+                     <p>SDS-PAGE (12%) analysis of expression and purification of rNbHSWP16 M, protein molecular weight marker; lane 1, expression product of pET30a (+)-NbHSWP16 without induction; lane 2, expression product of pET30a (+)-NbHSWP16 induced with IPTG; lanes 3 and 4, purified rNbHSWP16 inclusion body.</p>
+                  </caption>
+                  <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_fig8" xlink:type="simple"/>
+               </fig>
+               <table-wrap id="tab02" position="float">
+                  <label>Table A2.</label>
+                  <caption>
+                     <p>The statistical results of spore adherence analysis with antibody of NbSWP16 and NbSWP5</p>
+                  </caption>
+                  <alternatives>
+                     <graphic mime-subtype="gif" mimetype="image" position="float" xlink:href="S0031182014001565_tab2" xlink:type="simple"/>
+                     <table frame="hsides">
+                        <col align="left" span="1" width="1*"/>
+                        <col align="char" char="·" span="1" width="1*"/>
+                        <col align="char" char="·" span="1" width="1*"/>
+                        <col align="char" char="·" span="1" width="1*"/>
+                        <thead>
+                           <tr>
+                              <th align="left" colspan="1" rowspan="1">The bounded spores of average cell</th>
+                              <th align="left" colspan="1" rowspan="1">Negative control</th>
+                              <th align="left" colspan="1" rowspan="1">Antibody NbSWP16</th>
+                              <th align="left" colspan="1" rowspan="1">Antibody of NbSWP16 and NbSWP5</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td colspan="1" rowspan="1"/>
+                              <td colspan="1" rowspan="1">12·08</td>
+                              <td colspan="1" rowspan="1">9·53</td>
+                              <td colspan="1" rowspan="1">9·11</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1"/>
+                              <td colspan="1" rowspan="1">13·35</td>
+                              <td colspan="1" rowspan="1">9·70</td>
+                              <td colspan="1" rowspan="1">8·79</td>
+                           </tr>
+                           <tr>
+                              <td colspan="1" rowspan="1"/>
+                              <td colspan="1" rowspan="1">12·49</td>
+                              <td colspan="1" rowspan="1">9·45</td>
+                              <td colspan="1" rowspan="1">9·26</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </alternatives>
+               </table-wrap>
+            </p>
+         </app>
+      </app-group>
+   </back>
+</article>
