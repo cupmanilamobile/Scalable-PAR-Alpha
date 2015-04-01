@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <GooglePlus/GooglePlus.h>
+#import "MarkdownMaker.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
     
     [PFTwitterUtils initializeWithConsumerKey:@"mrRzY2HeisRiStOMsuzWJWXvH"
                                consumerSecret:@"VF5M3SfaI4yXytIHp7gOxrhiNam17kaihLHNpjxs7FqIPKWkDa"];
-    
+
     // Override point for customization after application launch.
     return YES;
 }

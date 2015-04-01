@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ArticleContentView : UIView
+@interface ArticleContentView : UIScrollView
 
-@property (nonatomic, copy) NSAttributedString *articleMarkup;
+@property (nonatomic, copy) NSString *articleMarkup;
 
 - (void)buildFrames;
 

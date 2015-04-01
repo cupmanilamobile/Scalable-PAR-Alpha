@@ -75,6 +75,7 @@
 		FD38C2641AB175DF00066F61 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25A1AB175DF00066F61 /* 8.jpg */; };
 		FD38C2651AB175DF00066F61 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25B1AB175DF00066F61 /* 9.jpg */; };
 		FD38C2661AB175DF00066F61 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25C1AB175DF00066F61 /* 10.jpg */; };
+		FD39B6B31ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */; };
 		FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B51AAD948900E9C476 /* Journal.m */; };
 		FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B81AAD949400E9C476 /* Volume.m */; };
 		FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BB1AAD949C00E9C476 /* Issue.m */; };
@@ -91,6 +92,9 @@
 		FDE37EF41AC2981900F59864 /* ArticleContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE37EF31AC2981900F59864 /* ArticleContentView.m */; };
 		FDE37EF81AC2AB1600F59864 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE37EF71AC2AB1600F59864 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FDE37EFA1AC2AC7200F59864 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE37EF91AC2AC7200F59864 /* libxml2.2.dylib */; };
+		FDE9616A1AC3B94F00D323BD /* MarkdownMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE961691AC3B94F00D323BD /* MarkdownMaker.m */; };
+		FDE9616D1AC3CEA700D323BD /* MarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9616C1AC3CEA700D323BD /* MarkdownParser.m */; };
+		FDE961701AC3FAA800D323BD /* NSString+Markdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9616F1AC3FAA800D323BD /* NSString+Markdown.m */; };
 		FDF9238B1AB00E2700CD992A /* libPods-Scalable Tablet PAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF9238A1AB00E2700CD992A /* libPods-Scalable Tablet PAR.a */; };
 		FDF9238D1AB00E4600CD992A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF91F501AB005B900CD992A /* Accounts.framework */; };
 		FDF9238E1AB00E4B00CD992A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF91F521AB005BE00CD992A /* Social.framework */; };
@@ -208,6 +212,8 @@
 		FD38C25A1AB175DF00066F61 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		FD38C25B1AB175DF00066F61 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		FD38C25C1AB175DF00066F61 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		FD39B6B11ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlightTextStorage.h; sourceTree = "<group>"; };
+		FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlightTextStorage.m; sourceTree = "<group>"; };
 		FDA0E9B41AAD948900E9C476 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
 		FDA0E9B51AAD948900E9C476 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
 		FDA0E9B71AAD949400E9C476 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
@@ -234,6 +240,12 @@
 		FDE37EF61AC2AB1600F59864 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		FDE37EF71AC2AB1600F59864 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		FDE37EF91AC2AC7200F59864 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		FDE961681AC3B94F00D323BD /* MarkdownMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownMaker.h; sourceTree = "<group>"; };
+		FDE961691AC3B94F00D323BD /* MarkdownMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownMaker.m; sourceTree = "<group>"; };
+		FDE9616B1AC3CEA700D323BD /* MarkdownParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownParser.h; sourceTree = "<group>"; };
+		FDE9616C1AC3CEA700D323BD /* MarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownParser.m; sourceTree = "<group>"; };
+		FDE9616E1AC3FAA800D323BD /* NSString+Markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Markdown.h"; sourceTree = "<group>"; };
+		FDE9616F1AC3FAA800D323BD /* NSString+Markdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Markdown.m"; sourceTree = "<group>"; };
 		FDF91F501AB005B900CD992A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FDF91F521AB005BE00CD992A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FDF91F541AB00B2200CD992A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -340,6 +352,8 @@
 		62C4A5A61A97126F00F70F6D /* Scalable Tablet PAR */ = {
 			isa = PBXGroup;
 			children = (
+				FDE961671AC3B86D00D323BD /* Util */,
+				FDE961661AC3B7CC00D323BD /* View */,
 				FDAC90D01AAD9CD400948813 /* Controller */,
 				FDA0E9B31AAD947900E9C476 /* Model */,
 				FDE37EF21AC2981900F59864 /* ArticleContentView.h */,
@@ -352,19 +366,11 @@
 				62C4A5D91A9731C400F70F6D /* Misc.m */,
 				62C4A5B11A97126F00F70F6D /* ArticleContentViewController.h */,
 				62C4A5B21A97126F00F70F6D /* ArticleContentViewController.m */,
-				62C4A5B71A97126F00F70F6D /* Images.xcassets */,
-				62E9978E1AA4687500D8AD22 /* ArticleCell.xib */,
-				62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */,
-				62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */,
-				62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */,
-				62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */,
 				CF75FD701AAD6F8E00BBB79D /* Archive */,
 				62C14C101AA01F9800ADCE3D /* Volume */,
 				62C00C351A9EC63F00979A05 /* Issue */,
 				62D5F48C1AA80F1400233B5E /* Article */,
-				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
 				62C4A5B41A97126F00F70F6D /* Main.storyboard */,
-				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
 				62C4A5A71A97126F00F70F6D /* Supporting Files */,
 			);
 			path = "Scalable Tablet PAR";
@@ -373,11 +379,13 @@
 		62C4A5A71A97126F00F70F6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62C4A5B71A97126F00F70F6D /* Images.xcassets */,
+				62C4A5AE1A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld */,
 				FDE37EF01AC294F200F59864 /* S0031182014001504e.epub */,
 				FDE37EEE1AC28C2C00F59864 /* S0031182014001565h.htm */,
-				FDE37EE81AC2886800F59864 /* S0031182014001565w.xml */,
-				FDE37EE91AC2886800F59864 /* S0031182014001565h.xml */,
 				FDE37EEA1AC2886800F59864 /* S0031182014001565w.htm */,
+				FDE37EE91AC2886800F59864 /* S0031182014001565h.xml */,
+				FDE37EE81AC2886800F59864 /* S0031182014001565w.xml */,
 				62C4A5D01A97137800F70F6D /* images */,
 				62C4A5A81A97126F00F70F6D /* Info.plist */,
 				62C4A5A91A97126F00F70F6D /* main.m */,
@@ -405,6 +413,7 @@
 		62C4A5D01A97137800F70F6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				62F74CF11AB15D7A005246D4 /* S0031182014000948_fig3p.jpeg */,
 				FD38C2531AB175DF00066F61 /* 1.jpg */,
 				FD38C2541AB175DF00066F61 /* 2.jpg */,
 				FD38C2551AB175DF00066F61 /* 3.jpg */,
@@ -444,7 +453,6 @@
 				62F74CED1AB144F2005246D4 /* ArticleViewController.h */,
 				62F74CEE1AB144F2005246D4 /* ArticleViewController.m */,
 				62E997841AA460E100D8AD22 /* AggregatorLayoutView.h */,
-				62F74CF11AB15D7A005246D4 /* S0031182014000948_fig3p.jpeg */,
 				62E997821AA45CD300D8AD22 /* AggregatorLayoutView.m */,
 				62E9978C1AA462AA00D8AD22 /* ArticleAggregatorViewController.h */,
 				62E9977F1AA45CC400D8AD22 /* ArticleAggregatorViewController.m */,
@@ -540,6 +548,34 @@
 				FDE37EF71AC2AB1600F59864 /* GDataXMLNode.m */,
 			);
 			name = GDataXML;
+			sourceTree = "<group>";
+		};
+		FDE961661AC3B7CC00D323BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62C4A5B91A97126F00F70F6D /* LaunchScreen.xib */,
+				62E9978E1AA4687500D8AD22 /* ArticleCell.xib */,
+				62E9978D1AA4687500D8AD22 /* ArticleCell1x2.xib */,
+				62E997911AA4687500D8AD22 /* ArticleCell1x3.xib */,
+				62E9978F1AA4687500D8AD22 /* ArticleCell2x1.xib */,
+				62E997901AA4687500D8AD22 /* ArticleCell3x1.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDE961671AC3B86D00D323BD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FDE961681AC3B94F00D323BD /* MarkdownMaker.h */,
+				FDE961691AC3B94F00D323BD /* MarkdownMaker.m */,
+				FDE9616B1AC3CEA700D323BD /* MarkdownParser.h */,
+				FDE9616C1AC3CEA700D323BD /* MarkdownParser.m */,
+				FDE9616E1AC3FAA800D323BD /* NSString+Markdown.h */,
+				FDE9616F1AC3FAA800D323BD /* NSString+Markdown.m */,
+				FD39B6B11ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.h */,
+				FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,10 +797,13 @@
 				62F74CF01AB14520005246D4 /* ArticleViewController.h in Sources */,
 				62F74CEC1AB1391C005246D4 /* FullScreenView.h in Sources */,
 				62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */,
+				FD39B6B31ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m in Sources */,
 				62F74CEB1AB138DE005246D4 /* FullScreenView.m in Sources */,
 				CFC402791AAC86930094ED83 /* IssueCover.m in Sources */,
 				FDA0E9C31AAD94A500E9C476 /* Article.m in Sources */,
 				62C4A5AD1A97126F00F70F6D /* AppDelegate.m in Sources */,
+				FDE9616D1AC3CEA700D323BD /* MarkdownParser.m in Sources */,
+				FDE961701AC3FAA800D323BD /* NSString+Markdown.m in Sources */,
 				62C00C3A1A9EC8A000979A05 /* VolumeCover.m in Sources */,
 				62C4A5D71A97315C00F70F6D /* VolumeDashboardViewController.m in Sources */,
 				62E9978A1AA4626600D8AD22 /* ArticleAggregatorItemView.m in Sources */,
@@ -787,6 +826,7 @@
 				CFC762921AAD4B4E0072B1D6 /* VolumeTableView.m in Sources */,
 				FDE37EF81AC2AB1600F59864 /* GDataXMLNode.m in Sources */,
 				FDE37EF41AC2981900F59864 /* ArticleContentView.m in Sources */,
+				FDE9616A1AC3B94F00D323BD /* MarkdownMaker.m in Sources */,
 				62C4A5B01A97126F00F70F6D /* Scalable_Tablet_PAR.xcdatamodeld in Sources */,
 				CFC7628F1AAD4A950072B1D6 /* VolumeTableViewCell.m in Sources */,
 			);
