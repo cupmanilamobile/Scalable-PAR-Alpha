@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ArticleContentView : UIScrollView
+@interface ArticleContentView : UIScrollView <UIScrollViewDelegate>
 
 @property (nonatomic, copy) NSAttributedString *articleMarkup;
 
