@@ -17,8 +17,7 @@
 {
     NSDictionary *attrs = @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
     // create the text storage
-    SyntaxHighlightTextStorage *textStorage = [SyntaxHighlightTextStorage new];
-    [textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:self.articleMarkup attributes:attrs]];
+    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithAttributedString:self.articleMarkup];
     
     // create the layout manager
     _layoutManager = [[NSLayoutManager alloc] init];

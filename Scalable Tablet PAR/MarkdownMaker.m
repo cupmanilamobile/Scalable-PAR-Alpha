@@ -35,7 +35,7 @@
     
     // contributors
     GDataXMLElement *contribGroup = [_document nodesForXPath:@"//contrib-group" error:nil][0];
-    NSMutableString *mdContribGroup = [[NSMutableString alloc] initWithString:@"#"];
+    NSMutableString *mdContribGroup = [[NSMutableString alloc] initWithString:@"##"];
     NSArray *contribs = [contribGroup nodesForXPath:@"contrib" error:nil];
     [contribs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         GDataXMLElement *name = [obj nodesForXPath:@"name" error:nil][0];
@@ -60,7 +60,7 @@
         NSArray *children = [obj children];
         [children enumerateObjectsUsingBlock:^(id iobj, NSUInteger iidx, BOOL *istop) {
             if (iidx == 0) {
-                [mdAff appendString:[[[iobj nodesForXPath:@"//label/sup" error:nil] objectAtIndex:idx] XMLString]];
+                [mdAff appendString:[NSString stringWithFormat:@"<sup>a%@</sup> ", [[[iobj nodesForXPath:@"//label/sup" error:nil] objectAtIndex:idx] stringValue]]];
             } else {
                 [mdAff appendString:[iobj stringValue]];
             }
@@ -105,7 +105,7 @@
                                        [[[obj nodesForXPath:@".//month" error:nil] firstObject] stringValue],
                                        [[[obj nodesForXPath:@".//day" error:nil] firstObject] stringValue]]];
         [format setDateFormat:@"MMMM dd yyyy"];
-        [mdDateHistory appendFormat:[NSString stringWithFormat:@"(%@ %@)", dateType, [format stringFromDate:date]]];
+        [mdDateHistory appendFormat:[NSString stringWithFormat:@"      (%@ %@)", dateType, [format stringFromDate:date]]];
         if (idx < [dateHistory count]) {
             [mdDateHistory appendFormat:@"\n"];
         }
@@ -125,7 +125,7 @@
                                                [[[circulationDate nodesForXPath:@".//month" error:nil] firstObject] stringValue],
                                                [[[circulationDate nodesForXPath:@".//day" error:nil] firstObject] stringValue]]];
     [format setDateFormat:@"MMMM dd yyyy"];
-    [mdCirculationDate appendString:[NSString stringWithFormat:@"(Online publication %@)", [format stringFromDate:circDate]]];
+    [mdCirculationDate appendString:[NSString stringWithFormat:@"      (Online publication %@)", [format stringFromDate:circDate]]];
     
     // key words
     GDataXMLElement *keywords = [[_document nodesForXPath:@"//kwd-group" error:nil] firstObject];

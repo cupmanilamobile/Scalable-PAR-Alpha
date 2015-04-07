@@ -35,8 +35,8 @@
         MarkdownMaker *mm = [MarkdownMaker sharedManager];
         _articleContentView = [[ArticleContentView alloc] initWithFrame:self.view.bounds];
         _articleContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//        _articleContentView.articleMarkup = [parser parseMarkdown:[mm convertAbstractDataToMarkdown:responseObject]];
-        _articleContentView.articleMarkup = [mm convertAbstractDataToMarkdown:responseObject];
+        _articleContentView.articleMarkup = [parser parseMarkdown:[mm convertAbstractDataToMarkdown:responseObject]];
+//        _articleContentView.articleMarkup = [mm convertAbstractDataToMarkdown:responseObject];
         [self.view addSubview:_articleContentView];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);

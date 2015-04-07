@@ -10,7 +10,7 @@
 
 @interface ArticleContentView : UIScrollView
 
-@property (nonatomic, copy) NSString *articleMarkup;
+@property (nonatomic, copy) NSAttributedString *articleMarkup;
 
 - (void)buildFrames;
 
