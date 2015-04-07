@@ -75,7 +75,6 @@
 		FD38C2641AB175DF00066F61 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25A1AB175DF00066F61 /* 8.jpg */; };
 		FD38C2651AB175DF00066F61 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25B1AB175DF00066F61 /* 9.jpg */; };
 		FD38C2661AB175DF00066F61 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD38C25C1AB175DF00066F61 /* 10.jpg */; };
-		FD39B6B31ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */; };
 		FDA0E9B61AAD948900E9C476 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B51AAD948900E9C476 /* Journal.m */; };
 		FDA0E9B91AAD949400E9C476 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9B81AAD949400E9C476 /* Volume.m */; };
 		FDA0E9BC1AAD949C00E9C476 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0E9BB1AAD949C00E9C476 /* Issue.m */; };
@@ -212,8 +211,6 @@
 		FD38C25A1AB175DF00066F61 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		FD38C25B1AB175DF00066F61 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		FD38C25C1AB175DF00066F61 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
-		FD39B6B11ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlightTextStorage.h; sourceTree = "<group>"; };
-		FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlightTextStorage.m; sourceTree = "<group>"; };
 		FDA0E9B41AAD948900E9C476 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
 		FDA0E9B51AAD948900E9C476 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
 		FDA0E9B71AAD949400E9C476 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
@@ -572,8 +569,6 @@
 				FDE9616C1AC3CEA700D323BD /* MarkdownParser.m */,
 				FDE9616E1AC3FAA800D323BD /* NSString+Markdown.h */,
 				FDE9616F1AC3FAA800D323BD /* NSString+Markdown.m */,
-				FD39B6B11ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.h */,
-				FD39B6B21ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -797,7 +792,6 @@
 				62F74CF01AB14520005246D4 /* ArticleViewController.h in Sources */,
 				62F74CEC1AB1391C005246D4 /* FullScreenView.h in Sources */,
 				62C14C131AA01FFF00ADCE3D /* VolumeViewController.m in Sources */,
-				FD39B6B31ACA4C1100B93AB6 /* SyntaxHighlightTextStorage.m in Sources */,
 				62F74CEB1AB138DE005246D4 /* FullScreenView.m in Sources */,
 				CFC402791AAC86930094ED83 /* IssueCover.m in Sources */,
 				FDA0E9C31AAD94A500E9C476 /* Article.m in Sources */,

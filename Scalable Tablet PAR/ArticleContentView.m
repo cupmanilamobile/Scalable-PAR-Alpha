@@ -7,7 +7,6 @@
 //
 
 #import "ArticleContentView.h"
-#import "SyntaxHighlightTextStorage.h"
 
 @implementation ArticleContentView {
     NSLayoutManager *_layoutManager;
@@ -15,7 +14,6 @@
 
 - (void)buildFrames
 {
-    NSDictionary *attrs = @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
     // create the text storage
     NSTextStorage *textStorage = [[NSTextStorage alloc] initWithAttributedString:self.articleMarkup];
     

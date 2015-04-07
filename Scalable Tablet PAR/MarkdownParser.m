@@ -85,6 +85,7 @@
             font = [self createAttributesForFontStyle:[font fontDescriptor] withTrait:UIFontDescriptorTraitBold];
             [attributedText addAttribute:NSFontAttributeName value:font range:matchRange];
         }];
+        [self removeMarkers:attributedText pattern:@"(\\*\\w+(.\\s\\w+)*\\*)"];
 
         NSRegularExpression *regexSup = [NSRegularExpression regularExpressionWithPattern:@"<sup>([\\w]+)*.</sup>" options:0 error:nil];
         [regexSup enumerateMatchesInString:[attributedText string] options:0 range:NSMakeRange(0, attributedText.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
@@ -94,8 +95,6 @@
             font = [self createAttributesForFontStyle:[font fontDescriptor] withTrait:0];
             [attributedText addAttribute:NSBaselineOffsetAttributeName value:@10 range:matchRange];
         }];
-        
-        [self removeMarkers:attributedText pattern:@"(\\*\\w+(.\\s\\w+)*\\*)"];
         [self removeMarkers:attributedText pattern:@"<(/)?sup>"];
         
         // 4. append to the output
